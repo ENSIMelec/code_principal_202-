@@ -1,0 +1,21 @@
+{
+    "initialisation": [
+        "AX12_Pince",
+        "AX12_Panneau",
+        "Lidar"
+    ],
+    "actions": [
+        {
+            "classe": "AX12_Pince",
+            "methode": "fermer"
+        },
+        {
+            "classe": "AX12_Panneau",
+            "methode": "deployer",
+            "argument": [
+                "1",
+                "2"
+            ]
+        }
+    ]
+}

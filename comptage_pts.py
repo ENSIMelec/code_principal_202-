@@ -23,7 +23,7 @@ class Affichage:
         app.mettre_a_jour_score(score, calcul_intermediaire)
 
 
-class ComptagePoints:
+class comptage_pts:
     def __init__(self):
         self.score = 0
         self.calculs_intermediaires = ""

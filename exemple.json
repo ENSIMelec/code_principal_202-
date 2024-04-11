@@ -1,0 +1,19 @@
+{
+    "initialisation": [
+        "AX12_Pinces",
+        "AX12_Panneau"
+    ],
+    "actions": [
+        {
+            "classe": "AX12_Pinces",
+            "methode": "open_pince",
+            "arguments": []
+        },
+        {
+            "classe": "AX12_Panneau",
+            "methode": "bouger_panneau_droit",
+            "arguments": []
+            
+        }
+    ]
+}

@@ -1,46 +1,32 @@
-
+import importlib
 import json
-import RPi.GPIO as GPIO
-import time
+import AX12_Pinces
 
-
-
-def execute_order(order):
-    if order['order'] == 'elevate':
-        # Appeler la méthode correspondante de la classe AX12_ascenseur
-        AX12_ascenseur.elevate()
-    elif order['order'] == 'lower':
-        # Appeler la méthode correspondante de la classe AX12_ascenseur
-        AX12_ascenseur.lower()
-    elif order['order'] == 'lower_for_plant':
-        # Appeler la méthode correspondante de la classe AX12_ascenseur
-        AX12_ascenseur.lower_for_plant()
-    elif order['order'] == 'control':
-        # Vérifier si la clé 'actuatorPosition' est présente dans l'ordre
-        if 'actuatorPosition' in order:
-            # Appeler la méthode correspondante de la classe appropriée avec la position spécifiée
-            # Supposons que vous ayez une classe appropriée pour le contrôle, par exemple 'ControlClass'
-            ControlClass.control(order['actuatorPosition'])
-    else:
-        print("Ordre inconnu :", order['order'])
-
-# Parcourir chaque ordre dans la liste et l'exécuter
-for order in orders:
-    execute_order(order)
-import json
-
-def lire_fichier_json(nom_fichier):
-    with open(nom_fichier, 'r') as f:
+# Fonction pour lire et traiter le JSON
+def init_json(json_file):
+    with open(json_file) as f:
         data = json.load(f)
-    return data
+    # Importer les modules d'initialisation
+    
+        # Importer le module
+    dic_class = {}
+    for module_name in data['initialisation']:
+        module=importlib.import_module(module_name)
+        dic_class[module_name] = getattr(module, module_name)
+    return dic_class,data
 
-# Utilisation de la fonction pour lire un fichier JSON
-donnees = lire_fichier_json('Blue1Strategy1.json')
-print(donnees) 
+def actions(dic_class, actions):
+    for action in actions:
+        action['arguments'].insert(0,dic_class[action['classe']]) 
+        while not( getattr(dic_class[action['classe']], action['methode'])(*action['arguments']) ):
+            continue
 
 
-#liste de toute les action
 
+
+
+"""
+import RPi.GPIO as GPIO
 # Numéro de broche GPIO connecté au pin jack 33
 PIN_JACK = 33
 
@@ -62,28 +48,31 @@ def check_jack_removed():
         time.sleep(1)
     return False
 
-
-
-
 # Fonction pour arrêter le robot après un certain temps
 def arreter_apres_temps():
     print("Démarrage du chrono du match")
     time.sleep(10)  # Simulation du temps de match
     print("Fin du match, arrêt du robot")
-
+"""
 # Code principal
 def main():
+    # Initialisation avec le Json
+    dic_class,data = init_json("exemple.json")
+
     # Vérifier si le jack est retiré avant de démarrer le robot
-    if not verifier_jack():
-        print("Le jack n'est pas retiré, impossible de démarrer le robot")
-        return
+    # check_jack_removed()
 
-    # Démarrer le thread pour arrêter le robot après un certain temps
-    arret_thread = threading.Thread(target=arreter_apres_temps)
-    arret_thread.start()
+    # # Démarrer le thread pour arrêter le robot après un certain temps
+    # arret_thread = threading.Thread(target=arreter_apres_temps)
+    # arret_thread.start()
+   
+    #Réalisation des actions 
+    actions(dic_class, data['actions'])
 
-    # Lire et exécuter les actions à partir du fichier JSON
-    lire_et_executer_actions()
+    
+
 
 if __name__ == "__main__":
     main()
+
+

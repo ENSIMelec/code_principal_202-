@@ -1,6 +1,5 @@
 {
     "initialisation": [
-<<<<<<< HEAD
         "AX12_Pinces",
         "AX12_Panneau"
     ],
@@ -15,24 +14,6 @@
             "methode": "bouger_panneau_droit",
             "arguments": []
             
-=======
-        "AX12_Pince",
-        "AX12_Panneau",
-        "Lidar"
-    ],
-    "actions": [
-        {
-            "classe": "AX12_Pince",
-            "methode": "fermer"
-        },
-        {
-            "classe": "AX12_Panneau",
-            "methode": "deployer",
-            "argument": [
-                "1",
-                "2"
-            ]
->>>>>>> 30f822bc456a6775d968680d8c13a448336364e8
         }
     ]
 }

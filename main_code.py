@@ -1,6 +1,12 @@
 import importlib
 import json
-import AX12_Pinces
+import RPi.GPIO as GPIO
+import time
+import threading
+# Numéro de broche GPIO connecté au pin jack 33
+PIN_JACK = 33
+MATCH_TIME = 100
+
 
 # Fonction pour lire et traiter le JSON
 def init_json(json_file):
@@ -19,24 +25,15 @@ def actions(dic_class, actions):
     for action in actions:
         action['arguments'].insert(0,dic_class[action['classe']]) 
         while not( getattr(dic_class[action['classe']], action['methode'])(*action['arguments']) ):
-            continue
+            time.sleep(0.1)
 
 
 
 
 
-"""
-import RPi.GPIO as GPIO
-# Numéro de broche GPIO connecté au pin jack 33
-PIN_JACK = 33
-
-# Configuration de la broche GPIO en mode d'entrée
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(PIN_JACK, GPIO.IN)
 
 # Fonction pour vérifier si le jack a été retiré
 def check_jack_removed():
-    while True:
         # Lire l'état de la broche GPIO connectée au pin jack
         jack_state = GPIO.input(PIN_JACK)
         # Si l'état du jack est bas (0), cela signifie qu'il a été retiré
@@ -45,34 +42,44 @@ def check_jack_removed():
             return True
         else:
             print("En attente du retrait du jack...")
-        time.sleep(1)
-    return False
+            return False
 
 # Fonction pour arrêter le robot après un certain temps
 def arreter_apres_temps():
     print("Démarrage du chrono du match")
-    time.sleep(10)  # Simulation du temps de match
+    time.sleep(MATCH_TIME)  # Simulation du temps de match
     print("Fin du match, arrêt du robot")
-"""
+
+
 # Code principal
 def main():
+    #definition GPIO entrée
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(PIN_JACK, GPIO.IN)
+
     # Initialisation avec le Json
     dic_class,data = init_json("exemple.json")
 
     # Vérifier si le jack est retiré avant de démarrer le robot
-    # check_jack_removed()
+    while(not(check_jack_removed())):
+        time.sleep(0.1)
 
-    # # Démarrer le thread pour arrêter le robot après un certain temps
-    # arret_thread = threading.Thread(target=arreter_apres_temps)
-    # arret_thread.start()
+    #Seconde a partir de laquelle le robot est partie
+    time_lauch = time.time()
    
-    #Réalisation des actions 
-    actions(dic_class, data['actions'])
+    #Réalisation des actions dans un thread deamon
+    thread_action = threading.Thread(target=actions, args=(dic_class, data['actions']))
+    thread_action.setDaemon(True)
+    thread_action.start()
+
+    print("Démarrage du chrono du match")
+    
+    while(time_lauch < (time_lauch + MATCH_TIME) and thread_action.is_alive()):
+        time.sleep(0.1)
+    print("Fin du chrono ou du match")
+    return 0
 
     
-
-
-if __name__ == "__main__":
-    main()
+main()
 
 

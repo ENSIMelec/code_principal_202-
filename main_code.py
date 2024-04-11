@@ -1,30 +1,32 @@
 
 import json
-"""
-import threading
+import RPi.GPIO as GPIO
 import time
 
-# Fonction pour exécuter une action
-def executer_action(action, parametres):
-    if action == "avancer":
-        print("Action : Avancer avec distance =", parametres.get("distance", 0), "et vitesse =", parametres.get("vitesse", 0))
-    elif action == "reculer":
-        print("Action : Reculer avec distance =", parametres.get("distance", 0), "et vitesse =", parametres.get("vitesse", 0))
-    elif action == "rotation":
-        print("Action : Rotation de", parametres.get("angle", 0), "degrés")
-    elif action == "actionneur":
-        print("Action : Actionneur avec position =", parametres.get("position", 0))
-    elif action == "ascenseur_descend":
-        print("Action : Descendre l'ascenseur")
-    elif action == "ascenseur_monte":
-        print("Action : Monter l'ascenseur")
-    elif action == "pince_fermeture":
-        print("Action : Fermer la pince")
-    elif action == "pince_ouverture":
-        print("Action : Ouvrir la pince")
+
+
+def execute_order(order):
+    if order['order'] == 'elevate':
+        # Appeler la méthode correspondante de la classe AX12_ascenseur
+        AX12_ascenseur.elevate()
+    elif order['order'] == 'lower':
+        # Appeler la méthode correspondante de la classe AX12_ascenseur
+        AX12_ascenseur.lower()
+    elif order['order'] == 'lower_for_plant':
+        # Appeler la méthode correspondante de la classe AX12_ascenseur
+        AX12_ascenseur.lower_for_plant()
+    elif order['order'] == 'control':
+        # Vérifier si la clé 'actuatorPosition' est présente dans l'ordre
+        if 'actuatorPosition' in order:
+            # Appeler la méthode correspondante de la classe appropriée avec la position spécifiée
+            # Supposons que vous ayez une classe appropriée pour le contrôle, par exemple 'ControlClass'
+            ControlClass.control(order['actuatorPosition'])
     else:
-        print("Action non reconnue")
-"""
+        print("Ordre inconnu :", order['order'])
+
+# Parcourir chaque ordre dans la liste et l'exécuter
+for order in orders:
+    execute_order(order)
 import json
 
 def lire_fichier_json(nom_fichier):
@@ -36,12 +38,32 @@ def lire_fichier_json(nom_fichier):
 donnees = lire_fichier_json('Blue1Strategy1.json')
 print(donnees) 
 
-"""
-# Fonction pour vérifier si le jack est retiré
-def verifier_jack():
-    print("Vérification si le jack est retiré")
-    time.sleep(2)  # Simulation de la vérification
-    return True  # Supposons que le jack est retiré
+
+#liste de toute les action
+
+# Numéro de broche GPIO connecté au pin jack 33
+PIN_JACK = 33
+
+# Configuration de la broche GPIO en mode d'entrée
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(PIN_JACK, GPIO.IN)
+
+# Fonction pour vérifier si le jack a été retiré
+def check_jack_removed():
+    while True:
+        # Lire l'état de la broche GPIO connectée au pin jack
+        jack_state = GPIO.input(PIN_JACK)
+        # Si l'état du jack est bas (0), cela signifie qu'il a été retiré
+        if jack_state == GPIO.LOW:
+            print("Le jack a été retiré.")
+            return True
+        else:
+            print("En attente du retrait du jack...")
+        time.sleep(1)
+    return False
+
+
+
 
 # Fonction pour arrêter le robot après un certain temps
 def arreter_apres_temps():
@@ -65,4 +87,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-"""

@@ -2,7 +2,8 @@ import serial
 import threading
 
 class Asserv:
-    def __init__(self, port='/dev/ttyUSB0', baudrate=115200, buffer_size=1024):
+    def __init__(self, port='/dev/ttyACM1', baudrate=115200, buffer_size=1024):
+        self.started = False
         self.buffer_size = buffer_size
         self.encGauche = [None] * buffer_size
         self.index_encGauche = 0
@@ -50,8 +51,8 @@ class Asserv:
             pass
         return True
     
-    def rotate(self, x, y):
-        command = f"asserv rotate {x} {y}\n"
+    def rotate(self, angle):
+        command = f"asserv rotate {angle}\n"
         self.serial.write(command.encode())
         while (self.angle_ok == 0):
             pass
@@ -60,76 +61,81 @@ class Asserv:
     def receive_data(self):
         while True:
             data = self.serial.readline().decode().strip()
-            if data.startswith("A"): # Valeur du codeur Gauche
-                _, x = data.split()
-                self.encGauche[self.index_encGauche] = int(x)
-                self.index_encGauche = (self.index_encGauche + 1) % self.buffer_size
-            elif data.startswith("B"): # Valeur du codeur Droit
-                _, x = data.split()
-                self.encDroit[self.index_encDroit] = int(x)
-                self.index_encDroit = (self.index_encDroit + 1) % self.buffer_size
-            elif data.startswith("C"): # Vitesse réel moteur Gauche
-                _, x = data.split()
-                self.vitesse_G[self.index_vitesse_G] = float(x)
-                self.index_vitesse_G = (self.index_vitesse_G + 1) % self.buffer_size
-            elif data.startswith("D"): # Vitesse réel moteur Droit
-                _, x = data.split()
-                self.vitesse_D[self.index_vitesse_D] = float(x)
-                self.index_vitesse_D = (self.index_vitesse_D + 1) % self.buffer_size
-            elif data.startswith("E"): # Sortie du PID vitesse moteur Gauche
-                _, x = data.split()
-                self.Output_PID_vitesse_G[self.index_Output_PID_vitesse_G] = float(x)
-                self.index_Output_PID_vitesse_G = (self.index_Output_PID_vitesse_G + 1) % self.buffer_size
-            elif data.startswith("F"): # Sortie du PID vitesse moteur Droit
-                _, x = data.split()
-                self.Output_PID_vitesse_D[self.index_Output_PID_vitesse_D] = float(x)
-                self.index_Output_PID_vitesse_D = (self.index_Output_PID_vitesse_D + 1) % self.buffer_size
-            elif data.startswith("G"): # Consigne de vitesse moteur Gauche
-                _, x = data.split()
-                self.cmd_vitesse_G[self.index_cmd_vitesse_G] = float(x)
-                self.index_cmd_vitesse_G = (self.index_cmd_vitesse_G + 1) % self.buffer_size
-            elif data.startswith("H"): # Consigne de vitesse moteur Droit
-                _, x = data.split()
-                self.cmd_vitesse_D[self.index_cmd_vitesse_D] = float(x)
-                self.index_cmd_vitesse_D = (self.index_cmd_vitesse_D + 1) % self.buffer_size
-            elif data.startswith("I"): # angle mesurer
-                _, x = data.split()
-                self.angle[self.index_angle] = float(x)
-                self.index_angle = (self.index_angle + 1) % self.buffer_size
-            elif data.startswith("J"): # angle PID
-                _, x = data.split()
-                self.Output_PID_angle[self.index_Output_PID_angle] = float(x)
-                self.index_Output_PID_angle = (self.index_Output_PID_angle + 1) % self.buffer_size
-            elif data.startswith("K"): # cmd angle
-                _, x = data.split()
-                self.cmd_angle[self.index_cmd_angle] = float(x)
-                self.index_cmd_angle = (self.index_cmd_angle + 1) % self.buffer_size
-            elif data.startswith("L"): # distance mesurer
-                _, x = data.split()
-                self.distance[self.index_distance] = float(x)
-                self.index_distance = (self.index_distance + 1) % self.buffer_size
-            elif data.startswith("M"): # distance PID
-                _, x = data.split()
-                self.Output_PID_distance[self.index_Output_PID_distance] = float(x)
-                self.index_Output_PID_distance = (self.index_Output_PID_distance + 1) % self.buffer_size
-            elif data.startswith("O"): # cmd distance
-                _, x = data.split()
-                self.cmd_distance[self.index_cmd_distance] = float(x)
-                self.index_cmd_distance = (self.index_cmd_distance + 1) % self.buffer_size
-            elif data.startswith("P"): # angle ok
-                _, x = data.split()
-                self.angle_ok = bool(x)
-            elif data.startswith("Q"): # distance ok 
-                _, x = data.split()
-                self.distance_ok = bool(x)
-            elif data.startswith("X"): # position x
-                _, x = data.split()
-                self.x[self.index_x] = float(x)
-                self.index_x = (self.index_x + 1) % self.buffer_size
-            elif data.startswith("Y"): # position y
-                _, x = data.split()
-                self.y[self.index_y] = float(x)
-                self.index_y = (self.index_y + 1) % self.buffer_size
+            if not started and data[0] != 'A':
+                continue
+            else:
+                started = True
+            if started :
+                if data.startswith("A"): # Valeur du codeur Gauche
+                    x = data[1:]
+                    self.encGauche[self.index_encGauche] = int(x)
+                    self.index_encGauche = (self.index_encGauche + 1) % self.buffer_size
+                elif data.startswith("B"): # Valeur du codeur Droit
+                    x = data[1:]
+                    self.encDroit[self.index_encDroit] = int(x)
+                    self.index_encDroit = (self.index_encDroit + 1) % self.buffer_size
+                elif data.startswith("C"): # Vitesse réel moteur Gauche
+                    x = data[1:]
+                    self.vitesse_G[self.index_vitesse_G] = float(x)
+                    self.index_vitesse_G = (self.index_vitesse_G + 1) % self.buffer_size
+                elif data.startswith("D"): # Vitesse réel moteur Droit
+                    x = data[1:]
+                    self.vitesse_D[self.index_vitesse_D] = float(x)
+                    self.index_vitesse_D = (self.index_vitesse_D + 1) % self.buffer_size
+                elif data.startswith("E"): # Sortie du PID vitesse moteur Gauche
+                    x = data[1:]
+                    self.Output_PID_vitesse_G[self.index_Output_PID_vitesse_G] = float(x)
+                    self.index_Output_PID_vitesse_G = (self.index_Output_PID_vitesse_G + 1) % self.buffer_size
+                elif data.startswith("F"): # Sortie du PID vitesse moteur Droit
+                    x = data[1:]
+                    self.Output_PID_vitesse_D[self.index_Output_PID_vitesse_D] = float(x)
+                    self.index_Output_PID_vitesse_D = (self.index_Output_PID_vitesse_D + 1) % self.buffer_size
+                elif data.startswith("G"): # Consigne de vitesse moteur Gauche
+                    x = data[1:]
+                    self.cmd_vitesse_G[self.index_cmd_vitesse_G] = float(x)
+                    self.index_cmd_vitesse_G = (self.index_cmd_vitesse_G + 1) % self.buffer_size
+                elif data.startswith("H"): # Consigne de vitesse moteur Droit
+                    x = data[1:]
+                    self.cmd_vitesse_D[self.index_cmd_vitesse_D] = float(x)
+                    self.index_cmd_vitesse_D = (self.index_cmd_vitesse_D + 1) % self.buffer_size
+                elif data.startswith("I"): # angle mesurer
+                    x = data[1:]
+                    self.angle[self.index_angle] = float(x)
+                    self.index_angle = (self.index_angle + 1) % self.buffer_size
+                elif data.startswith("J"): # angle PID
+                    x = data[1:]
+                    self.Output_PID_angle[self.index_Output_PID_angle] = float(x)
+                    self.index_Output_PID_angle = (self.index_Output_PID_angle + 1) % self.buffer_size
+                elif data.startswith("K"): # cmd angle
+                    x = data[1:]
+                    self.cmd_angle[self.index_cmd_angle] = float(x)
+                    self.index_cmd_angle = (self.index_cmd_angle + 1) % self.buffer_size
+                elif data.startswith("L"): # distance mesurer
+                    x = data[1:]
+                    self.distance[self.index_distance] = float(x)
+                    self.index_distance = (self.index_distance + 1) % self.buffer_size
+                elif data.startswith("M"): # distance PID
+                    x = data[1:]
+                    self.Output_PID_distance[self.index_Output_PID_distance] = float(x)
+                    self.index_Output_PID_distance = (self.index_Output_PID_distance + 1) % self.buffer_size
+                elif data.startswith("O"): # cmd distance
+                    x = data[1:]
+                    self.cmd_distance[self.index_cmd_distance] = float(x)
+                    self.index_cmd_distance = (self.index_cmd_distance + 1) % self.buffer_size
+                elif data.startswith("P"): # angle ok
+                    x = data[1:]
+                    self.angle_ok = bool(x)
+                elif data.startswith("Q"): # distance ok 
+                    x = data[1:]
+                    self.distance_ok = bool(x)
+                elif data.startswith("X"): # position x
+                    x = data[1:]
+                    self.x[self.index_x] = float(x)
+                    self.index_x = (self.index_x + 1) % self.buffer_size
+                elif data.startswith("Y"): # position y
+                    x = data[1:]
+                    self.y[self.index_y] = float(x)
+                    self.index_y = (self.index_y + 1) % self.buffer_size
     
 # 
 # /*************************************/

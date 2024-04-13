@@ -47,25 +47,25 @@ class Asserv:
     def goto(self, x, y):
         command = f"asserv goto {x} {y}\n"
         self.serial.write(command.encode())
-        while (self.distance_ok == 0):
+        while (not self.distance_ok):
             pass
         return True
     
     def rotate(self, angle):
         command = f"asserv rotate {angle}\n"
         self.serial.write(command.encode())
-        while (self.angle_ok == 0):
+        while (not self.angle_ok):
             pass
         return True
     
     def receive_data(self):
         while True:
             data = self.serial.readline().decode().strip()
-            if not started and data[0] != 'A':
+            if not self.started and data[0] != 'A':
                 continue
             else:
-                started = True
-            if started :
+                self.started = True
+            if self.started :
                 if data.startswith("A"): # Valeur du codeur Gauche
                     x = data[1:]
                     self.encGauche[self.index_encGauche] = int(x)

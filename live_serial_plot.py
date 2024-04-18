@@ -25,7 +25,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--tty", "-t", required=True)
+parser.add_argument("--tty", "-t", default="/dev/ttyACM0")
 parser.add_argument("--baudrate", "-b", default=115200)
 parser.add_argument("--plot", "-p", nargs=1, default=[], action='append')
 parser.add_argument("--plot_n", "-pn", nargs=2, action='append', dest='plot')

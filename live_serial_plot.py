@@ -4,7 +4,7 @@
 Simple live plot reading serial data
 Graph is not exact as it can be altered by delays in serial communication and plot time, but it is useful nonetheless
 
-Usage example: ./live_serial_plot.py --tty /dev/ttyUSB0 --plot var1 --plot var2 --plot_n vars3 2 --save ./log.csv
+Usage example: /home/pi/code_principal_2024/bin/python /home/pi/code_principal_2024/live_serial_plot.py -t /dev/ttyACM0 --plot A --plot B --plot C --plot D --plot E --plot F --plot G --plot H --plot I --plot J --plot K --plot L --plot M --plot O --plot X --plot Y --save ./log.csv
 
 Data on the serial line for the above command:    [note: space after prefix is optional]
 var1 1.4427
@@ -23,9 +23,9 @@ import serial
 
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
-
+# /dev/serial/by-id/usb-STMicroelectronics_STM32_STLink_0670FF484971754867164639-if02
 parser = argparse.ArgumentParser()
-parser.add_argument("--tty", "-t", default="/dev/ttyACM0")
+parser.add_argument("--tty", "-t", default="/dev/ttyACM1")
 parser.add_argument("--baudrate", "-b", default=115200)
 parser.add_argument("--plot", "-p", nargs=1, default=[], action='append')
 parser.add_argument("--plot_n", "-pn", nargs=2, action='append', dest='plot')

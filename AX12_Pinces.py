@@ -12,9 +12,7 @@ class AX12_Pinces:
         self.angle_ajustement_ax12_motor_2 = 140
         self.continuer_ajustement_motor_1 = True
         self.continuer_ajustement_motor_2 = True
-
-    def initialize_motors(self):
-        # On leur donne une position initiale
+        
         self.ax12_motor_1.connect()
         self.ax12_motor_2.connect()
 
@@ -26,7 +24,8 @@ class AX12_Pinces:
         # Ouvrir la pince
         self.ax12_motor_1.move(470) # à peu près 135°
         self.ax12_motor_2.move(270) 
-
+        time.sleep(2)
+        return True
         
     def open_pince_stepbystep(self):
         self.continuer_ajustement_motor_1 = True
@@ -43,6 +42,8 @@ class AX12_Pinces:
                 self.ax12_motor_2.move(self.angle_ajustement_ax12_motor_2)
             else:
                 self.continuer_ajustement_motor_2 = False
+        time.sleep(2)
+        return True
 
     def close_pince(self):
         
@@ -75,16 +76,17 @@ class AX12_Pinces:
             else:
                 print(f"Ajustement du moteur {self.ax12_motor_2.DXL_ID} suffisant")
                 self.continuer_ajustement_motor_2 = False
+        time.sleep(2)
+        return True
 
                 
                 
     def run(self):
-        self.initialize_motors()
-        self.open_pince()
+        #self.open_pince()
         self.close_pince()
-        self.open_pince_stepbystep()
+        #self.open_pince_stepbystep()
 
-# # Exemple d'utilisation
-# if __name__ == "__main__":
-#     pince = AX12_Pinces()
-#     pince.run()
+# Exemple d'utilisation
+if __name__ == "__main__":
+    pince = AX12_Pinces()
+    pince.run()

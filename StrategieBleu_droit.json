@@ -1,0 +1,15 @@
+{    
+    "initialisation": [
+        "Asserv"
+  ], 
+  "actions": [
+    {
+        "classe": "Asserv",
+        "methode": "goto",
+        "arguments": [
+            100.0,
+            0.0
+        ]    
+    }
+  ]
+}

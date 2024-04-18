@@ -1,6 +1,7 @@
 {
     "initialisation": [
         "AX12_Pinces",
+        "AX12_Ascenseur",
         "AX12_Panneau"
     ],
     "actions": [
@@ -10,10 +11,29 @@
             "arguments": []
         },
         {
+            "classe": "AX12_Pinces",
+            "methode": "close_pince",
+            "arguments": []
+        },
+        {
+            "classe": "AX12_Ascenseur",
+            "methode": "elevate",
+            "arguments": []
+        },
+        {
+            "classe": "AX12_Ascenseur",
+            "methode": "lower",
+            "arguments": []
+        },
+        {
             "classe": "AX12_Panneau",
             "methode": "bouger_panneau_droit",
             "arguments": []
-            
+        },
+        {
+            "classe": "AX12_Panneau",
+            "methode": "ramener_AX12_droit",
+            "arguments": []
         }
     ]
 }

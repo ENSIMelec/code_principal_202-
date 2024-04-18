@@ -13,3 +13,6 @@ python -m pip install nom_librairie
 
 pour sortir de l'environnement virtuel vous pouvez faire la commande suivante :
 deactivate
+
+
+Grace au moniteur série (extension installé dans le vscode remote) vous pouvez facilement voir le port connecté de l'arduino

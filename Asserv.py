@@ -44,18 +44,38 @@ class Asserv:
         self.thread.daemon = True
         self.thread.start()
     
-    def goto(self, x, y):
+    def enable(self): # enable de l'asservissement
+        command = "asserv enable\n"
+        self.serial.write(command.encode())
+        return True
+
+    def goto(self, x, y): # simple goto x et y en mm
         command = f'asserv goto {x} {y}\n'
         self.serial.write(command.encode())
         while (not self.distance_ok):
             continue
         return True
     
-    def rotate(self, angle):
+    def rotate(self, angle): # simple rotation de l'angle en degrée
         command = f"asserv rotate {angle}\n"
         self.serial.write(command.encode())
         while (not self.angle_ok):
             continue
+        return True
+    
+    def reset(self): # reset de l'asservissement
+        command = "asserv reset\n"
+        self.serial.write(command.encode())
+        return True
+    
+    def angle_reset(self): # reset de l'angle
+        command = "asserv anglereset\n"
+        self.serial.write(command.encode())
+        return True
+    
+    def dist_reset(self): # reset de la distance
+        command = "asserv distreset\n"
+        self.serial.write(command.encode())
         return True
     
     def receive_data(self):
@@ -188,3 +208,90 @@ class Asserv:
 # /*************************************/
 # /*************************************/
 # /*************************************/
+
+# //         chprintf(outputStream,"Usage :");
+# //         chprintf(outputStream," - asserv wheelcalib \r\n");
+# //         chprintf(outputStream," - asserv enablemotor 0|1\r\n");
+# //         chprintf(outputStream," - asserv enablepolar 0|1\r\n");
+# //         chprintf(outputStream," - asserv coders \r\n");
+# //         chprintf(outputStream," - asserv reset \r\n");
+# //         chprintf(outputStream," - asserv motorspeed [r|l] speed \r\n");
+# //         chprintf(outputStream," -------------- \r\n");
+# //         chprintf(outputStream," - asserv wheelspeedstep [r|l] [speed] [steptime] \r\n"); 
+# //         chprintf(outputStream," -------------- \r\n");
+# //         chprintf(outputStream," - asserv robotfwspeedstep [speed] [step time]\r\n"); 
+# //         chprintf(outputStream," - asserv robotangspeedstep [speed][step time] \r\n"); 
+# //         chprintf(outputStream," - asserv speedcontrol [r|l] [Kp] [Ki] \r\n"); 
+# //         chprintf(outputStream," - asserv angleacc delta_speed \r\n"); 
+# //         chprintf(outputStream," - asserv distacc delta_speed \r\n"); 
+# //         chprintf(outputStream," -------------------\r\n"); 
+# //         chprintf(outputStream," - asserv addangle angle_rad \r\n");
+# //         chprintf(outputStream," - asserv anglereset\r\n");
+# //         chprintf(outputStream," - asserv anglecontrol Kp\r\n");
+# //         chprintf(outputStream," ------------------- \r\n");
+# //         chprintf(outputStream," - asserv adddist mm \r\n");
+# //         chprintf(outputStream," - asserv distreset\r\n");
+# //         chprintf(outputStream," - asserv distcontrol Kp\r\n");
+# //         chprintf(outputStream," -------------- \r\n");
+# //         chprintf(outputStream," - asserv addgoto X Y\r\n");
+# //         chprintf(outputStream," - asserv gototest\r\n");
+# //         chprintf(outputStream," -------------- \r\n");
+# //         chprintf(outputStream," - asserv pll freq\r\n");
+
+# /*
+#   * Commande / Caractères à envoyer sur la série / Paramètres / Effets obtenus
+
+#   g%x#%y\n / Goto / x, y : entiers, en mm /Le robot se déplace au point de
+# 	coordonnée (x, y). Il tourne vers le point, puis avance en ligne droite.
+# 	L'angle est sans cesse corrigé pour bien viser le point voulu. 
+
+#   e%x#%y\n / goto Enchaîné / x, y : entiers, en mm / Idem que le Goto, sauf que 
+#   	lorsque le robot est proche du point d'arrivée (x, y), on s'autorise à 
+# 	enchaîner directement la consigne suivante si c'est un Goto ou un Goto
+# 	enchaîné, sans marquer d'arrêt.
+
+#   v%d\n / aVancer / d : entier, en mm / Fait avancer le robot de d mm, tout
+#   	droit 
+
+#   t%a\n / Tourner / a : entier, en degrées / Fait tourner le robot de a degrées.
+#   	Le robot tournera dans le sens trigonométrique : si a est positif, il tourne
+# 	à gauche, et vice-versa. 
+
+#   f%x#%y\n / faire Face / x, y : entiers, en mm / Fait tourner le robot pour être
+# 	en face du point de coordonnées (x, y). En gros, ça réalise la première partie
+# 	d'un Goto : on se tourne vers le point cible, mais on avance pas. 
+
+#   h / Halte ! / Arrêt d'urgence ! Le robot est ensuite systématiquement asservi à
+#   	sa position actuelle. Cela devrait suffire à arrêter le robot correctement. La
+# 	seule commande acceptée par la suite sera un Reset de l'arrêt d'urgence : toute
+# 	autre commande sera ignorée. 
+
+#   r / Reset de l'arrêt d'urgence / Remet le robot dans son fonctionnement normal 
+#   	après un arrêt d'urgence. Les commandes en cours au moment de l'arrêt d'urgence 
+# 	NE sont PAS reprises. Si le robot n'est pas en arrêt d'urgence, cette commande 
+# 	n'a aucun effet.
+
+#   p / get Position / Récupère la position et le cap du robot sur la connexion i2c, 
+#   	sous la forme de 3 types float (3 * 4 bytes), avec x, y, et a les coordonnées et
+# 	l'angle du robot. S%x#%y#%a\n / set Position / applique la nouvelle position du robot
+
+#   z / avance de 20 cm
+#   s / recule de 20 cm
+#   q / tourne de 45° (gauche)
+#   d / tourne de -45° (droite)
+
+#   M / modifie la valeur d'un paramètre / name, value
+#   R / réinitialiser l'asserv
+#   D / dump la config du robot
+#   G / lire la valeur d'un paramètre / name
+#   L / recharge la config config.txt
+#   W / sauvegarde la config courante  config~1.txt = config.default.txt
+
+#   I / Active les actions dans la boucle d'asservissement (odo + managers)
+#   ! / Stoppe actions dans la boucle d'asservissement
+#   K / desactive le consignController et le commandManager
+#   J / reactive le consignController et le commandManager
+
+#   + / applique une valeur +1 sur les moteurs LEFT
+#   - / applique une valeur -1 sur les moteurs LEFT
+#   */

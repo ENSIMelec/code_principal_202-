@@ -8,7 +8,7 @@ if __name__ == '__main__':
     
     started = False
     print('Running. Press CTRL-C to exit.')
-    with serial.Serial("usb-STMicroelectronics_STM32_STLink_0670FF484971754867164639-if02", 115200, timeout=1) as ser:
+    with serial.Serial("/dev/serial/by-id/usb-STMicroelectronics_STM32_STLink_0670FF484971754867164639-if02", 115200, timeout=1) as ser:
         time.sleep(0.1) #wait for serial to open
         if ser.isOpen():
             print("{} connected!".format(ser.port))

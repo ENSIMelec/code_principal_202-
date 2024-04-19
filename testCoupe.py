@@ -31,7 +31,7 @@ def main():
     time_lauch = time.time()
     
     ax12_panneau = AX12_Panneau()
-    asserv = Asserv('/dev/ttyACM0')
+    asserv = Asserv()
     
     # for i in range(0,2001,500):
     #     asserv.goto(i,0.0)

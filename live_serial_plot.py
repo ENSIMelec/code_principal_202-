@@ -23,9 +23,9 @@ import serial
 
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
-# /dev/serial/by-id/usb-STMicroelectronics_STM32_STLink_0670FF484971754867164639-if02
+
 parser = argparse.ArgumentParser()
-parser.add_argument("--tty", "-t", default="/dev/ttyACM1")
+parser.add_argument("--tty", "-t", default="/dev/serial/by-id/usb-STMicroelectronics_STM32_STLink_0670FF484971754867164639-if02")
 parser.add_argument("--baudrate", "-b", default=115200)
 parser.add_argument("--plot", "-p", nargs=1, default=[], action='append')
 parser.add_argument("--plot_n", "-pn", nargs=2, action='append', dest='plot')

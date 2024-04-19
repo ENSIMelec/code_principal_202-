@@ -3,7 +3,7 @@ import time
 from Lidar import LidarScanner
 from Globals_Variables import *
 from Asserv import Asserv
-from AX12_Panneau import AX12_Panneau
+from AX12_Python.AX12_Panneau import AX12_Panneau
 
 
 # Fonction pour vérifier si le jack a été retiré

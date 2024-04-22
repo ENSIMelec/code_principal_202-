@@ -5,3 +5,4 @@ STM32_SERIAL = "usb-STMicroelectronics_STM32_STLink_0670FF484971754867164639-if0
 AX12_SERIAL = "usb-Xevelabs_USB2AX_555333435373518142B0-if00"
 detection = False
 set_stop_lidar = False
+ORIGIN_LIDAR = 72.5/2

@@ -5,12 +5,12 @@ from Globals_Variables import *
 class LidarScanner:
     def __init__(self):
         self.port_name = '/dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0001-if00-port0'
-        self.max_distance = 500
-        self.deadzone_distance = 150
+        self.max_distance = 700
+        self.deadzone_distance = 500
         self.lidar = RPLidar(None, self.port_name, timeout=3)
         self.alert_triggered = False
         self.alert_counter = 0
-        self.alert_limit = 5 #le lidar met 0.6sec/tour
+        self.alert_limit = 1 #le lidar met 0.6sec/tour
         
     def set_pwm(self, value):
         self.lidar.set_pwm(value)
@@ -28,8 +28,8 @@ class LidarScanner:
                         # Convert angle to radians for y-coordinate calculation
                         angle_radians = angle * (math.pi / 180)
                         # Calculate y-coordinate based on distance and angle
-                        x_coordinate = distance * math.cos(angle * (math.pi / 180))
-                        y_coordinate = distance * math.sin(angle_radians)
+                        x_coordinate = (distance + ORIGIN_LIDAR) * math.cos(angle * (math.pi / 180))
+                        y_coordinate = (distance + ORIGIN_LIDAR) * math.sin(angle_radians)
                         # Filtering by y-coordinate range
                         if -200 <= y_coordinate <= 200:
                             valid_distances[min([359, math.floor(angle)])] = distance
@@ -42,6 +42,7 @@ class LidarScanner:
                         self.alert_triggered = True
                         detection = True
                         print("You need to stop turn NOW !!!")
+                        print("A une distance", x_coordinate)
                     
                 else:
                     #print(f"No objects detected in the deadzone. Nearest object: {distance} mm") 
@@ -56,12 +57,11 @@ class LidarScanner:
             self.stop_lidarScan()
 
     def stop_lidarScan(self):
-        self.lidar.stop()
-        self.lidar.set_pwm(0)
-        self.lidar.disconnect()
+        self.lidar.stop_motor()
 
 if __name__ == '__main__':
     # Setup the RPLidar
     lidar_scanner = LidarScanner()
     lidar_scanner.scan()
+    lidar_scanner.stop_lidarScan()
 

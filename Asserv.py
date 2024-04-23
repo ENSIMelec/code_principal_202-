@@ -160,6 +160,60 @@ class Asserv:
                         self.index_y = (self.index_y + 1) % self.buffer_size
             except :
                 continue
+
+    def get_enc_gauche(self):
+        return self.encGauche[self.index_encGauche - 1]
+
+    def get_enc_droit(self):
+        return self.encDroit[self.index_encDroit - 1]
+
+    def get_vitesse_g(self):
+        return self.vitesse_G[self.index_vitesse_G - 1]
+
+    def get_vitesse_d(self):
+        return self.vitesse_D[self.index_vitesse_D - 1]
+
+    def get_output_pid_vitesse_g(self):
+        return self.Output_PID_vitesse_G[self.index_Output_PID_vitesse_G - 1]
+
+    def get_output_pid_vitesse_d(self):
+        return self.Output_PID_vitesse_D[self.index_Output_PID_vitesse_D - 1]
+
+    def get_cmd_vitesse_g(self):
+        return self.cmd_vitesse_G[self.index_cmd_vitesse_G - 1]
+
+    def get_cmd_vitesse_d(self):
+        return self.cmd_vitesse_D[self.index_cmd_vitesse_D - 1]
+
+    def get_angle(self):
+        return self.angle[self.index_angle - 1]
+
+    def get_output_pid_angle(self):
+        return self.Output_PID_angle[self.index_Output_PID_angle - 1]
+
+    def get_cmd_angle(self):
+        return self.cmd_angle[self.index_cmd_angle - 1]
+
+    def get_distance(self):
+        return self.distance[self.index_distance - 1]
+
+    def get_output_pid_distance(self):
+        return self.Output_PID_distance[self.index_Output_PID_distance - 1]
+
+    def get_cmd_distance(self):
+        return self.cmd_distance[self.index_cmd_distance - 1]
+
+    def get_x(self):
+        return self.x[self.index_x - 1]
+
+    def get_y(self):
+        return self.y[self.index_y - 1]
+
+    def is_angle_ok(self):
+        return self.angle_ok
+
+    def is_distance_ok(self):
+        return self.distance_ok
 # 
 # /*************************************/
 # /*******Envoie des données************/

@@ -2,7 +2,7 @@ import serial
 import threading
 
 class Asserv:
-    def __init__(self, port='/dev/serial/by-id/usb-STMicroelectronics_STM32_STLink_0670FF484971754867164639-if02', baudrate=115200, buffer_size=1024):
+    def __init__(self, port='/dev/serial/by-id/usb-STMicroelectronics_STM32_STLink_066EFF555185754867141922-if02', baudrate=115200, buffer_size=1024):
         self.started = False
         self.buffer_size = buffer_size
         self.encGauche = [None] * buffer_size

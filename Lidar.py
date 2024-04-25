@@ -4,7 +4,7 @@ from Globals_Variables import *
 
 class LidarScanner:
     def __init__(self):
-        self.port_name = '/dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0001-if00-port0'
+        self.port_name = LIDAR_SERIAL
         self.max_distance = 700
         self.deadzone_distance = 500
         self.lidar = RPLidar(None, self.port_name, timeout=3)
@@ -32,6 +32,7 @@ class LidarScanner:
                         y_coordinate = (distance + ORIGIN_LIDAR) * math.sin(angle_radians)
                         # Filtering by y-coordinate range
                         if -200 <= y_coordinate <= 200:
+                            # -150<x_coordinates*signeLidar<500
                             valid_distances[min([359, math.floor(angle)])] = distance
                             
                 # Check for objects in the deadzone
@@ -59,9 +60,9 @@ class LidarScanner:
     def stop_lidarScan(self):
         self.lidar.stop_motor()
 
-if __name__ == '__main__':
-    # Setup the RPLidar
-    lidar_scanner = LidarScanner()
-    lidar_scanner.scan()
-    lidar_scanner.stop_lidarScan()
+# if __name__ == '__main__':
+#     # Setup the RPLidar
+#     lidar_scanner = LidarScanner()
+#     lidar_scanner.scan()
+#     lidar_scanner.stop_lidarScan()
 

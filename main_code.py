@@ -13,12 +13,15 @@ def init_json(json_file):
         data = json.load(f)
     # Importer les modules d'initialisation
     
-        # Importer le module
+    # Importer le module
     dic_class = {}
     for module_name in data['initialisation']:
-        module=importlib.import_module(module_name)
+        if module_name.startswith('AX12'):
+            module = importlib.import_module('AX12_Python.' + module_name)
+        else:
+            module = importlib.import_module(module_name)
         dic_class[module_name] = getattr(module, module_name)()
-    return dic_class,data
+    return dic_class, data
 
 def actions(dic_class, actions):
     for action in actions:
@@ -38,20 +41,6 @@ def check_jack_removed():
             print("En attente du retrait du jack...")
             return False
 
-# def lidar_callback():
-#     global thread_action
-#     global dic_class
-#     global data
-    
-#     print("Message reçu du Lidar. Arrêt des actions en cours...")
-
-#     thread_action.cancel()
-    
-#     time.sleep(3)
-#     thread_action = threading.Thread(target=actions, args=(dic_class, data['actions']))
-#     thread_action.start()
-#     print("Actions reprises.")
-
 # Code principal avec conditions sur l'arret en fonction d'obsatcle
 def main():
     # Définir la configuration des broches GPIO
@@ -59,7 +48,7 @@ def main():
     GPIO.setup(PIN_JACK, GPIO.IN)
 
     # Initialisation avec le JSON
-    dic_class, data = init_json("Documents/Codes/code_principal_2024/StrategieBleu_droit.json")
+    dic_class, data = init_json("/home/pi/code_principal_2024/StrategieBleu_droit.json")
 
     # Vérifier si le jack est retiré avant de démarrer le robot
     while not (check_jack_removed()):
@@ -83,7 +72,7 @@ def main():
     
     print("Démarrage du chrono du match")
     
-    while(time_lauch < (time_lauch + MATCH_TIME) and thread_action.is_alive()):
+    while(time.time() < (time_lauch + MATCH_TIME) and thread_action.is_alive()):
         time.sleep(0.1)
     print("Fin du chrono ou du match")
     

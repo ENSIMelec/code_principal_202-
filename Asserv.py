@@ -1,8 +1,9 @@
 import serial
 import threading
+from Globals_Variables import STM32_SERIAL
 
 class Asserv:
-    def __init__(self, port='/dev/serial/by-id/usb-STMicroelectronics_STM32_STLink_066EFF555185754867141922-if02', baudrate=115200, buffer_size=1024):
+    def __init__(self, port=STM32_SERIAL, baudrate=115200, buffer_size=1024):
         self.started = False
         self.buffer_size = buffer_size
         self.encGauche = [None] * buffer_size
@@ -45,7 +46,12 @@ class Asserv:
         self.thread.start()
     
     def enable(self): # enable de l'asservissement
-        command = "asserv enable\n"
+        command = "asserv enable all\n"
+        self.serial.write(command.encode())
+        return True
+    
+    def disable(self): # disable de l'asservissement
+        command = "asserv disable all\n"
         self.serial.write(command.encode())
         return True
 

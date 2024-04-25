@@ -1,5 +1,6 @@
 import math
 from adafruit_rplidar import RPLidar
+from serial import SerialException
 from Globals_Variables import *
 
 class LidarScanner:
@@ -7,7 +8,7 @@ class LidarScanner:
         self.port_name = LIDAR_SERIAL
         self.max_distance = 700
         self.deadzone_distance = 500
-        self.lidar = RPLidar(None, self.port_name, timeout=3)
+        self.lidar = RPLidar(None, self.port_name, timeout=5)
         self.alert_triggered = False
         self.alert_counter = 0
         self.alert_limit = 1 #le lidar met 0.6sec/tour
@@ -53,16 +54,17 @@ class LidarScanner:
                 if(set_stop_lidar):
                     return True
 
-        except KeyboardInterrupt:
-            print('Stopping.')
+        except SerialException:
+            print('Error: Lidar device disconnected or multiple access on port.')
             self.stop_lidarScan()
 
     def stop_lidarScan(self):
         self.lidar.stop_motor()
+        self.lidar.disconnect()
 
-# if __name__ == '__main__':
-#     # Setup the RPLidar
-#     lidar_scanner = LidarScanner()
-#     lidar_scanner.scan()
-#     lidar_scanner.stop_lidarScan()
+if __name__ == '__main__':
+    # Setup the RPLidar
+    lidar_scanner = LidarScanner()
+    lidar_scanner.scan()
+    lidar_scanner.stop_lidarScan()
 

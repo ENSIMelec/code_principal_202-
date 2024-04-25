@@ -45,16 +45,81 @@ class Asserv:
         self.thread.daemon = True
         self.thread.start()
     
-    def enable(self): # enable de l'asservissement
+    def enable(self): # enable de tout l'asservissement
         command = "asserv enable all\n"
         self.serial.write(command.encode())
         return True
     
-    def disable(self): # disable de l'asservissement
+    def disable(self): # disable de tout l'asservissement
         command = "asserv disable all\n"
         self.serial.write(command.encode())
         return True
 
+    def reset(self): # reset de tout l'asservissement
+        command = "asserv reset all\n"
+        self.serial.write(command.encode())
+        return True
+
+    def angle_enable(self): # enable de l'asservissement d'angle seulement
+        command = "asserv enable angle\n"
+        self.serial.write(command.encode())
+        return True
+    
+    def angle_disable(self): # disable de l'asservissement d'angle seulement
+        command = "asserv disable angle\n"
+        self.serial.write(command.encode())
+        return True
+
+    def angle_reset(self): # reset de l'angle
+        command = "asserv reset angle\n"
+        self.serial.write(command.encode())
+        return True
+
+    def dist_enable(self): # enable de l'asservissement de distance seulement
+        command = "asserv enable distance\n"
+        self.serial.write(command.encode())
+        return True
+    
+    def dist_disable(self): # disable de l'asservissement de distance seulement
+        command = "asserv disable distance\n"
+        self.serial.write(command.encode())
+        return True
+    
+    def dist_reset(self): # reset de la distance
+        command = "asserv reset distance\n"
+        self.serial.write(command.encode())
+        return True
+
+    def vitesse_droit_enable(self): # enable de l'asservissement vitesse droit seulement
+        command = "asserv enable vitesse droit\n"
+        self.serial.write(command.encode())
+        return True
+    
+    def vitesse_droit_disable(self): # disable de l'asservissement vitesse droit seulement
+        command = "asserv disable vitesse droit\n"
+        self.serial.write(command.encode())
+        return True
+
+    def vitesse_droit_reset(self): # reset de l'asservissement vitesse droit seulement
+        command = "asserv reset vitesse droit\n"
+        self.serial.write(command.encode())
+        return True
+
+    def vitesse_gauche_enable(self): # enable de l'asservissement vitesse gauche seulement
+        command = "asserv enable vitesse gauche\n"
+        self.serial.write(command.encode())
+        return True
+    
+    def vitesse_gauche_disable(self): # disable de l'asservissement vitesse gauche seulement
+        command = "asserv disable vitesse gauche\n"
+        self.serial.write(command.encode())
+        return True
+
+    def vitesse_gauche_reset(self): # reset de l'asservissement vitesse gauche seulement
+        command = "asserv reset vitesse gauche\n"
+        self.serial.write(command.encode())
+        return True
+    
     def goto(self, x, y): # simple goto x et y en mm
         command = f'asserv goto {x} {y}\n'
         self.serial.write(command.encode())
@@ -67,21 +132,6 @@ class Asserv:
         self.serial.write(command.encode())
         while (not self.angle_ok):
             continue
-        return True
-    
-    def reset(self): # reset de l'asservissement
-        command = "asserv reset\n"
-        self.serial.write(command.encode())
-        return True
-    
-    def angle_reset(self): # reset de l'angle
-        command = "asserv anglereset\n"
-        self.serial.write(command.encode())
-        return True
-    
-    def dist_reset(self): # reset de la distance
-        command = "asserv distreset\n"
-        self.serial.write(command.encode())
         return True
     
     def receive_data(self):

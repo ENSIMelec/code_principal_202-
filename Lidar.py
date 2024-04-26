@@ -43,9 +43,13 @@ class LidarScanner:
                     if self.alert_counter >= self.alert_limit and not self.alert_triggered:
                         self.alert_triggered = True
                         detection = True
+                        # appeler com pour Killian
                         print("You need to stop turn NOW !!!")
                         print("A une distance", x_coordinate)
-                    
+                
+                elif detection :
+                    detection = False
+                    # appeler com pour Killian  
                 else:
                     #print(f"No objects detected in the deadzone. Nearest object: {distance} mm") 
                     self.alert_counter = 0

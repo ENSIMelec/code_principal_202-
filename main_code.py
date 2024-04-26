@@ -41,7 +41,7 @@ def check_jack_removed():
             print("En attente du retrait du jack...")
             return False
 
-# Code principal avec conditions sur l'arret en fonction d'obsatcle
+# Code principal avec conditions sur l'arret en fonction d'obstacle
 def main():
     # Définir la configuration des broches GPIO
     GPIO.setmode(GPIO.BCM)

@@ -127,7 +127,7 @@ class Asserv:
         else :
             command = f'asserv goto {x} {y} {vitesse}\n'
         self.serial.write(command.encode())
-        time.sleep(0.2)
+        time.sleep(2)
         while (not self.distance_ok):
             continue
         time.sleep(0.5)
@@ -144,7 +144,7 @@ class Asserv:
         while True:
             try :
                 data = self.serial.readline().decode().strip()
-                print(data)
+                # print(data)
                 if not self.started and data[0] != 'A':
                     continue
                 else:

@@ -1,6 +1,5 @@
 {    
     "initialisation": [
-        "Asserv",
         "AX12_Pinces"
   ], 
   "actions": [
@@ -9,14 +8,7 @@
       "methode": "open_pince",
       "arguments": []    
     },
-    {
-      "classe": "Asserv",
-      "methode": "goto",
-      "arguments": [
-          400.0,
-          0.0
-      ]    
-    },
+
     {
       "classe": "AX12_Pinces",
       "methode": "close_pince",

@@ -65,6 +65,6 @@ class LidarScanner:
 if __name__ == '__main__':
     # Setup the RPLidar
     lidar_scanner = LidarScanner()
-    lidar_scanner.scan()
+    #lidar_scanner.scan()
     lidar_scanner.stop_lidarScan()
 

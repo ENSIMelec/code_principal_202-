@@ -1,4 +1,5 @@
 import serial
+import time
 import threading
 from Globals_Variables import STM32_SERIAL
 
@@ -120,11 +121,16 @@ class Asserv:
         self.serial.write(command.encode())
         return True
     
-    def goto(self, x, y): # simple goto x et y en mm
-        command = f'asserv goto {x} {y}\n'
+    def goto(self, x, y, vitesse=500): # simple goto x et y en mm et une vitesse
+        if vitesse == 500 :
+            command = f'asserv goto {x} {y}\n'
+        else :
+            command = f'asserv goto {x} {y} {vitesse}\n'
         self.serial.write(command.encode())
+        time.sleep(0.2)
         while (not self.distance_ok):
             continue
+        time.sleep(0.5)
         return True
     
     def rotate(self, angle): # simple rotation de l'angle en degrée
@@ -138,7 +144,7 @@ class Asserv:
         while True:
             try :
                 data = self.serial.readline().decode().strip()
-                #print(data)
+                print(data)
                 if not self.started and data[0] != 'A':
                     continue
                 else:

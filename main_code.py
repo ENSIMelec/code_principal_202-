@@ -48,7 +48,7 @@ def main():
     GPIO.setup(PIN_JACK, GPIO.IN)
 
     # Initialisation avec le JSON
-    dic_class, data = init_json("/home/pi/code_principal_2024/StrategieBleu_droit.json")
+    dic_class, data = init_json("StrategieBleu_droit.json")
 
     # Vérifier si le jack est retiré avant de démarrer le robot
     while not (check_jack_removed()):
@@ -60,6 +60,7 @@ def main():
    
     #Réalisation des actions dans un thread deamon et démarrer le scanner Lidar dans un thread séparé
     lidar_scanner = LidarScanner()
+    
     thread_action = threading.Thread(target=actions, args=(dic_class, data['actions']))
     thread_action.daemon = True
     

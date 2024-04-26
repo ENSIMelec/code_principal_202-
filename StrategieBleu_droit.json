@@ -5,16 +5,21 @@
   ], 
   "actions": [
     {
-        "classe": "Asserv",
-        "methode": "goto",
-        "arguments": [
-            100.0,
-            0.0
-        ]    
+      "classe": "AX12_Pinces",
+      "methode": "open_pince",
+      "arguments": []    
+    },
+    {
+      "classe": "Asserv",
+      "methode": "goto",
+      "arguments": [
+          400.0,
+          0.0
+      ]    
     },
     {
       "classe": "AX12_Pinces",
-      "methode": "open_pinces",
+      "methode": "close_pince",
       "arguments": []    
     }
   ]

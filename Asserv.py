@@ -120,8 +120,8 @@ class Asserv:
         self.serial.write(command.encode())
         return True
     
-    def goto(self, x, y): # simple goto x et y en mm
-        command = f'asserv goto {x} {y}\n'
+    def goto(self, x, y, vitesse=500): # simple goto x et y en mm à une certaine vitesse par défault = 500
+        command = f'asserv goto {x} {y} {vitesse}\n'
         self.serial.write(command.encode())
         while (not self.distance_ok):
             continue
@@ -134,6 +134,23 @@ class Asserv:
             continue
         return True
     
+    def moveof(self, distance, vitesse=500): # simple avance de distance en mm à une certaine vitesse par défault = 500
+        command = f"asserv moveof {distance} {vitesse}\n"
+        self.serial.write(command.encode())
+        while (not self.distance_ok):
+            continue
+        return True
+    
+    def stopmove(self): # stopper le mouvement (détection d'obstacle)
+        command = "asserv stopmove\n"
+        self.serial.write(command.encode())
+        return True
+    
+    def restartmove(self): # redémarrer le mouvement (plus de détection d'obstacle ou passage à une autre commande)
+        command = "asserv restartmove\n"
+        self.serial.write(command.encode())
+        return True
+
     def receive_data(self):
         while True:
             try :

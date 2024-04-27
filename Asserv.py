@@ -1,10 +1,14 @@
 import serial
 import threading
+import time
 from Globals_Variables import STM32_SERIAL
 
 class Asserv:
     def __init__(self, port=STM32_SERIAL, baudrate=115200, buffer_size=1024):
         self.started = False
+        self.stopMoove = False
+        self.timeout = 10000
+        self.timeCount = 0
         self.buffer_size = buffer_size
         self.encGauche = [None] * buffer_size
         self.index_encGauche = 0
@@ -41,9 +45,12 @@ class Asserv:
         self.y = [None] * buffer_size
         self.index_y = 0
         self.serial = serial.Serial(port, baudrate)
-        self.thread = threading.Thread(target=self.receive_data)
-        self.thread.daemon = True
-        self.thread.start()
+        self.thread_readSerial = threading.Thread(target=self.receive_data)
+        self.thread_readSerial.daemon = True
+        self.thread_readSerial.start()
+        self.thread_check_lidar = threading.Thread(target=self.check_lidar)
+        self.thread_check_lidar.daemon = True
+        self.thread_check_lidar.start()
     
     def enable(self): # enable de tout l'asservissement
         command = "asserv enable all\n"
@@ -150,6 +157,31 @@ class Asserv:
         command = "asserv restartmove\n"
         self.serial.write(command.encode())
         return True
+
+    def check_lidar(self): # vérifier si un obstacle est détecté
+        global detection
+        global restart
+        global bypass
+        while True:
+            if detection and not self.stopMoove and not bypass:
+                self.stopmove()
+                self.stopMoove = True
+                self.timeCount = time.time()
+            if self.stopMoove :
+                if not bypass : 
+                    if time.time() - self.timeCount > self.timeout:
+                        bypass = True
+                        self.restartmove()
+                        self.stopMoove = False
+                        while(not self.goto(0,0)): #retourner à un point stratégique
+                            continue
+                        bypass = False
+                if restart :
+                    self.restartmove()
+                    self.stopMoove = False
+                    restart = False
+                    bypass = False
+
 
     def receive_data(self):
         while True:

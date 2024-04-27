@@ -1,11 +1,15 @@
 import serial
 import time
 import threading
+import time
 from Globals_Variables import STM32_SERIAL
 
 class Asserv:
     def __init__(self, port=STM32_SERIAL, baudrate=115200, buffer_size=1024):
         self.started = False
+        self.stopMoove = False
+        self.timeout = 10000
+        self.timeCount = 0
         self.buffer_size = buffer_size
         self.encGauche = [None] * buffer_size
         self.index_encGauche = 0
@@ -42,9 +46,12 @@ class Asserv:
         self.y = [None] * buffer_size
         self.index_y = 0
         self.serial = serial.Serial(port, baudrate)
-        self.thread = threading.Thread(target=self.receive_data)
-        self.thread.daemon = True
-        self.thread.start()
+        self.thread_readSerial = threading.Thread(target=self.receive_data)
+        self.thread_readSerial.daemon = True
+        self.thread_readSerial.start()
+        self.thread_check_lidar = threading.Thread(target=self.check_lidar)
+        self.thread_check_lidar.daemon = True
+        self.thread_check_lidar.start()
     
     def enable(self): # enable de tout l'asservissement
         command = "asserv enable all\n"
@@ -121,11 +128,9 @@ class Asserv:
         self.serial.write(command.encode())
         return True
     
-    def goto(self, x, y, vitesse=500): # simple goto x et y en mm et une vitesse
-        if vitesse == 500 :
-            command = f'asserv goto {x} {y}\n'
-        else :
-            command = f'asserv goto {x} {y} {vitesse}\n'
+
+    def goto(self, x, y, vitesse=500): # simple goto x et y en mm à une certaine vitesse par défault = 500
+        command = f'asserv goto {x} {y} {vitesse}\n'
         self.serial.write(command.encode())
         time.sleep(2)
         while (not self.distance_ok):
@@ -140,6 +145,48 @@ class Asserv:
             continue
         return True
     
+    def moveof(self, distance, vitesse=500): # simple avance de distance en mm à une certaine vitesse par défault = 500
+        command = f"asserv moveof {distance} {vitesse}\n"
+        self.serial.write(command.encode())
+        while (not self.distance_ok):
+            continue
+        return True
+    
+    def stopmove(self): # stopper le mouvement (détection d'obstacle)
+        command = "asserv stopmove\n"
+        self.serial.write(command.encode())
+        return True
+    
+    def restartmove(self): # redémarrer le mouvement (plus de détection d'obstacle ou passage à une autre commande)
+        command = "asserv restartmove\n"
+        self.serial.write(command.encode())
+        return True
+
+    def check_lidar(self): # vérifier si un obstacle est détecté
+        global detection
+        global restart
+        global bypass
+        while True:
+            if detection and not self.stopMoove and not bypass:
+                self.stopmove()
+                self.stopMoove = True
+                self.timeCount = time.time()
+            if self.stopMoove :
+                if not bypass : 
+                    if time.time() - self.timeCount > self.timeout:
+                        bypass = True
+                        self.restartmove()
+                        self.stopMoove = False
+                        while(not self.goto(0,0)): #retourner à un point stratégique
+                            continue
+                        bypass = False
+                if restart :
+                    self.restartmove()
+                    self.stopMoove = False
+                    restart = False
+                    bypass = False
+
+
     def receive_data(self):
         while True:
             try :

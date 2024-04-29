@@ -12492,3 +12492,58 @@
 29/04/2024 20:28:29 Asserv       INFO     Commande envoyé : moveof 250 500
 29/04/2024 20:28:30 Asserv       DEBUG    Data received: Z
 29/04/2024 20:28:30 Asserv       INFO     Action OK (Z reçu)
+29/04/2024 20:29:37 Asserv       INFO     Thread receive_data started
+29/04/2024 20:29:37 Asserv       INFO     Thread check_lidar started
+29/04/2024 20:29:38 Asserv       INFO     Commande envoyé : reset all
+29/04/2024 20:29:39 Asserv       DEBUG    Data received: Serial OK
+29/04/2024 20:29:39 Asserv       DEBUG    Data received: -Encoder Initialization OK
+29/04/2024 20:29:39 Asserv       DEBUG    Data received: Z
+29/04/2024 20:29:39 Asserv       INFO     Action OK (Z reçu)
+29/04/2024 20:29:41 Asserv       INFO     Commande envoyé : moveof 20 100
+29/04/2024 20:29:41 Asserv       DEBUG    Data received: Z
+29/04/2024 20:29:41 Asserv       INFO     Action OK (Z reçu)
+29/04/2024 20:29:41 Asserv       INFO     Commande envoyé : rotate -0.1
+29/04/2024 20:29:42 Asserv       DEBUG    Data received: Z
+29/04/2024 20:29:42 Asserv       INFO     Action OK (Z reçu)
+29/04/2024 20:29:42 Asserv       INFO     Commande envoyé : moveof 220 300
+29/04/2024 20:29:43 Asserv       DEBUG    Data received: Z
+29/04/2024 20:29:43 Asserv       INFO     Action OK (Z reçu)
+29/04/2024 20:29:43 Asserv       INFO     Commande envoyé : moveof 20 100
+29/04/2024 20:29:43 Asserv       DEBUG    Data received: Z
+29/04/2024 20:29:43 Asserv       INFO     Action OK (Z reçu)
+29/04/2024 20:29:44 Asserv       INFO     Commande envoyé : moveof 220 300
+29/04/2024 20:29:45 Asserv       DEBUG    Data received: Z
+29/04/2024 20:29:45 Asserv       INFO     Action OK (Z reçu)
+29/04/2024 20:29:45 Asserv       INFO     Commande envoyé : moveof 20 100
+29/04/2024 20:29:45 Asserv       DEBUG    Data received: Z
+29/04/2024 20:29:45 Asserv       INFO     Action OK (Z reçu)
+29/04/2024 20:29:46 Asserv       INFO     Commande envoyé : moveof 295 500
+29/04/2024 20:29:47 Asserv       DEBUG    Data received: Z
+29/04/2024 20:29:47 Asserv       INFO     Action OK (Z reçu)
+29/04/2024 20:29:47 Asserv       INFO     Commande envoyé : rotate 1.42
+29/04/2024 20:29:49 Asserv       DEBUG    Data received: Z
+29/04/2024 20:29:49 Asserv       INFO     Action OK (Z reçu)
+29/04/2024 20:29:49 Asserv       INFO     Commande envoyé : moveof 280 500
+29/04/2024 20:29:51 Asserv       DEBUG    Data received: Z
+29/04/2024 20:29:51 Asserv       INFO     Action OK (Z reçu)
+29/04/2024 20:29:51 Asserv       INFO     Commande envoyé : moveof 200 75
+29/04/2024 20:29:54 Asserv       DEBUG    Data received: Z
+29/04/2024 20:29:54 Asserv       INFO     Action OK (Z reçu)
+29/04/2024 20:30:16 Asserv       INFO     Commande envoyé : rotate 2
+29/04/2024 20:30:17 Asserv       DEBUG    Data received: Z
+29/04/2024 20:30:17 Asserv       INFO     Action OK (Z reçu)
+29/04/2024 20:30:17 Asserv       INFO     Commande envoyé : moveof 620 500
+29/04/2024 20:30:19 Asserv       DEBUG    Data received: Z
+29/04/2024 20:30:19 Asserv       INFO     Action OK (Z reçu)
+29/04/2024 20:30:19 Asserv       INFO     Commande envoyé : rotate 1.25
+29/04/2024 20:30:20 Asserv       DEBUG    Data received: Z
+29/04/2024 20:30:20 Asserv       INFO     Action OK (Z reçu)
+29/04/2024 20:30:20 Asserv       INFO     Commande envoyé : moveof 500 500
+29/04/2024 20:30:22 Asserv       DEBUG    Data received: Z
+29/04/2024 20:30:22 Asserv       INFO     Action OK (Z reçu)
+29/04/2024 20:30:22 Asserv       INFO     Commande envoyé : rotate 0.7
+29/04/2024 20:30:23 Asserv       DEBUG    Data received: Z
+29/04/2024 20:30:23 Asserv       INFO     Action OK (Z reçu)
+29/04/2024 20:30:23 Asserv       INFO     Commande envoyé : moveof 250 500
+29/04/2024 20:30:24 Asserv       DEBUG    Data received: Z
+29/04/2024 20:30:24 Asserv       INFO     Action OK (Z reçu)

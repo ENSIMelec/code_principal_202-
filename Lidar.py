@@ -66,7 +66,7 @@ class LidarScanner:
                     # appeler com pour Killian  
                     
                 else:
-                    #print(f"No objects detected in the deadzone. Nearest object: {distance} mm") 
+                    #logger.debug(f"No objects detected in the deadzone. Nearest object: {distance} mm") 
                     self.alert_counter = 0
                     self.alert_triggered = False
                     

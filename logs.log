@@ -12547,3 +12547,4 @@
 29/04/2024 20:30:23 Asserv       INFO     Commande envoyé : moveof 250 500
 29/04/2024 20:30:24 Asserv       DEBUG    Data received: Z
 29/04/2024 20:30:24 Asserv       INFO     Action OK (Z reçu)
+30/04/2024 01:30:25 __main__     INFO     Initialisation broche GPIO Jack

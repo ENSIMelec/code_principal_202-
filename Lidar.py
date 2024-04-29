@@ -2,9 +2,19 @@ import math
 from adafruit_rplidar import RPLidar
 from serial import SerialException
 from Globals_Variables import *
+import logging
+import logging.config
 
+       
 class LidarScanner:
-    def __init__(self):
+    def __init__(self): 
+        
+        # Charger la configuration de logging
+        logging.config.fileConfig('logs.conf')
+
+        # Créer un logger
+        self.logger = logging.getLogger(__name__)
+
         self.port_name = LIDAR_SERIAL
         self.max_distance = 700
         self.deadzone_distance = 500
@@ -13,9 +23,11 @@ class LidarScanner:
         self.alert_counter = 0
         self.alert_limit = 1 #le lidar met 0.6sec/tour
         self.detection = False
+        self.logger.info("Lidar initialized.")
         
-        
+
     def set_pwm(self, value):
+        self.logger.info(f"Setting PWM value to {value}")
         self.lidar.set_pwm(value)
 
     def scan(self):
@@ -38,17 +50,17 @@ class LidarScanner:
                             
                 # Check for objects in the deadzone
                 if any(0 < distance <= self.deadzone_distance for distance in valid_distances):
-                    #print(f"ALERT: Object detected in the deadzone at {distance} mm! ")
+                    self.logger.debug(f"Object detected in the deadzone at {x_coordinate} mm (x)! {angle}° counter: {self.alert_counter}")
                     self.alert_counter += 1
                     if self.alert_counter >= self.alert_limit and not self.alert_triggered:
                         self.alert_triggered = True
                         self.detection = True
                         # self.asserv.stopmove()
                         # appeler com pour Killian
-                        print("You need to stop turn NOW !!!")
-                        print("A une distance", x_coordinate, angle)
+                        self.logger.info("Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°")
                 
                 elif self.detection :
+                    self.logger.info("No more object. Restarting the robot.")
                     # self.asserv.restartmove()
                     self.detection = False
                     # appeler com pour Killian  
@@ -62,10 +74,11 @@ class LidarScanner:
                     return True
 
         except KeyboardInterrupt:
-            print('Error: Lidar device disconnected or multiple access on port.')
+            self.logger.warning("Stopping the lidar scan. (KeyboardInterrupt)")
             self.stop_lidarScan()
 
     def stop_lidarScan(self):
+        self.logger.info("Stopping the lidar scan.")
         self.lidar.stop_motor()
         self.lidar.disconnect()
         

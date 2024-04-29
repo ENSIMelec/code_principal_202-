@@ -15,9 +15,6 @@ class Asserv:
         # Créer un logger
         self.logger = logging.getLogger(__name__)
 
-        self.stopMoove = False
-        self.timeout = 10000
-        self.timeCount = 0
         self.buffer_size = buffer_size
         self.encGauche = [None] * buffer_size
         self.index_encGauche = 0
@@ -58,9 +55,7 @@ class Asserv:
         self.thread_readSerial = threading.Thread(target=self.receive_data)
         self.thread_readSerial.daemon = True
         self.thread_readSerial.start()
-        self.thread_check_lidar = threading.Thread(target=self.check_lidar)
-        self.thread_check_lidar.daemon = True
-        self.thread_check_lidar.start()
+        self.logger.info("Asserv initialized.")
     
     def enable(self): # enable de tout l'asservissement
         command = "asserv enable all\n"
@@ -191,30 +186,6 @@ class Asserv:
         self.serial.write(command.encode())
         self.logger.info("Commande envoyé : restartmove")
         return True
-
-    def check_lidar(self): # vérifier si un obstacle est détecté
-        self.logger.info("Thread check_lidar started")
-        while True:
-            time.sleep(0.01)
-            if detection and not self.stopMoove and not bypass:
-                self.stopmove()
-                self.stopMoove = True
-                self.timeCount = time.time()
-            if self.stopMoove :
-                if not bypass : 
-                    if time.time() - self.timeCount > self.timeout:
-                        bypass = True
-                        self.restartmove()
-                        self.stopMoove = False
-                        while(not self.goto(0,0)): #retourner à un point stratégique
-                            continue
-                        bypass = False
-                if restart :
-                    self.restartmove()
-                    self.stopMoove = False
-                    restart = False
-                    bypass = False
-
 
     def receive_data(self):
         self.logger.info("Thread receive_data started")

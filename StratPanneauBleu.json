@@ -1,0 +1,62 @@
+{    
+    "initialisation": [
+        "AX12_Panneau",
+        "Asserv"
+  ], 
+  "actions": [
+    {
+        "classe": "Asserv",
+        "methode": "reset",
+        "arguments": []    
+    },
+    {
+        "classe": "AX12_Panneau",
+        "methode": "bouger_panneau_droit",
+        "arguments": []    
+    },
+    {
+        "classe": "AX12_Panneau",
+        "methode": "ramener_AX12_droit",
+        "arguments": []    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "rotate",
+        "arguments": [-0.1]    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "moveof",
+        "arguments": [240,
+                        100]    
+    },
+    {
+        "classe": "AX12_Panneau",
+        "methode": "bouger_panneau_droit",
+        "arguments": []    
+    },
+    {
+        "classe": "AX12_Panneau",
+        "methode": "ramener_AX12_droit",
+        "arguments": []    
+    },
+
+    {
+        "classe": "Asserv",
+        "methode": "moveof",
+        "arguments": [240,
+                        100]    
+    },
+    {
+        "classe": "AX12_Panneau",
+        "methode": "bouger_panneau_droit",
+        "arguments": []    
+    },
+    {
+        "classe": "AX12_Panneau",
+        "methode": "ramener_AX12_droit",
+        "arguments": []    
+    }
+
+  ]
+}

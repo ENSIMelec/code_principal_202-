@@ -1,0 +1,146 @@
+{    
+    "initialisation": [
+      "Asserv",
+      "AX12_Pinces",
+      "AX12_Panneau",
+      "AX12_Ascenseur"
+  ], 
+  "actions": [
+    {
+        "classe": "Asserv",
+        "methode": "reset",
+        "arguments": []    
+    },
+    {
+        "classe": "AX12_Panneau",
+        "methode": "bouger_panneau_droit",
+        "arguments": []    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "moveof",
+        "arguments": [20,
+                        100]    
+    },
+    {
+        "classe": "AX12_Panneau",
+        "methode": "ramener_AX12_droit",
+        "arguments": []    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "rotate",
+        "arguments": [-0.1]    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "moveof",
+        "arguments": [220,
+                        300]    
+    },
+    {
+        "classe": "AX12_Panneau",
+        "methode": "bouger_panneau_droit",
+        "arguments": []    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "moveof",
+        "arguments": [20,
+                        100]    
+    },
+    {
+        "classe": "AX12_Panneau",
+        "methode": "ramener_AX12_droit",
+        "arguments": []    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "moveof",
+        "arguments": [220,
+                        300]    
+    },
+    {
+        "classe": "AX12_Panneau",
+        "methode": "bouger_panneau_droit",
+        "arguments": []    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "moveof",
+        "arguments": [20,
+                        100]    
+    },
+    {
+        "classe": "AX12_Panneau",
+        "methode": "ramener_AX12_droit",
+        "arguments": []    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "moveof",
+        "arguments": [295]    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "rotate",
+        "arguments": [1.42]    
+    },
+    {
+        "classe": "AX12_Pinces",
+        "methode": "open_pince",
+        "arguments": []    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "moveof",
+        "arguments": [280]    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "moveof",
+        "arguments": [200,
+                        75]    
+    },
+    {
+        "classe": "AX12_Pinces",
+        "methode": "close_pince",
+        "arguments": []    
+    },
+    {
+        "classe": "AX12_Ascenseur",
+        "methode": "elevate",
+        "arguments": []    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "rotate",
+        "arguments": [2]    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "moveof",
+        "arguments": [620]    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "rotate",
+        "arguments": [1.25]    
+    }, 
+    {
+        "classe": "Asserv",
+        "methode": "moveof",
+        "arguments": [500]    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "rotate",
+        "arguments": [0.7]    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "moveof",
+        "arguments": [250]    
+    }
+  ]
+}

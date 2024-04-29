@@ -2,11 +2,19 @@ import serial
 import time
 import threading
 import time
-from Globals_Variables import STM32_SERIAL
+from Globals_Variables import *
+import logging
+import logging.config
 
 class Asserv:
     def __init__(self, port=STM32_SERIAL, baudrate=115200, buffer_size=1024):
-        self.started = False
+
+        # Charger la configuration de logging
+        logging.config.fileConfig('logs.conf')
+
+        # Créer un logger
+        self.logger = logging.getLogger(__name__)
+
         self.stopMoove = False
         self.timeout = 10000
         self.timeCount = 0
@@ -45,6 +53,7 @@ class Asserv:
         self.index_x = 0
         self.y = [None] * buffer_size
         self.index_y = 0
+        self.action_ok = False
         self.serial = serial.Serial(port, baudrate)
         self.thread_readSerial = threading.Thread(target=self.receive_data)
         self.thread_readSerial.daemon = True
@@ -56,117 +65,137 @@ class Asserv:
     def enable(self): # enable de tout l'asservissement
         command = "asserv enable all\n"
         self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : enable all")
         return True
     
     def disable(self): # disable de tout l'asservissement
         command = "asserv disable all\n"
         self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : disable all")
         return True
 
     def reset(self): # reset de tout l'asservissement
         command = "asserv reset all\n"
         self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : reset all")
+        time.sleep(2)
         return True
 
     def angle_enable(self): # enable de l'asservissement d'angle seulement
         command = "asserv enable angle\n"
         self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : enable angle")
         return True
     
     def angle_disable(self): # disable de l'asservissement d'angle seulement
         command = "asserv disable angle\n"
         self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : disable angle")
         return True
 
     def angle_reset(self): # reset de l'angle
         command = "asserv reset angle\n"
         self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : reset angle")
         return True
 
     def dist_enable(self): # enable de l'asservissement de distance seulement
         command = "asserv enable distance\n"
         self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : enable distance")
         return True
     
     def dist_disable(self): # disable de l'asservissement de distance seulement
         command = "asserv disable distance\n"
         self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : disable distance")
         return True
     
     def dist_reset(self): # reset de la distance
         command = "asserv reset distance\n"
         self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : reset distance")
         return True
 
     def vitesse_droit_enable(self): # enable de l'asservissement vitesse droit seulement
         command = "asserv enable vitesse droit\n"
         self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : enable vitesse droit")
         return True
     
     def vitesse_droit_disable(self): # disable de l'asservissement vitesse droit seulement
         command = "asserv disable vitesse droit\n"
         self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : disable vitesse droit")
         return True
 
     def vitesse_droit_reset(self): # reset de l'asservissement vitesse droit seulement
         command = "asserv reset vitesse droit\n"
         self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : reset vitesse droit")
         return True
 
     def vitesse_gauche_enable(self): # enable de l'asservissement vitesse gauche seulement
         command = "asserv enable vitesse gauche\n"
         self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : enable vitesse gauche")
         return True
     
     def vitesse_gauche_disable(self): # disable de l'asservissement vitesse gauche seulement
         command = "asserv disable vitesse gauche\n"
         self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : disable vitesse gauche")
         return True
 
     def vitesse_gauche_reset(self): # reset de l'asservissement vitesse gauche seulement
         command = "asserv reset vitesse gauche\n"
         self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : reset vitesse gauche")
         return True
-    
 
     def goto(self, x, y, vitesse=500): # simple goto x et y en mm à une certaine vitesse par défault = 500
+        self.action_ok = False
         command = f'asserv goto {x} {y} {vitesse}\n'
         self.serial.write(command.encode())
-        time.sleep(2)
-        while (not self.distance_ok):
+        self.logger.info(f"Commande envoyé : goto {x} {y} {vitesse}")
+        while (not self.action_ok):
             continue
-        time.sleep(0.5)
         return True
     
     def rotate(self, angle): # simple rotation de l'angle en degrée
+        self.action_ok = False
         command = f"asserv rotate {angle}\n"
         self.serial.write(command.encode())
-        while (not self.angle_ok):
+        self.logger.info(f"Commande envoyé : rotate {angle}")
+        while (not self.action_ok):
             continue
         return True
     
     def moveof(self, distance, vitesse=500): # simple avance de distance en mm à une certaine vitesse par défault = 500
+        self.action_ok = False
         command = f"asserv moveof {distance} {vitesse}\n"
         self.serial.write(command.encode())
-        while (not self.distance_ok):
+        self.logger.info(f"Commande envoyé : moveof {distance} {vitesse}")
+        while (not self.action_ok):
             continue
         return True
     
     def stopmove(self): # stopper le mouvement (détection d'obstacle)
         command = "asserv stopmove\n"
         self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : stopmove")
         return True
     
     def restartmove(self): # redémarrer le mouvement (plus de détection d'obstacle ou passage à une autre commande)
         command = "asserv restartmove\n"
         self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : restartmove")
         return True
 
     def check_lidar(self): # vérifier si un obstacle est détecté
-        global detection
-        global restart
-        global bypass
+        self.logger.info("Thread check_lidar started")
         while True:
+            time.sleep(0.01)
             if detection and not self.stopMoove and not bypass:
                 self.stopmove()
                 self.stopMoove = True
@@ -188,86 +217,87 @@ class Asserv:
 
 
     def receive_data(self):
+        self.logger.info("Thread receive_data started")
         while True:
             try :
                 data = self.serial.readline().decode().strip()
-                # print(data)
-                if not self.started and data[0] != 'A':
-                    continue
-                else:
-                    self.started = True
-                if self.started :
-                    if data.startswith("A"): # Valeur du codeur Gauche
-                        x = data[1:]
-                        self.encGauche[self.index_encGauche] = int(x)
-                        self.index_encGauche = (self.index_encGauche + 1) % self.buffer_size
-                    elif data.startswith("B"): # Valeur du codeur Droit
-                        x = data[1:]
-                        self.encDroit[self.index_encDroit] = int(x)
-                        self.index_encDroit = (self.index_encDroit + 1) % self.buffer_size
-                    elif data.startswith("C"): # Vitesse réel moteur Gauche
-                        x = data[1:]
-                        self.vitesse_G[self.index_vitesse_G] = float(x)
-                        self.index_vitesse_G = (self.index_vitesse_G + 1) % self.buffer_size
-                    elif data.startswith("D"): # Vitesse réel moteur Droit
-                        x = data[1:]
-                        self.vitesse_D[self.index_vitesse_D] = float(x)
-                        self.index_vitesse_D = (self.index_vitesse_D + 1) % self.buffer_size
-                    elif data.startswith("E"): # Sortie du PID vitesse moteur Gauche
-                        x = data[1:]
-                        self.Output_PID_vitesse_G[self.index_Output_PID_vitesse_G] = float(x)
-                        self.index_Output_PID_vitesse_G = (self.index_Output_PID_vitesse_G + 1) % self.buffer_size
-                    elif data.startswith("F"): # Sortie du PID vitesse moteur Droit
-                        x = data[1:]
-                        self.Output_PID_vitesse_D[self.index_Output_PID_vitesse_D] = float(x)
-                        self.index_Output_PID_vitesse_D = (self.index_Output_PID_vitesse_D + 1) % self.buffer_size
-                    elif data.startswith("G"): # Consigne de vitesse moteur Gauche
-                        x = data[1:]
-                        self.cmd_vitesse_G[self.index_cmd_vitesse_G] = float(x)
-                        self.index_cmd_vitesse_G = (self.index_cmd_vitesse_G + 1) % self.buffer_size
-                    elif data.startswith("H"): # Consigne de vitesse moteur Droit
-                        x = data[1:]
-                        self.cmd_vitesse_D[self.index_cmd_vitesse_D] = float(x)
-                        self.index_cmd_vitesse_D = (self.index_cmd_vitesse_D + 1) % self.buffer_size
-                    elif data.startswith("I"): # angle mesurer
-                        x = data[1:]
-                        self.angle[self.index_angle] = float(x)
-                        self.index_angle = (self.index_angle + 1) % self.buffer_size
-                    elif data.startswith("J"): # angle PID
-                        x = data[1:]
-                        self.Output_PID_angle[self.index_Output_PID_angle] = float(x)
-                        self.index_Output_PID_angle = (self.index_Output_PID_angle + 1) % self.buffer_size
-                    elif data.startswith("K"): # cmd angle
-                        x = data[1:]
-                        self.cmd_angle[self.index_cmd_angle] = float(x)
-                        self.index_cmd_angle = (self.index_cmd_angle + 1) % self.buffer_size
-                    elif data.startswith("L"): # distance mesurer
-                        x = data[1:]
-                        self.distance[self.index_distance] = float(x)
-                        self.index_distance = (self.index_distance + 1) % self.buffer_size
-                    elif data.startswith("M"): # distance PID
-                        x = data[1:]
-                        self.Output_PID_distance[self.index_Output_PID_distance] = float(x)
-                        self.index_Output_PID_distance = (self.index_Output_PID_distance + 1) % self.buffer_size
-                    elif data.startswith("O"): # cmd distance
-                        x = data[1:]
-                        self.cmd_distance[self.index_cmd_distance] = float(x)
-                        self.index_cmd_distance = (self.index_cmd_distance + 1) % self.buffer_size
-                    elif data.startswith("P"): # angle ok
-                        x = data[1:]
-                        self.angle_ok = bool(x)
-                    elif data.startswith("Q"): # distance ok 
-                        x = data[1:]
-                        self.distance_ok = bool(x)
-                    elif data.startswith("X"): # position x
-                        x = data[1:]
-                        self.x[self.index_x] = float(x)
-                        self.index_x = (self.index_x + 1) % self.buffer_size
-                    elif data.startswith("Y"): # position y
-                        x = data[1:]
-                        self.y[self.index_y] = float(x)
-                        self.index_y = (self.index_y + 1) % self.buffer_size
+                self.logger.debug(f"Data received: {data}")
+                
+                if data.startswith("A"): # Valeur du codeur Gauche
+                    x = data[1:]
+                    self.encGauche[self.index_encGauche] = int(x)
+                    self.index_encGauche = (self.index_encGauche + 1) % self.buffer_size
+                elif data.startswith("B"): # Valeur du codeur Droit
+                    x = data[1:]
+                    self.encDroit[self.index_encDroit] = int(x)
+                    self.index_encDroit = (self.index_encDroit + 1) % self.buffer_size
+                elif data.startswith("C"): # Vitesse réel moteur Gauche
+                    x = data[1:]
+                    self.vitesse_G[self.index_vitesse_G] = float(x)
+                    self.index_vitesse_G = (self.index_vitesse_G + 1) % self.buffer_size
+                elif data.startswith("D"): # Vitesse réel moteur Droit
+                    x = data[1:]
+                    self.vitesse_D[self.index_vitesse_D] = float(x)
+                    self.index_vitesse_D = (self.index_vitesse_D + 1) % self.buffer_size
+                elif data.startswith("E"): # Sortie du PID vitesse moteur Gauche
+                    x = data[1:]
+                    self.Output_PID_vitesse_G[self.index_Output_PID_vitesse_G] = float(x)
+                    self.index_Output_PID_vitesse_G = (self.index_Output_PID_vitesse_G + 1) % self.buffer_size
+                elif data.startswith("F"): # Sortie du PID vitesse moteur Droit
+                    x = data[1:]
+                    self.Output_PID_vitesse_D[self.index_Output_PID_vitesse_D] = float(x)
+                    self.index_Output_PID_vitesse_D = (self.index_Output_PID_vitesse_D + 1) % self.buffer_size
+                elif data.startswith("G"): # Consigne de vitesse moteur Gauche
+                    x = data[1:]
+                    self.cmd_vitesse_G[self.index_cmd_vitesse_G] = float(x)
+                    self.index_cmd_vitesse_G = (self.index_cmd_vitesse_G + 1) % self.buffer_size
+                elif data.startswith("H"): # Consigne de vitesse moteur Droit
+                    x = data[1:]
+                    self.cmd_vitesse_D[self.index_cmd_vitesse_D] = float(x)
+                    self.index_cmd_vitesse_D = (self.index_cmd_vitesse_D + 1) % self.buffer_size
+                elif data.startswith("I"): # angle mesurer
+                    x = data[1:]
+                    self.angle[self.index_angle] = float(x)
+                    self.index_angle = (self.index_angle + 1) % self.buffer_size
+                elif data.startswith("J"): # angle PID
+                    x = data[1:]
+                    self.Output_PID_angle[self.index_Output_PID_angle] = float(x)
+                    self.index_Output_PID_angle = (self.index_Output_PID_angle + 1) % self.buffer_size
+                elif data.startswith("K"): # cmd angle
+                    x = data[1:]
+                    self.cmd_angle[self.index_cmd_angle] = float(x)
+                    self.index_cmd_angle = (self.index_cmd_angle + 1) % self.buffer_size
+                elif data.startswith("L"): # distance mesurer
+                    x = data[1:]
+                    self.distance[self.index_distance] = float(x)
+                    self.index_distance = (self.index_distance + 1) % self.buffer_size
+                elif data.startswith("M"): # distance PID
+                    x = data[1:]
+                    self.Output_PID_distance[self.index_Output_PID_distance] = float(x)
+                    self.index_Output_PID_distance = (self.index_Output_PID_distance + 1) % self.buffer_size
+                elif data.startswith("O"): # cmd distance
+                    x = data[1:]
+                    self.cmd_distance[self.index_cmd_distance] = float(x)
+                    self.index_cmd_distance = (self.index_cmd_distance + 1) % self.buffer_size
+                elif data.startswith("P"): # angle ok
+                    x = data[1:]
+                    self.angle_ok = bool(x)
+                elif data.startswith("Q"): # distance ok 
+                    x = data[1:]
+                    self.distance_ok = bool(x)
+                elif data.startswith("X"): # position x
+                    x = data[1:]
+                    self.x[self.index_x] = float(x)
+                    self.index_x = (self.index_x + 1) % self.buffer_size
+                elif data.startswith("Y"): # position y
+                    x = data[1:]
+                    self.y[self.index_y] = float(x)
+                    self.index_y = (self.index_y + 1) % self.buffer_size
+                elif data.startswith("Z"): # action OK
+                    self.logger.info("Action OK (Z reçu)")
+                    self.action_ok = True
             except :
+                self.logger.warn("receive_data wrong data format...")
                 continue
 
     def get_enc_gauche(self):

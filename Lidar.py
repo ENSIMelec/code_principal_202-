@@ -12,13 +12,13 @@ class LidarScanner:
         self.alert_triggered = False
         self.alert_counter = 0
         self.alert_limit = 1 #le lidar met 0.6sec/tour
+        self.detection = False
+        
         
     def set_pwm(self, value):
         self.lidar.set_pwm(value)
 
     def scan(self):
-        global detection
-        global set_stop_lidar
         self.set_pwm(512)
         try:
             for scan in self.lidar.iter_scans():
@@ -29,7 +29,7 @@ class LidarScanner:
                         # Convert angle to radians for y-coordinate calculation
                         angle_radians = angle * (math.pi / 180)
                         # Calculate y-coordinate based on distance and angle
-                        x_coordinate = (distance + ORIGIN_LIDAR) * math.cos(angle * (math.pi / 180))
+                        x_coordinate = (distance + ORIGIN_LIDAR) * math.cos(angle_radians)
                         y_coordinate = (distance + ORIGIN_LIDAR) * math.sin(angle_radians)
                         # Filtering by y-coordinate range
                         if -200 <= y_coordinate <= 200:
@@ -42,14 +42,17 @@ class LidarScanner:
                     self.alert_counter += 1
                     if self.alert_counter >= self.alert_limit and not self.alert_triggered:
                         self.alert_triggered = True
-                        detection = True
+                        self.detection = True
+                        # self.asserv.stopmove()
                         # appeler com pour Killian
                         print("You need to stop turn NOW !!!")
-                        print("A une distance", x_coordinate)
+                        print("A une distance", x_coordinate, angle)
                 
-                elif detection :
-                    detection = False
+                elif self.detection :
+                    # self.asserv.restartmove()
+                    self.detection = False
                     # appeler com pour Killian  
+                    
                 else:
                     #print(f"No objects detected in the deadzone. Nearest object: {distance} mm") 
                     self.alert_counter = 0
@@ -58,17 +61,20 @@ class LidarScanner:
                 if(set_stop_lidar):
                     return True
 
-        except SerialException:
+        except KeyboardInterrupt:
             print('Error: Lidar device disconnected or multiple access on port.')
             self.stop_lidarScan()
 
     def stop_lidarScan(self):
         self.lidar.stop_motor()
         self.lidar.disconnect()
+        
+    def set_asserv_obj(self, obj):
+        self.asserv = obj
 
 if __name__ == '__main__':
     # Setup the RPLidar
     lidar_scanner = LidarScanner()
-    #lidar_scanner.scan()
-    lidar_scanner.stop_lidarScan()
+    lidar_scanner.scan()
+    #lidar_scanner.stop_lidarScan()
 

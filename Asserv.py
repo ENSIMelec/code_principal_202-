@@ -56,6 +56,7 @@ class Asserv:
         self.thread_readSerial.daemon = True
         self.thread_readSerial.start()
         self.logger.info("Asserv initialized.")
+        self.signeLidar = 1
     
     def enable(self): # enable de tout l'asservissement
         command = "asserv enable all\n"
@@ -150,6 +151,7 @@ class Asserv:
 
     def goto(self, x, y, vitesse=500): # simple goto x et y en mm à une certaine vitesse par défault = 500
         self.action_ok = False
+        self.signeLidar = 1
         command = f'asserv goto {x} {y} {vitesse}\n'
         self.serial.write(command.encode())
         self.logger.info(f"Commande envoyé : goto {x} {y} {vitesse}")
@@ -168,6 +170,10 @@ class Asserv:
     
     def moveof(self, distance, vitesse=500): # simple avance de distance en mm à une certaine vitesse par défault = 500
         self.action_ok = False
+        if distance < 0 :
+            self.signeLidar = -1
+        else :
+            self.signeLidar = 1
         command = f"asserv moveof {distance} {vitesse}\n"
         self.serial.write(command.encode())
         self.logger.info(f"Commande envoyé : moveof {distance} {vitesse}")

@@ -3,7 +3,7 @@ import json
 import RPi.GPIO as GPIO
 import time
 import threading
-from Lidar import LidarScanner
+from LidarScan import LidarScanner
 from Globals_Variables import *
 
 import logging
@@ -89,8 +89,7 @@ def main():
     while(time.time() < (time_lauch + MATCH_TIME) and thread_action.is_alive()):
         time.sleep(0.1)
     logger.info("Fin du match ou chrono")
-    
-    set_stop_lidar = True
+ 
     time.sleep(1)
     logger.info("Arrêt du scanner Lidar")
     lidar_scanner.stop_lidarScan()

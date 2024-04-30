@@ -12548,3 +12548,1838 @@
 29/04/2024 20:30:24 Asserv       DEBUG    Data received: Z
 29/04/2024 20:30:24 Asserv       INFO     Action OK (Z reçu)
 30/04/2024 01:30:25 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 15:47:39 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 15:47:39 __main__     INFO     Initialisation du JSON
+30/04/2024 15:47:39 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 15:47:39 Asserv       INFO     Thread receive_data started
+30/04/2024 15:47:39 Asserv       INFO     Asserv initialized.
+30/04/2024 15:47:39 LidarScan    INFO     Lidar initialized.
+30/04/2024 15:47:39 LidarScan    INFO     Setting PWM value to 512
+30/04/2024 15:48:41 LidarScan    INFO     Stopping the lidar scan.
+30/04/2024 15:49:20 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 15:49:20 __main__     INFO     Initialisation du JSON
+30/04/2024 15:49:20 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 15:49:20 Asserv       INFO     Thread receive_data started
+30/04/2024 15:49:20 Asserv       INFO     Asserv initialized.
+30/04/2024 15:49:20 LidarScan    INFO     Lidar initialized.
+30/04/2024 15:49:20 LidarScan    INFO     Setting PWM value to 512
+30/04/2024 15:49:21 LidarScan    DEBUG    Object detected in the deadzone at -144.9846709192698 mm (x)! 141.40625°
+30/04/2024 15:49:21 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:49:21 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:49:21 LidarScan    DEBUG    Object detected in the deadzone at -147.60883189011906 mm (x)! 142.125°
+30/04/2024 15:49:21 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:49:22 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:49:22 LidarScan    DEBUG    Object detected in the deadzone at -146.8295221454554 mm (x)! 142.03125°
+30/04/2024 15:49:22 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:49:22 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:49:22 LidarScan    DEBUG    Object detected in the deadzone at -147.34730242440247 mm (x)! 142.390625°
+30/04/2024 15:49:22 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:49:22 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:49:22 LidarScan    DEBUG    Object detected in the deadzone at -147.20089157960012 mm (x)! 141.921875°
+30/04/2024 15:49:22 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:49:22 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:49:22 LidarScan    DEBUG    Object detected in the deadzone at -145.565117174549 mm (x)! 141.5°
+30/04/2024 15:49:22 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:49:23 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:49:24 LidarScan    DEBUG    Object detected in the deadzone at 41.89586962891496 mm (x)! 77.609375°
+30/04/2024 15:49:24 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:49:24 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:49:27 LidarScan    DEBUG    Object detected in the deadzone at -145.07929056031958 mm (x)! 141.453125°
+30/04/2024 15:49:27 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:49:27 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:49:28 LidarScan    DEBUG    Object detected in the deadzone at -144.72622519768154 mm (x)! 141.375°
+30/04/2024 15:49:28 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:49:28 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:49:29 LidarScan    DEBUG    Object detected in the deadzone at -145.00960454510636 mm (x)! 141.515625°
+30/04/2024 15:49:29 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:49:30 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:49:30 LidarScan    DEBUG    Object detected in the deadzone at -144.88995423630465 mm (x)! 141.359375°
+30/04/2024 15:49:30 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:49:30 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:49:30 LidarScan    DEBUG    Object detected in the deadzone at -144.85836045473505 mm (x)! 141.34375°
+30/04/2024 15:49:30 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:49:31 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:49:31 LidarScan    DEBUG    Object detected in the deadzone at -145.43251103376085 mm (x)! 141.53125°
+30/04/2024 15:49:31 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:49:31 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:49:31 LidarScan    DEBUG    Object detected in the deadzone at -149.05137497460797 mm (x)! 142.75°
+30/04/2024 15:49:31 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:49:31 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:49:31 LidarScan    DEBUG    Object detected in the deadzone at -144.73187762154555 mm (x)! 141.28125°
+30/04/2024 15:49:31 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:49:32 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:49:32 LidarScan    DEBUG    Object detected in the deadzone at -147.4606488764421 mm (x)! 141.953125°
+30/04/2024 15:49:32 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:49:32 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:49:32 LidarScan    DEBUG    Object detected in the deadzone at -147.04349855341488 mm (x)! 141.84375°
+30/04/2024 15:49:32 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:49:32 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:49:32 LidarScan    DEBUG    Object detected in the deadzone at -147.81495517998866 mm (x)! 142.03125°
+30/04/2024 15:49:32 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:49:32 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:49:33 LidarScan    DEBUG    Object detected in the deadzone at -147.04349855341488 mm (x)! 141.84375°
+30/04/2024 15:49:33 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:49:33 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:49:33 LidarScan    INFO     Stopping the lidar scan.
+30/04/2024 15:50:34 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 15:50:34 __main__     INFO     Initialisation du JSON
+30/04/2024 15:50:34 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 15:50:34 Asserv       INFO     Thread receive_data started
+30/04/2024 15:50:34 Asserv       INFO     Asserv initialized.
+30/04/2024 15:50:34 LidarScan    INFO     Lidar initialized.
+30/04/2024 15:50:34 LidarScan    INFO     Setting PWM value to 512
+30/04/2024 15:50:36 LidarScan    DEBUG    Object detected in the deadzone at 35.10885514928427 mm (x)! 79.0°
+30/04/2024 15:50:36 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:50:36 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:50:37 LidarScan    DEBUG    Object detected in the deadzone at 33.36714959832365 mm (x)! 80.03125°
+30/04/2024 15:50:37 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:50:37 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:50:38 LidarScan    DEBUG    Object detected in the deadzone at 32.823700974871514 mm (x)! 79.890625°
+30/04/2024 15:50:38 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:50:38 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:50:39 LidarScan    DEBUG    Object detected in the deadzone at 34.154526411305355 mm (x)! 79.015625°
+30/04/2024 15:50:39 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:50:39 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:50:40 LidarScan    DEBUG    Object detected in the deadzone at 95.92686211198989 mm (x)! 57.078125°
+30/04/2024 15:50:40 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:50:41 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:50:41 LidarScan    DEBUG    Object detected in the deadzone at 35.75067396968508 mm (x)! 78.296875°
+30/04/2024 15:50:41 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:50:42 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:50:43 LidarScan    DEBUG    Object detected in the deadzone at 168.46665421686518 mm (x)! 30.859375°
+30/04/2024 15:50:43 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:50:43 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:50:43 LidarScan    DEBUG    Object detected in the deadzone at 165.39065603733866 mm (x)! 35.734375°
+30/04/2024 15:50:43 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:50:43 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:50:43 LidarScan    DEBUG    Object detected in the deadzone at 164.0153392361056 mm (x)! 40.125°
+30/04/2024 15:50:43 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:50:43 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:50:43 LidarScan    DEBUG    Object detected in the deadzone at 163.3393093191027 mm (x)! 35.84375°
+30/04/2024 15:50:43 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:50:43 LidarScan    INFO     No more object. Restarting the robot.
+30/04/2024 15:50:43 LidarScan    DEBUG    Object detected in the deadzone at 161.07922396445792 mm (x)! 40.234375°
+30/04/2024 15:50:43 LidarScan    INFO     Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°
+30/04/2024 15:50:44 LidarScan    INFO     Stopping the lidar scan.
+30/04/2024 15:58:03 __main__     INFO     Lidar initialized.
+30/04/2024 15:58:03 __main__     INFO     Setting PWM value to 512
+30/04/2024 15:58:04 __main__     DEBUG    Object detected in the deadzone at 97.01841907177544 mm (x)! 57.6875°
+30/04/2024 16:00:20 __main__     INFO     Lidar initialized.
+30/04/2024 16:00:20 Asserv       INFO     Thread receive_data started
+30/04/2024 16:00:20 Asserv       INFO     Asserv initialized.
+30/04/2024 16:04:23 __main__     INFO     Lidar initialized.
+30/04/2024 16:04:23 Asserv       INFO     Thread receive_data started
+30/04/2024 16:04:23 Asserv       INFO     Asserv initialized.
+30/04/2024 16:10:30 __main__     INFO     Lidar initialized.
+30/04/2024 16:10:30 Asserv       INFO     Thread receive_data started
+30/04/2024 16:10:30 Asserv       INFO     Asserv initialized.
+30/04/2024 16:10:31 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:31 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:31 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:31 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:32 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:32 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:32 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:32 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:32 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:32 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:32 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:32 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:32 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:32 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:33 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:33 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:34 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:34 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:34 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:34 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:34 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:34 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:34 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:34 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:34 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:34 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:34 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:34 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:35 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:35 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:35 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:35 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:35 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:35 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:35 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:35 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:36 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:36 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:36 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:36 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:36 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:36 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:36 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:36 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:36 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:36 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:36 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:36 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:36 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:36 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:36 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:37 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:37 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:37 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:37 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:37 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:37 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:37 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:37 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:37 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:38 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:38 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:38 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:38 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:38 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:38 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:38 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:38 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:38 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:38 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:38 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:38 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:38 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:38 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:39 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:39 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:39 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:39 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:39 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:39 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:39 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:39 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:39 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:39 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:39 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:39 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:40 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:40 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:40 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:40 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:40 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:40 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:40 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:40 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:40 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:40 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:40 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:40 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:40 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:40 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:40 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:40 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:40 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:40 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:41 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:41 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:41 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:41 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:41 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:41 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:41 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:41 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:41 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:41 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:41 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:41 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:41 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:41 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:42 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:42 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:42 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:42 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:42 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:42 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:42 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:42 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:42 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:42 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:42 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:42 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:43 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:43 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:43 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:43 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:43 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:43 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:43 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:43 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:43 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:43 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:43 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:43 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:44 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:44 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:44 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:44 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:44 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:44 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:44 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:44 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:44 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:44 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:44 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:44 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:44 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:44 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:45 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:45 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:45 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:45 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:45 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:45 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:45 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:45 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:45 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:45 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:46 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:46 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:46 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:46 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:46 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:46 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:46 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:46 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:46 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:46 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:47 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:47 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:47 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:47 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:47 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:47 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:47 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:47 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:47 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:47 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:47 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:47 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:47 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:47 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:48 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:48 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:48 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:48 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:48 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:48 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:48 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:48 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:48 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:48 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:48 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:48 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:48 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:48 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:48 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:48 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:48 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:49 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:50 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:50 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:50 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:50 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:50 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:50 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:50 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:50 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:50 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:50 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:50 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:50 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:50 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:50 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:50 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:50 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:50 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:50 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:50 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:50 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:51 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:51 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:51 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:51 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:51 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:51 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:51 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:51 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:51 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:51 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:51 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:51 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:51 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:51 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:51 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:51 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:51 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:51 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:51 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:51 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:52 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:53 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:53 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:53 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:53 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:53 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:53 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:53 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:53 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:53 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:53 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:53 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:53 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:53 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:53 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:53 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:53 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:53 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:54 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:54 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:54 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:54 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:54 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:54 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:54 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:54 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:54 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:54 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:54 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:54 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:54 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:54 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:54 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:54 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:54 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:54 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:55 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:56 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:56 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:56 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:56 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:56 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:56 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:56 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:56 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:56 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:56 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:56 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:56 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:56 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:56 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:56 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:56 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:56 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:56 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:57 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:57 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:57 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:57 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:57 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:57 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:57 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:57 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:57 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:57 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:57 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:57 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:57 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:57 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:57 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:57 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:58 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:58 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:58 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:58 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:58 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:58 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:58 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:58 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:58 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:58 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:58 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:58 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:58 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:58 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:58 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:58 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:58 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:58 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:59 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:59 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:59 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:59 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:59 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:59 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:59 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:59 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:59 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:59 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:59 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:59 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:59 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:59 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:10:59 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:10:59 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:00 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:00 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:00 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:00 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:00 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:00 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:00 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:00 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:00 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:00 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:00 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:00 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:00 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:00 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:00 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:01 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:01 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:01 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:01 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:01 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:01 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:01 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:01 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:01 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:01 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:01 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:01 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:01 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:01 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:01 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:01 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:01 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:01 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:01 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:06 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:06 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:06 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:06 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:06 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:06 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:06 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:06 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:06 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:06 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:06 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:06 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:08 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:11 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:11 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:11 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:11 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:11 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:11 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:11 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:11 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:11 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:11 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:11 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:11 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:11 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:11 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:11 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:11 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:12 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:12 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:12 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:12 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:12 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:12 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:12 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:12 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:12 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:12 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:12 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:12 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:12 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:12 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:12 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:12 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:12 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:12 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:11:12 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:11:13 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:36:30 __main__     INFO     Lidar initialized.
+30/04/2024 16:36:30 Asserv       INFO     Asserv initialized.
+30/04/2024 16:36:30 Asserv       INFO     Thread receive_data started
+30/04/2024 16:36:33 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:36:34 Asserv       DEBUG    Data received: Z
+30/04/2024 16:36:34 Asserv       INFO     Action OK (Z reçu)
+30/04/2024 16:36:34 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:36:35 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:36:35 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:36:36 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:36:36 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:36:37 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:36:37 Asserv       DEBUG    Data received: Z
+30/04/2024 16:36:37 Asserv       INFO     Action OK (Z reçu)
+30/04/2024 16:36:37 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:36:37 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:36:37 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:36:38 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:36:38 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:36:39 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:36:39 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:36:39 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:36:39 Asserv       DEBUG    Data received: Z
+30/04/2024 16:36:39 Asserv       INFO     Action OK (Z reçu)
+30/04/2024 16:36:39 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:36:40 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:36:40 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:36:40 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:36:40 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:36:40 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:36:40 Asserv       DEBUG    Data received: Z
+30/04/2024 16:36:40 Asserv       INFO     Action OK (Z reçu)
+30/04/2024 16:36:40 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:36:40 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:36:40 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:36:40 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:36:40 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:36:41 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:36:41 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:36:41 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:36:41 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:36:42 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:36:42 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:36:43 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:36:43 Asserv       DEBUG    Data received: Z
+30/04/2024 16:36:43 Asserv       INFO     Action OK (Z reçu)
+30/04/2024 16:39:59 __main__     INFO     Lidar initialized.
+30/04/2024 16:39:59 Asserv       INFO     Thread receive_data started
+30/04/2024 16:39:59 Asserv       INFO     Asserv initialized.
+30/04/2024 16:40:00 __main__     INFO     Lidar initialized.
+30/04/2024 16:40:00 Asserv       INFO     Thread receive_data started
+30/04/2024 16:40:00 Asserv       INFO     Asserv initialized.
+30/04/2024 16:40:01 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:01 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:01 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:01 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:01 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:01 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:01 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:01 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:01 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:01 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:01 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:01 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:02 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:02 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:03 Asserv       DEBUG    Data received: Z
+30/04/2024 16:40:03 Asserv       INFO     Action OK (Z reçu)
+30/04/2024 16:40:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:03 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:03 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:03 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:03 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:03 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:03 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:03 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:03 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:04 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:04 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:05 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:05 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:06 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:06 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:06 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:06 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:06 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:06 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:06 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:06 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:06 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:06 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:06 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:06 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:06 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:06 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:06 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:06 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:06 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:06 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:06 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:06 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:07 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:07 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:08 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:08 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:08 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:08 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:08 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:08 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:08 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:08 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:08 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:08 Asserv       DEBUG    Data received: Z
+30/04/2024 16:40:08 Asserv       INFO     Action OK (Z reçu)
+30/04/2024 16:40:08 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:09 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:10 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:10 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:11 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:11 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:11 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:11 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:11 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:11 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:11 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:11 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:11 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:11 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:11 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:11 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:11 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:11 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:11 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:11 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:11 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:11 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:12 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:12 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:12 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:12 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:12 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:12 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:12 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:12 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:12 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:12 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:12 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:12 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:12 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:12 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:12 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:12 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:12 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:12 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:13 Asserv       DEBUG    Data received: Z
+30/04/2024 16:40:13 Asserv       INFO     Action OK (Z reçu)
+30/04/2024 16:40:13 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:13 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:13 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:13 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:13 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:13 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:13 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:13 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:13 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:13 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:13 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:13 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:13 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:13 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:13 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:14 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:14 Asserv       DEBUG    Data received: Z
+30/04/2024 16:40:14 Asserv       INFO     Action OK (Z reçu)
+30/04/2024 16:40:14 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:14 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:14 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:14 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:14 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:14 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:14 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:14 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:14 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:14 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:14 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:14 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:14 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:14 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:14 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:15 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:16 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:16 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:16 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:16 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:16 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:16 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:16 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:16 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:16 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:16 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:16 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:16 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:16 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:16 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:16 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:16 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:17 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:17 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:17 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:17 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:17 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:17 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:17 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:17 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:17 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:17 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:17 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:17 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:17 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:17 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:17 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:17 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:17 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:17 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:17 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:18 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:18 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:18 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:18 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:18 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:18 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:18 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:18 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:18 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:18 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:18 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:18 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:18 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:18 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:18 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:18 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:18 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:18 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:18 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:19 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:19 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:19 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:19 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:19 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:19 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:19 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:19 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:19 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:20 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:20 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:20 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:20 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:20 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:20 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:20 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:20 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:20 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:20 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:20 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:20 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:20 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:20 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:20 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:21 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:21 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:21 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:21 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:21 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:21 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:21 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:21 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:21 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:21 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:21 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:21 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:22 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:22 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:22 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:22 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:22 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:22 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:22 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:22 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:22 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:22 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:22 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:22 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:22 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:22 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:23 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:23 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:23 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:23 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:23 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:23 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:23 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:23 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:23 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:23 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:23 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:23 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:24 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:24 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:24 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:24 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:24 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:24 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:24 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:24 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:24 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:24 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:24 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:24 Asserv       DEBUG    Data received: Z
+30/04/2024 16:40:24 Asserv       INFO     Action OK (Z reçu)
+30/04/2024 16:40:25 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:25 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:25 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:25 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:25 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:25 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:25 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:25 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:25 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:25 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:25 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:25 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:26 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:26 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:26 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:26 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:26 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:26 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:26 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:26 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:26 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:26 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:26 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:26 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:26 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:26 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:26 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:26 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:27 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:27 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:27 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:27 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:27 Asserv       DEBUG    Data received: Z
+30/04/2024 16:40:27 Asserv       INFO     Action OK (Z reçu)
+30/04/2024 16:40:27 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:27 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:27 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:27 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:27 Asserv       DEBUG    Data received: Z
+30/04/2024 16:40:27 Asserv       INFO     Action OK (Z reçu)
+30/04/2024 16:40:27 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:28 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:28 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:28 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:28 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:28 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:28 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:28 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:28 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:28 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:28 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:28 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:28 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:29 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:29 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:29 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:29 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:29 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:29 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:29 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:29 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:29 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:29 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:30 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:30 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:30 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:30 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:30 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:30 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:30 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:30 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:30 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:30 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:31 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:31 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:31 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:31 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:31 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:31 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:31 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:31 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:31 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:32 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:32 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:32 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:32 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:32 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:32 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:32 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:33 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:33 Asserv       DEBUG    Data received: Z
+30/04/2024 16:40:33 Asserv       INFO     Action OK (Z reçu)
+30/04/2024 16:40:33 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:33 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:33 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:33 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:33 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:33 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:34 Asserv       DEBUG    Data received: Z
+30/04/2024 16:40:34 Asserv       INFO     Action OK (Z reçu)
+30/04/2024 16:40:34 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:34 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:34 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:34 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:34 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:34 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:34 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:34 Asserv       DEBUG    Data received: Z
+30/04/2024 16:40:34 Asserv       INFO     Action OK (Z reçu)
+30/04/2024 16:40:35 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:35 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:35 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:35 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:35 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:35 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:35 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:35 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:35 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:35 Asserv       DEBUG    Data received: Z
+30/04/2024 16:40:35 Asserv       INFO     Action OK (Z reçu)
+30/04/2024 16:40:36 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:36 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:36 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:36 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:36 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:36 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:36 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:36 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:36 Asserv       DEBUG    Data received: Z
+30/04/2024 16:40:36 Asserv       INFO     Action OK (Z reçu)
+30/04/2024 16:40:36 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:36 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:36 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:37 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:37 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:37 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:37 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:37 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:38 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:38 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:38 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:38 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:38 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:38 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:38 Asserv       DEBUG    Data received: Z
+30/04/2024 16:40:38 Asserv       INFO     Action OK (Z reçu)
+30/04/2024 16:40:38 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:39 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:39 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:39 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:39 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:39 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:39 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:39 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:40 Asserv       DEBUG    Data received: Z
+30/04/2024 16:40:40 Asserv       INFO     Action OK (Z reçu)
+30/04/2024 16:40:40 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:40 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:40 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:40 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:40 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:40:44 Asserv       INFO     Commande envoyé : stopmove
+30/04/2024 16:40:48 Asserv       INFO     Commande envoyé : restartmove
+30/04/2024 16:45:41 __main__     INFO     Lidar initialized.
+30/04/2024 16:45:41 Asserv       INFO     Thread receive_data started
+30/04/2024 16:45:41 Asserv       INFO     Asserv initialized.
+30/04/2024 16:46:44 __main__     INFO     Lidar initialized.
+30/04/2024 16:46:44 Asserv       INFO     Thread receive_data started
+30/04/2024 16:46:44 Asserv       INFO     Asserv initialized.
+30/04/2024 16:46:49 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 16:46:49 __main__     INFO     Initialisation du JSON
+30/04/2024 16:46:49 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 16:46:49 Asserv       INFO     Thread receive_data started
+30/04/2024 16:46:49 Asserv       INFO     Asserv initialized.
+30/04/2024 16:46:49 LidarScan    INFO     Lidar initialized.
+30/04/2024 16:47:03 __main__     INFO     Lidar initialized.
+30/04/2024 16:47:03 Asserv       INFO     Thread receive_data started
+30/04/2024 16:47:03 Asserv       INFO     Asserv initialized.
+30/04/2024 16:47:12 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 16:47:12 __main__     INFO     Initialisation du JSON
+30/04/2024 16:47:12 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 16:47:12 Asserv       INFO     Thread receive_data started
+30/04/2024 16:47:12 Asserv       INFO     Asserv initialized.
+30/04/2024 16:47:12 LidarScan    INFO     Lidar initialized.
+30/04/2024 16:48:13 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 16:48:13 __main__     INFO     Initialisation du JSON
+30/04/2024 16:48:13 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 16:48:13 Asserv       INFO     Thread receive_data started
+30/04/2024 16:48:13 Asserv       INFO     Asserv initialized.
+30/04/2024 16:48:13 LidarScan    INFO     Lidar initialized.
+30/04/2024 16:50:15 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 16:50:15 __main__     INFO     Initialisation du JSON
+30/04/2024 16:50:15 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 16:50:15 Asserv       INFO     Thread receive_data started
+30/04/2024 16:50:15 Asserv       INFO     Asserv initialized.
+30/04/2024 16:50:15 LidarScan    INFO     Lidar initialized.
+30/04/2024 16:51:57 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 16:51:57 __main__     INFO     Initialisation du JSON
+30/04/2024 16:51:57 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 16:51:57 Asserv       INFO     Thread receive_data started
+30/04/2024 16:51:57 Asserv       INFO     Asserv initialized.
+30/04/2024 16:51:57 LidarScan    INFO     Lidar initialized.
+30/04/2024 16:57:30 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 16:57:30 __main__     INFO     Initialisation du JSON
+30/04/2024 16:57:30 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 16:57:30 Asserv       INFO     Thread receive_data started
+30/04/2024 16:57:30 Asserv       INFO     Asserv initialized.
+30/04/2024 16:57:31 LidarScan    INFO     Lidar initialized.
+30/04/2024 16:58:44 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 16:58:44 __main__     INFO     Initialisation du JSON
+30/04/2024 16:58:44 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 16:58:44 Asserv       INFO     Thread receive_data started
+30/04/2024 16:58:44 Asserv       INFO     Asserv initialized.
+30/04/2024 16:58:45 LidarScan    INFO     Lidar initialized.
+30/04/2024 17:08:57 __main__     INFO     Lidar initialized.
+30/04/2024 17:08:57 Asserv       INFO     Thread receive_data started
+30/04/2024 17:08:57 Asserv       INFO     Asserv initialized.
+30/04/2024 17:09:17 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 17:09:17 __main__     INFO     Initialisation du JSON
+30/04/2024 17:09:17 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 17:09:17 Asserv       INFO     Thread receive_data started
+30/04/2024 17:09:17 Asserv       INFO     Asserv initialized.
+30/04/2024 17:09:17 LidarScan    INFO     Lidar initialized.
+30/04/2024 17:13:29 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 17:13:29 __main__     INFO     Initialisation du JSON
+30/04/2024 17:13:29 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 17:13:29 Asserv       INFO     Thread receive_data started
+30/04/2024 17:13:29 Asserv       INFO     Asserv initialized.
+30/04/2024 17:13:29 LidarScan    INFO     Lidar initialized.
+30/04/2024 17:16:54 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 17:16:54 __main__     INFO     Initialisation du JSON
+30/04/2024 17:16:54 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 17:16:54 Asserv       INFO     Thread receive_data started
+30/04/2024 17:16:54 Asserv       INFO     Asserv initialized.
+30/04/2024 17:16:55 LidarScan    INFO     Lidar initialized.
+30/04/2024 17:17:34 __main__     INFO     Lidar initialized.
+30/04/2024 17:17:34 Asserv       INFO     Thread receive_data started
+30/04/2024 17:17:34 Asserv       INFO     Asserv initialized.
+30/04/2024 17:40:15 __main__     INFO     Lidar initialized.
+30/04/2024 17:40:15 Asserv       INFO     Thread receive_data started
+30/04/2024 17:40:15 Asserv       INFO     Asserv initialized.
+30/04/2024 17:40:24 __main__     INFO     Lidar initialized.
+30/04/2024 17:40:24 Asserv       INFO     Thread receive_data started
+30/04/2024 17:40:24 Asserv       INFO     Asserv initialized.
+30/04/2024 17:42:33 __main__     INFO     Lidar initialized.
+30/04/2024 17:42:33 Asserv       INFO     Thread receive_data started
+30/04/2024 17:42:33 Asserv       INFO     Asserv initialized.
+30/04/2024 17:43:09 __main__     INFO     Lidar initialized.
+30/04/2024 17:43:09 Asserv       INFO     Thread receive_data started
+30/04/2024 17:43:09 Asserv       INFO     Asserv initialized.
+30/04/2024 18:03:01 __main__     INFO     Lidar initialized.
+30/04/2024 18:03:01 Asserv       INFO     Thread receive_data started
+30/04/2024 18:03:01 Asserv       INFO     Asserv initialized.
+30/04/2024 18:03:55 __main__     INFO     Lidar initialized.
+30/04/2024 18:03:55 Asserv       INFO     Thread receive_data started
+30/04/2024 18:03:55 Asserv       INFO     Asserv initialized.
+30/04/2024 18:08:36 __main__     INFO     Lidar initialized.
+30/04/2024 18:08:36 Asserv       INFO     Thread receive_data started
+30/04/2024 18:08:36 Asserv       INFO     Asserv initialized.
+30/04/2024 18:10:00 __main__     INFO     Lidar initialized.
+30/04/2024 18:10:00 Asserv       INFO     Thread receive_data started
+30/04/2024 18:10:00 Asserv       INFO     Asserv initialized.
+30/04/2024 18:13:08 __main__     INFO     Lidar initialized.
+30/04/2024 18:13:08 Asserv       INFO     Thread receive_data started
+30/04/2024 18:13:08 Asserv       INFO     Asserv initialized.
+30/04/2024 18:17:02 __main__     INFO     Lidar initialized.
+30/04/2024 18:17:03 Asserv       INFO     Thread receive_data started
+30/04/2024 18:17:03 Asserv       INFO     Asserv initialized.
+30/04/2024 18:19:30 __main__     INFO     Lidar initialized.
+30/04/2024 18:19:30 Asserv       INFO     Thread receive_data started
+30/04/2024 18:19:30 Asserv       INFO     Asserv initialized.
+30/04/2024 18:20:39 __main__     INFO     Lidar initialized.
+30/04/2024 18:20:39 Asserv       INFO     Thread receive_data started
+30/04/2024 18:20:39 Asserv       INFO     Asserv initialized.
+30/04/2024 18:22:48 __main__     INFO     Lidar initialized.
+30/04/2024 18:22:48 Asserv       INFO     Thread receive_data started
+30/04/2024 18:22:48 Asserv       INFO     Asserv initialized.
+30/04/2024 18:25:20 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 18:25:20 __main__     INFO     Initialisation du JSON
+30/04/2024 18:25:20 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 18:25:20 Asserv       INFO     Thread receive_data started
+30/04/2024 18:25:20 Asserv       INFO     Asserv initialized.
+30/04/2024 18:25:21 LidarScan    INFO     Lidar initialized.
+30/04/2024 18:26:36 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 18:26:36 __main__     INFO     Initialisation du JSON
+30/04/2024 18:26:36 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 18:26:36 Asserv       INFO     Thread receive_data started
+30/04/2024 18:26:36 Asserv       INFO     Asserv initialized.
+30/04/2024 18:26:36 LidarScan    INFO     Lidar initialized.
+30/04/2024 18:28:03 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 18:28:03 __main__     INFO     Initialisation du JSON
+30/04/2024 18:28:03 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 18:28:03 Asserv       INFO     Thread receive_data started
+30/04/2024 18:28:03 Asserv       INFO     Asserv initialized.
+30/04/2024 18:28:04 LidarScan    INFO     Lidar initialized.
+30/04/2024 18:28:48 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 18:28:48 __main__     INFO     Initialisation du JSON
+30/04/2024 18:28:48 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 18:28:48 Asserv       INFO     Thread receive_data started
+30/04/2024 18:28:48 Asserv       INFO     Asserv initialized.
+30/04/2024 18:28:49 LidarScan    INFO     Lidar initialized.
+30/04/2024 18:29:25 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 18:29:25 __main__     INFO     Initialisation du JSON
+30/04/2024 18:29:25 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 18:29:25 Asserv       INFO     Thread receive_data started
+30/04/2024 18:29:25 Asserv       INFO     Asserv initialized.
+30/04/2024 18:29:26 LidarScan    INFO     Lidar initialized.
+30/04/2024 18:29:55 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 18:29:55 __main__     INFO     Initialisation du JSON
+30/04/2024 18:29:55 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 18:29:55 Asserv       INFO     Thread receive_data started
+30/04/2024 18:29:55 Asserv       INFO     Asserv initialized.
+30/04/2024 18:29:56 LidarScan    INFO     Lidar initialized.
+30/04/2024 18:30:38 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 18:30:38 __main__     INFO     Initialisation du JSON
+30/04/2024 18:30:38 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 18:30:38 Asserv       INFO     Thread receive_data started
+30/04/2024 18:30:38 Asserv       INFO     Asserv initialized.
+30/04/2024 18:30:38 LidarScan    INFO     Lidar initialized.
+30/04/2024 18:31:24 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 18:31:24 __main__     INFO     Initialisation du JSON
+30/04/2024 18:31:24 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 18:31:24 Asserv       INFO     Thread receive_data started
+30/04/2024 18:31:24 Asserv       INFO     Asserv initialized.
+30/04/2024 18:31:24 LidarScan    INFO     Lidar initialized.
+30/04/2024 18:32:29 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 18:32:29 __main__     INFO     Initialisation du JSON
+30/04/2024 18:32:29 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 18:32:29 Asserv       INFO     Thread receive_data started
+30/04/2024 18:32:29 Asserv       INFO     Asserv initialized.
+30/04/2024 18:32:29 LidarScan    INFO     Lidar initialized.
+30/04/2024 18:32:57 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 18:32:57 __main__     INFO     Initialisation du JSON
+30/04/2024 18:32:57 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 18:32:57 Asserv       INFO     Thread receive_data started
+30/04/2024 18:32:57 Asserv       INFO     Asserv initialized.
+30/04/2024 18:32:58 LidarScan    INFO     Lidar initialized.
+30/04/2024 18:34:27 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 18:34:27 __main__     INFO     Initialisation du JSON
+30/04/2024 18:34:27 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 18:34:27 Asserv       INFO     Thread receive_data started
+30/04/2024 18:34:27 Asserv       INFO     Asserv initialized.
+30/04/2024 18:34:28 LidarScan    INFO     Lidar initialized.
+30/04/2024 18:43:15 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 18:43:15 __main__     INFO     Initialisation du JSON
+30/04/2024 18:43:15 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 18:43:15 Asserv       INFO     Thread receive_data started
+30/04/2024 18:43:15 Asserv       INFO     Asserv initialized.
+30/04/2024 18:43:15 LidarScan    INFO     Lidar initialized.
+30/04/2024 18:43:51 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 18:43:51 __main__     INFO     Initialisation du JSON
+30/04/2024 18:43:51 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 18:43:51 Asserv       INFO     Thread receive_data started
+30/04/2024 18:43:51 Asserv       INFO     Asserv initialized.
+30/04/2024 18:43:52 LidarScan    INFO     Lidar initialized.
+30/04/2024 18:45:13 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 18:45:13 __main__     INFO     Initialisation du JSON
+30/04/2024 18:45:13 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 18:45:13 Asserv       INFO     Thread receive_data started
+30/04/2024 18:45:13 Asserv       INFO     Asserv initialized.
+30/04/2024 18:45:14 LidarScan    INFO     Lidar initialized.
+30/04/2024 18:57:45 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 18:57:45 __main__     INFO     Initialisation du JSON
+30/04/2024 18:57:45 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 18:57:45 Asserv       INFO     Thread receive_data started
+30/04/2024 18:57:45 Asserv       INFO     Asserv initialized.
+30/04/2024 18:57:45 LidarScan    INFO     Lidar initialized.
+30/04/2024 19:07:55 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 19:07:55 __main__     INFO     Initialisation du JSON
+30/04/2024 19:07:55 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 19:07:55 Asserv       INFO     Thread receive_data started
+30/04/2024 19:07:55 Asserv       INFO     Asserv initialized.
+30/04/2024 19:07:56 LidarScan    INFO     Lidar initialized.
+30/04/2024 19:16:30 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 19:16:30 __main__     INFO     Initialisation du JSON
+30/04/2024 19:16:30 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 19:16:30 Asserv       INFO     Thread receive_data started
+30/04/2024 19:16:30 Asserv       INFO     Asserv initialized.
+30/04/2024 19:16:31 LidarScan    INFO     Lidar initialized.
+30/04/2024 19:17:35 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 19:17:35 __main__     INFO     Initialisation du JSON
+30/04/2024 19:17:35 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 19:17:35 Asserv       INFO     Thread receive_data started
+30/04/2024 19:17:35 Asserv       INFO     Asserv initialized.
+30/04/2024 19:17:36 LidarScan    INFO     Lidar initialized.
+30/04/2024 19:18:29 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 19:18:29 __main__     INFO     Initialisation du JSON
+30/04/2024 19:18:29 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 19:18:29 Asserv       INFO     Thread receive_data started
+30/04/2024 19:18:29 Asserv       INFO     Asserv initialized.
+30/04/2024 19:18:30 LidarScan    INFO     Lidar initialized.
+30/04/2024 19:18:58 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 19:18:58 __main__     INFO     Initialisation du JSON
+30/04/2024 19:18:58 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 19:18:58 Asserv       INFO     Thread receive_data started
+30/04/2024 19:18:58 Asserv       INFO     Asserv initialized.
+30/04/2024 19:18:58 LidarScan    INFO     Lidar initialized.
+30/04/2024 19:19:36 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 19:19:36 __main__     INFO     Initialisation du JSON
+30/04/2024 19:19:36 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 19:19:36 Asserv       INFO     Thread receive_data started
+30/04/2024 19:19:36 Asserv       INFO     Asserv initialized.
+30/04/2024 19:19:37 LidarScan    INFO     Lidar initialized.
+30/04/2024 19:21:51 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 19:21:51 __main__     INFO     Initialisation du JSON
+30/04/2024 19:21:51 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 19:21:51 Asserv       INFO     Thread receive_data started
+30/04/2024 19:21:51 Asserv       INFO     Asserv initialized.
+30/04/2024 19:21:52 LidarScan    INFO     Lidar initialized.
+30/04/2024 19:40:51 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 19:40:51 __main__     INFO     Initialisation du JSON
+30/04/2024 19:40:51 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 19:40:51 Asserv       INFO     Thread receive_data started
+30/04/2024 19:40:51 Asserv       INFO     Asserv initialized.
+30/04/2024 19:40:51 LidarScan    INFO     Lidar initialized.
+30/04/2024 19:43:54 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 19:43:54 __main__     INFO     Initialisation du JSON
+30/04/2024 19:43:54 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 19:43:54 Asserv       INFO     Thread receive_data started
+30/04/2024 19:43:54 Asserv       INFO     Asserv initialized.
+30/04/2024 19:43:54 LidarScan    INFO     Lidar initialized.
+30/04/2024 19:45:35 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 19:45:35 __main__     INFO     Initialisation du JSON
+30/04/2024 19:45:35 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 19:45:35 Asserv       INFO     Thread receive_data started
+30/04/2024 19:45:35 Asserv       INFO     Asserv initialized.
+30/04/2024 19:45:35 LidarScan    INFO     Lidar initialized.
+30/04/2024 19:46:21 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 19:46:21 __main__     INFO     Initialisation du JSON
+30/04/2024 19:46:21 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 19:46:21 Asserv       INFO     Thread receive_data started
+30/04/2024 19:46:21 Asserv       INFO     Asserv initialized.
+30/04/2024 19:46:21 LidarScan    INFO     Lidar initialized.
+30/04/2024 19:47:23 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 19:47:23 __main__     INFO     Initialisation du JSON
+30/04/2024 19:47:23 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 19:47:23 Asserv       INFO     Thread receive_data started
+30/04/2024 19:47:23 Asserv       INFO     Asserv initialized.
+30/04/2024 19:47:23 LidarScan    INFO     Lidar initialized.
+30/04/2024 19:51:27 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 19:51:27 __main__     INFO     Initialisation du JSON
+30/04/2024 19:51:27 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 19:51:27 Asserv       INFO     Thread receive_data started
+30/04/2024 19:51:27 Asserv       INFO     Asserv initialized.
+30/04/2024 19:51:28 LidarScan    INFO     Lidar initialized.
+30/04/2024 19:52:17 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 19:52:17 __main__     INFO     Initialisation du JSON
+30/04/2024 19:52:17 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 19:52:17 Asserv       INFO     Thread receive_data started
+30/04/2024 19:52:17 Asserv       INFO     Asserv initialized.
+30/04/2024 19:52:17 LidarScan    INFO     Lidar initialized.
+30/04/2024 19:56:41 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 19:56:41 __main__     INFO     Initialisation du JSON
+30/04/2024 19:56:41 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 19:56:41 Asserv       INFO     Thread receive_data started
+30/04/2024 19:56:41 Asserv       INFO     Asserv initialized.
+30/04/2024 19:56:42 LidarScan    INFO     Lidar initialized.
+30/04/2024 20:09:15 __main__     INFO     Initialisation broche GPIO Jack
+30/04/2024 20:09:15 __main__     INFO     Initialisation du JSON
+30/04/2024 20:09:15 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+30/04/2024 20:09:15 Asserv       INFO     Thread receive_data started
+30/04/2024 20:09:15 Asserv       INFO     Asserv initialized.
+30/04/2024 20:09:15 LidarScan    INFO     Lidar initialized.

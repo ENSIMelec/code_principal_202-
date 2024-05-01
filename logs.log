@@ -14383,3 +14383,137 @@
 30/04/2024 20:09:15 Asserv       INFO     Thread receive_data started
 30/04/2024 20:09:15 Asserv       INFO     Asserv initialized.
 30/04/2024 20:09:15 LidarScan    INFO     Lidar initialized.
+01/05/2024 16:34:02 __main__     INFO     Test
+01/05/2024 16:34:02 __main__     INFO     Test2
+01/05/2024 16:34:02 __main__     INFO     Test3
+01/05/2024 16:34:02 __main__     INFO     Test4
+01/05/2024 16:41:17 __main__     INFO     Test
+01/05/2024 16:41:17 __main__     INFO     Test2
+01/05/2024 16:41:17 __main__     INFO     Test3
+01/05/2024 16:41:17 __main__     INFO     Test4
+01/05/2024 16:41:22 __main__     INFO     Test5
+01/05/2024 16:42:36 __main__     INFO     Test
+01/05/2024 16:42:36 __main__     INFO     Test2
+01/05/2024 16:42:36 __main__     INFO     Test3
+01/05/2024 16:42:36 __main__     INFO     Test4
+01/05/2024 16:42:39 __main__     INFO     Test5
+01/05/2024 16:42:40 __main__     INFO     Test6
+01/05/2024 16:43:04 __main__     INFO     Test6
+01/05/2024 16:43:18 __main__     INFO     Test6
+01/05/2024 16:43:24 __main__     INFO     Test6
+01/05/2024 16:43:29 __main__     INFO     Test6
+01/05/2024 16:43:36 __main__     INFO     Test6
+01/05/2024 17:02:20 __main__     INFO     Début initialisation TeamSelectionPage
+01/05/2024 17:02:20 __main__     INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 17:02:20 __main__     INFO     Fin initialisation MainApplication
+01/05/2024 17:02:23 __main__     INFO     Equipe sélectionnée: Jaune
+01/05/2024 17:02:23 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 17:02:25 __main__     INFO     Stratégie sélectionnée: 1 en couleur Jaune
+01/05/2024 17:02:25 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 17:02:45 __main__     INFO     Stratégie sélectionnée: 4 en couleur Jaune
+01/05/2024 17:02:45 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 17:02:50 __main__     INFO     Début initialisation TeamSelectionPage
+01/05/2024 17:02:50 __main__     INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 17:02:50 __main__     INFO     Fin initialisation MainApplication
+01/05/2024 17:02:52 __main__     INFO     Equipe sélectionnée: Bleue
+01/05/2024 17:02:52 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 17:02:54 __main__     INFO     Stratégie sélectionnée: 4 en couleur Bleue
+01/05/2024 17:02:54 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 17:29:47 __main__     INFO     Début initialisation TeamSelectionPage
+01/05/2024 17:29:47 __main__     INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 17:29:47 __main__     INFO     Fin initialisation MainApplication
+01/05/2024 17:29:49 __main__     INFO     Equipe sélectionnée: Bleue
+01/05/2024 17:29:49 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 17:29:50 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°3 Bleue.json en couleur Bleue
+01/05/2024 17:29:50 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 17:29:56 __main__     INFO     Retour à la sélection de stratégie
+01/05/2024 17:29:57 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°1 Bleue.json en couleur Bleue
+01/05/2024 17:29:57 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 17:30:10 __main__     INFO     Début initialisation TeamSelectionPage
+01/05/2024 17:30:10 __main__     INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 17:30:10 __main__     INFO     Fin initialisation MainApplication
+01/05/2024 17:30:12 __main__     INFO     Equipe sélectionnée: Bleue
+01/05/2024 17:30:12 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 17:30:14 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°1 Bleue.json en couleur Bleue
+01/05/2024 17:30:14 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 17:30:16 __main__     INFO     Retour à la sélection de stratégie
+01/05/2024 17:30:16 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°4 Bleue.json en couleur Bleue
+01/05/2024 17:30:17 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 17:30:17 __main__     INFO     Retour à la sélection de stratégie
+01/05/2024 17:30:19 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°4 Bleue.json en couleur Bleue
+01/05/2024 17:30:19 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 17:30:21 __main__     INFO     Retour à la sélection de stratégie
+01/05/2024 17:39:17 __main__     INFO     Début initialisation TeamSelectionPage
+01/05/2024 17:39:17 __main__     INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 17:39:17 __main__     INFO     Fin initialisation MainApplication
+01/05/2024 17:39:19 __main__     INFO     Equipe sélectionnée: Bleue
+01/05/2024 17:39:19 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 17:39:21 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°4 Bleue.json en couleur Bleue
+01/05/2024 17:39:21 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 17:39:23 __main__     INFO     Retour à la sélection de stratégie
+01/05/2024 17:39:27 __main__     INFO     Retour à la sélection d'équipe
+01/05/2024 17:39:28 __main__     INFO     Equipe sélectionnée: Jaune
+01/05/2024 17:39:29 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 17:39:30 __main__     INFO     Retour à la sélection d'équipe
+01/05/2024 17:39:31 __main__     INFO     Equipe sélectionnée: Bleue
+01/05/2024 17:39:31 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 17:40:03 __main__     INFO     Début initialisation TeamSelectionPage
+01/05/2024 17:40:03 __main__     INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 17:40:03 __main__     INFO     Fin initialisation MainApplication
+01/05/2024 17:40:05 __main__     INFO     Equipe sélectionnée: Jaune
+01/05/2024 17:40:06 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°4 Jaune.json en couleur Jaune
+01/05/2024 17:40:06 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 17:40:08 __main__     INFO     Retour à la sélection de stratégie
+01/05/2024 17:46:51 __main__     INFO     Début initialisation TeamSelectionPage
+01/05/2024 17:46:51 __main__     INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 17:46:51 __main__     INFO     Fin initialisation MainApplication
+01/05/2024 17:46:53 __main__     INFO     Equipe sélectionnée: Bleue
+01/05/2024 17:46:53 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 17:47:09 __main__     INFO     Début initialisation TeamSelectionPage
+01/05/2024 17:47:09 __main__     INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 17:47:09 __main__     INFO     Fin initialisation MainApplication
+01/05/2024 17:47:11 __main__     INFO     Equipe sélectionnée: Jaune
+01/05/2024 17:47:11 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 17:47:36 __main__     INFO     Début initialisation TeamSelectionPage
+01/05/2024 17:47:36 __main__     INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 17:47:36 __main__     INFO     Fin initialisation MainApplication
+01/05/2024 17:47:43 __main__     INFO     Equipe sélectionnée: Bleue
+01/05/2024 17:47:46 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°4 Bleue.json en couleur Bleue
+01/05/2024 17:47:46 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 17:47:48 __main__     INFO     Retour à la sélection de stratégie
+01/05/2024 17:49:24 __main__     INFO     Début initialisation TeamSelectionPage
+01/05/2024 17:49:24 __main__     INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 17:49:24 __main__     INFO     Fin initialisation MainApplication
+01/05/2024 17:49:26 __main__     INFO     Equipe sélectionnée: Bleue
+01/05/2024 17:49:26 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 17:49:28 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°4 Bleue.json en couleur Bleue
+01/05/2024 17:49:28 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 17:49:30 __main__     INFO     Retour à la sélection de stratégie
+01/05/2024 17:49:33 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°4 Bleue.json en couleur Bleue
+01/05/2024 17:49:33 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 17:49:34 __main__     INFO     Retour à la sélection de stratégie
+01/05/2024 17:59:33 __main__     INFO     Début initialisation TeamSelectionPage
+01/05/2024 17:59:33 __main__     INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 17:59:33 __main__     INFO     Fin initialisation MainApplication
+01/05/2024 17:59:35 __main__     INFO     Equipe sélectionnée: Bleue
+01/05/2024 17:59:35 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 17:59:36 __main__     INFO     Retour à la sélection d'équipe
+01/05/2024 17:59:37 __main__     INFO     Equipe sélectionnée: Bleue
+01/05/2024 17:59:37 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 17:59:38 __main__     INFO     Retour à la sélection d'équipe
+01/05/2024 17:59:39 __main__     INFO     Equipe sélectionnée: Bleue
+01/05/2024 17:59:39 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 17:59:41 __main__     INFO     Retour à la sélection d'équipe
+01/05/2024 17:59:43 __main__     INFO     Equipe sélectionnée: Jaune
+01/05/2024 17:59:43 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 17:59:44 __main__     INFO     Retour à la sélection d'équipe
+01/05/2024 17:59:45 __main__     INFO     Equipe sélectionnée: Bleue
+01/05/2024 17:59:45 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 17:59:48 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°2 Bleue.json en couleur Bleue
+01/05/2024 17:59:48 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 17:59:50 __main__     INFO     Retour à la sélection de stratégie
+01/05/2024 17:59:51 __main__     INFO     Retour à la sélection d'équipe
+01/05/2024 17:59:52 __main__     INFO     Equipe sélectionnée: Jaune
+01/05/2024 17:59:52 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 17:59:53 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°1 Jaune.json en couleur Jaune
+01/05/2024 17:59:53 __main__     INFO     Fin initialisation StepsSelectionPage

@@ -5,10 +5,22 @@ import time
 import threading
 from LidarScan import LidarScanner
 from Globals_Variables import *
-
 import logging
 import logging.config
+import signal
+import sys
 
+# Fonction de gestionnaire de signal
+def signal_handler(sig, frame, lidar_scanner, asserv):
+    logger.warning("Vous avez appuyé sur Ctrl+C ou STOP via l'interface !")
+    # Arrêter les moteurs
+    logger.info("Arrêt des moteurs")
+    asserv.stopmove()
+    # Arrêter le scanner Lidar
+    logger.info("Arrêt du scanner Lidar")
+    lidar_scanner.stop_lidarScan()
+
+    sys.exit(0)
 
 # Fonction pour lire et traiter le JSON
 def init_json(json_file):
@@ -61,6 +73,10 @@ def main():
     logger.info("Don de asserv à Lidar")
     lidar_scanner.set_asserv_obj(dic_class['Asserv'])
      
+    # Définir le gestionnaire de signal pour SIGINT et SIGTERM
+    signal.signal(signal.SIGINT, lambda sig, frame: signal_handler(sig, frame, lidar_scanner,dic_class['Asserv']))
+    signal.signal(signal.SIGTERM, lambda sig, frame: signal_handler(sig, frame, lidar_scanner,dic_class['Asserv']))
+
     
     # Vérifier si le jack est retiré avant de démarrer le robot
     logger.info("Wainting for jack removal...")

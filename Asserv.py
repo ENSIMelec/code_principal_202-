@@ -7,7 +7,7 @@ import logging
 import logging.config
 
 class Asserv:
-    def __init__(self, port=STM32_SERIAL, baudrate=115200, buffer_size=1024):
+    def __init__(self, port=STM32_SERIAL, baudrate=115200, buffer_size=512):
 
         # Charger la configuration de logging
         logging.config.fileConfig(LOGS_CONF_PATH)
@@ -55,9 +55,32 @@ class Asserv:
         self.thread_readSerial = threading.Thread(target=self.receive_data)
         self.thread_readSerial.daemon = True
         self.thread_readSerial.start()
+
+        command = "asserv Z\n" #J'envoie Z à la STM pour quelle sache que je suis prêt
+        self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : Z")
+
         self.logger.info("Asserv initialized.")
         self.signeLidar = 1
+
+    def action_ok_receive(self):
+        command = "asserv Z\n"
+        self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : Z")
+        return True
     
+    def debug_enable():
+        command = "asserv debug enable\n"
+        self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : debug enable")
+        return True
+    
+    def debug_disable():
+        command = "asserv debug disable\n"
+        self.serial.write(command.encode())
+        self.logger.info("Commande envoyé : debug disable")
+        return True
+
     def enable(self): # enable de tout l'asservissement
         command = "asserv enable all\n"
         self.serial.write(command.encode())
@@ -157,6 +180,7 @@ class Asserv:
         self.logger.info(f"Commande envoyé : goto {x} {y} {vitesse}")
         while (not self.action_ok):
             continue
+        self.action_ok_receive()
         return True
     
     def rotate(self, angle): # simple rotation de l'angle en degrée
@@ -166,6 +190,7 @@ class Asserv:
         self.logger.info(f"Commande envoyé : rotate {angle}")
         while (not self.action_ok):
             continue
+        self.action_ok_receive()
         return True
     
     def moveof(self, distance, vitesse=500): # simple avance de distance en mm à une certaine vitesse par défault = 500
@@ -179,6 +204,7 @@ class Asserv:
         self.logger.info(f"Commande envoyé : moveof {distance} {vitesse}")
         while (not self.action_ok):
             continue
+        self.action_ok_receive()
         return True
     
     def stopmove(self): # stopper le mouvement (détection d'obstacle)

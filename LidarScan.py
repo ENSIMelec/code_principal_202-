@@ -22,7 +22,6 @@ class LidarScanner:
         self.lidar = RPLidar(None, self.port_name, timeout=5)
         self.detection = False
         self.logger.info("Lidar initialized.")
-        self.asserv = Asserv()
         
 
     def set_pwm(self, value):
@@ -40,10 +39,9 @@ class LidarScanner:
                     y_coordinate = (distance + ORIGIN_LIDAR) * math.sin(angle_radians)
                     
                     if (-200 <= y_coordinate <= 200) and (50 < x_coordinate < 650) and (quality > 10): # Filtering by deadzone distance
-                        self.logger.info(f"Object detected in the deadzone at {distance} mm (x)! {angle}°")
+                        self.logger.info(f"Object detected in the deadzone at {distance} mm (x)! {angle}°. {quality}")
                         if not self.detection:
                             self.asserv.stopmove()
-                        print(f"something detected at {distance} mm. {angle}°. {quality}")
                         self.detection = True
                         self.logger.info("Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°")
                         self.time_detect = time.time()

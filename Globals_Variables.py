@@ -7,3 +7,4 @@ ORIGIN_LIDAR = 72.5/2
 DELAY = 0.2
 restart = False
 bypass = False
+LOGS_CONF_PATH = "/home/pi/code_principal_2024/logs.conf"

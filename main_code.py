@@ -54,7 +54,7 @@ def main():
 
     # Initialisation avec le JSON
     logger.info("Initialisation du JSON")
-    dic_class, data = init_json("StrategieBleu.json")
+    dic_class, data = init_json("/home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/STRATEGIE/STRATEGIE.json")
 
     logger.info("Initialisation du Lidar")
     lidar_scanner = LidarScanner()
@@ -99,8 +99,8 @@ def main():
 
 if __name__ == "__main__":
     # Charger la configuration de logging
-    logging.config.fileConfig('logs.conf')
+    logging.config.fileConfig(LOGS_CONF_PATH)
 
     # Créer un logger
-    logger = logging.getLogger(__name__)
+    logger = logging.getLogger("main_code")
     main()

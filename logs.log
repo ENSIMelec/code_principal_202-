@@ -14517,3 +14517,273 @@
 01/05/2024 17:59:52 __main__     INFO     Fin initialisation StrategySelectionPage
 01/05/2024 17:59:53 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°1 Jaune.json en couleur Jaune
 01/05/2024 17:59:53 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 18:17:14 __main__     INFO     Début initialisation TeamSelectionPage
+01/05/2024 18:17:14 __main__     INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 18:17:14 __main__     INFO     Fin initialisation MainApplication
+01/05/2024 18:17:16 __main__     INFO     Equipe sélectionnée: Bleue
+01/05/2024 18:17:16 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 18:17:24 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°StrategieHomologation.json Bleue.json en couleur Bleue
+01/05/2024 18:18:27 __main__     INFO     Début initialisation TeamSelectionPage
+01/05/2024 18:18:27 __main__     INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 18:18:27 __main__     INFO     Fin initialisation MainApplication
+01/05/2024 18:18:29 __main__     INFO     Equipe sélectionnée: Bleue
+01/05/2024 18:18:29 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 18:18:53 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°StrategieHomologation.json Bleue.json en couleur Bleue
+01/05/2024 18:18:53 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°StrategieHomologation.json Bleue.json en couleur Bleue
+01/05/2024 18:18:53 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°StrategieHomologation.json Bleue.json en couleur Bleue
+01/05/2024 18:18:54 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°StratPanneauBleu.json Bleue.json en couleur Bleue
+01/05/2024 18:18:54 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°StratPanneauBleu.json Bleue.json en couleur Bleue
+01/05/2024 18:18:55 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°exemple.json Bleue.json en couleur Bleue
+01/05/2024 18:18:55 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°StrategieBleu.json Bleue.json en couleur Bleue
+01/05/2024 18:18:56 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°StrategieBleu.json Bleue.json en couleur Bleue
+01/05/2024 18:18:57 __main__     INFO     Retour à la sélection d'équipe
+01/05/2024 18:18:58 __main__     INFO     Equipe sélectionnée: Jaune
+01/05/2024 18:18:58 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 18:19:00 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°StrategieBleu.json Jaune.json en couleur Jaune
+01/05/2024 18:19:00 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°exemple.json Jaune.json en couleur Jaune
+01/05/2024 18:19:00 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°StratPanneauBleu.json Jaune.json en couleur Jaune
+01/05/2024 18:19:00 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/Stratégie N°StrategieHomologation.json Jaune.json en couleur Jaune
+01/05/2024 18:19:02 __main__     INFO     Retour à la sélection d'équipe
+01/05/2024 18:22:56 __main__     INFO     Début initialisation TeamSelectionPage
+01/05/2024 18:22:56 __main__     INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 18:22:56 __main__     INFO     Fin initialisation MainApplication
+01/05/2024 18:22:59 __main__     INFO     Equipe sélectionnée: Bleue
+01/05/2024 18:22:59 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 18:23:00 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Bleue
+01/05/2024 18:23:00 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 18:23:04 __main__     INFO     Retour à la sélection de stratégie
+01/05/2024 18:23:15 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/StrategieHomologation.json en couleur Bleue
+01/05/2024 18:23:16 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 18:23:17 __main__     INFO     Retour à la sélection de stratégie
+01/05/2024 18:23:28 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/StrategieHomologation.json en couleur Bleue
+01/05/2024 18:23:28 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 18:23:30 __main__     INFO     Retour à la sélection de stratégie
+01/05/2024 18:23:37 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/StrategieBleu.json en couleur Bleue
+01/05/2024 18:23:37 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 18:23:40 __main__     INFO     Retour à la sélection de stratégie
+01/05/2024 18:23:42 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Bleue
+01/05/2024 18:23:42 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 18:23:54 __main__     INFO     Retour à la sélection de stratégie
+01/05/2024 18:23:59 __main__     INFO     Retour à la sélection d'équipe
+01/05/2024 18:24:01 __main__     INFO     Equipe sélectionnée: Jaune
+01/05/2024 18:24:01 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 18:24:02 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Jaune
+01/05/2024 18:24:02 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 18:24:05 __main__     INFO     Retour à la sélection de stratégie
+01/05/2024 18:24:06 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/StrategieHomologation.json en couleur Jaune
+01/05/2024 18:24:07 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 18:38:44 __main__     INFO     Début initialisation TeamSelectionPage
+01/05/2024 18:38:44 __main__     INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 18:38:44 __main__     INFO     Fin initialisation MainApplication
+01/05/2024 18:38:52 __main__     INFO     Equipe sélectionnée: Bleue
+01/05/2024 18:38:52 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 18:38:53 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Bleue
+01/05/2024 18:38:53 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 18:45:11 __main__     INFO     Début initialisation TeamSelectionPage
+01/05/2024 18:45:11 __main__     INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 18:45:11 __main__     INFO     Fin initialisation MainApplication
+01/05/2024 18:45:12 __main__     INFO     Equipe sélectionnée: Bleue
+01/05/2024 18:45:12 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 18:45:13 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Bleue
+01/05/2024 18:45:14 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 18:45:15 __main__     INFO     Lancement du programme principal
+01/05/2024 18:47:04 __main__     INFO     Début initialisation TeamSelectionPage
+01/05/2024 18:47:04 __main__     INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 18:47:04 __main__     INFO     Fin initialisation MainApplication
+01/05/2024 18:47:07 __main__     INFO     Equipe sélectionnée: Bleue
+01/05/2024 18:47:07 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 18:47:08 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Bleue
+01/05/2024 18:47:08 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 18:47:09 __main__     INFO     Lancement du programme principal
+01/05/2024 18:48:18 __main__     INFO     Initialisation broche GPIO Jack
+01/05/2024 18:48:18 __main__     INFO     Initialisation du JSON
+01/05/2024 18:48:18 __main__     INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+01/05/2024 18:48:25 __main__     INFO     Début initialisation TeamSelectionPage
+01/05/2024 18:48:25 __main__     INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 18:48:25 __main__     INFO     Fin initialisation MainApplication
+01/05/2024 18:48:28 __main__     INFO     Equipe sélectionnée: Bleue
+01/05/2024 18:48:28 __main__     INFO     Fin initialisation StrategySelectionPage
+01/05/2024 18:48:29 __main__     INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Bleue
+01/05/2024 18:48:29 __main__     INFO     Fin initialisation StepsSelectionPage
+01/05/2024 18:48:30 __main__     INFO     Lancement du programme principal
+01/05/2024 18:49:55 main_code    INFO     Initialisation broche GPIO Jack
+01/05/2024 18:49:55 main_code    INFO     Initialisation du JSON
+01/05/2024 18:49:55 main_code    INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+01/05/2024 18:50:08 Interface    INFO     Début initialisation TeamSelectionPage
+01/05/2024 18:50:08 Interface    INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 18:50:08 Interface    INFO     Fin initialisation MainApplication
+01/05/2024 18:50:13 Interface    INFO     Equipe sélectionnée: Bleue
+01/05/2024 18:50:14 Interface    INFO     Fin initialisation StrategySelectionPage
+01/05/2024 18:50:15 Interface    INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Bleue
+01/05/2024 18:50:15 Interface    INFO     Fin initialisation StepsSelectionPage
+01/05/2024 18:50:18 Interface    INFO     Lancement du programme principal
+01/05/2024 18:53:22 Interface    INFO     Début initialisation TeamSelectionPage
+01/05/2024 18:53:22 Interface    INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 18:53:22 Interface    INFO     Fin initialisation MainApplication
+01/05/2024 18:53:26 Interface    INFO     Equipe sélectionnée: Bleue
+01/05/2024 18:53:26 Interface    INFO     Fin initialisation StrategySelectionPage
+01/05/2024 18:53:27 Interface    INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Bleue
+01/05/2024 18:53:27 Interface    INFO     Fin initialisation StepsSelectionPage
+01/05/2024 18:53:28 Interface    INFO     Lancement du programme principal
+01/05/2024 19:26:10 Interface    INFO     Début initialisation TeamSelectionPage
+01/05/2024 19:26:10 Interface    INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 19:26:10 Interface    INFO     Fin initialisation MainApplication
+01/05/2024 19:26:21 Interface    INFO     Equipe sélectionnée: Bleue
+01/05/2024 19:26:21 Interface    INFO     Fin initialisation StrategySelectionPage
+01/05/2024 19:26:26 Interface    INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/StratPanneauBleu.json en couleur Bleue
+01/05/2024 19:26:26 Interface    INFO     Fin initialisation StepsSelectionPage
+01/05/2024 19:26:29 Interface    INFO     Retour à la sélection de stratégie
+01/05/2024 19:26:30 Interface    INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Bleue
+01/05/2024 19:26:30 Interface    INFO     Fin initialisation StepsSelectionPage
+01/05/2024 19:26:31 Interface    INFO     Lancement du programme principal
+01/05/2024 19:26:31 main_code    INFO     Initialisation broche GPIO Jack
+01/05/2024 19:26:31 main_code    INFO     Initialisation du JSON
+01/05/2024 19:26:31 main_code    INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+01/05/2024 19:26:52 Interface    INFO     Début initialisation TeamSelectionPage
+01/05/2024 19:26:52 Interface    INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 19:26:52 Interface    INFO     Fin initialisation MainApplication
+01/05/2024 19:26:55 Interface    INFO     Equipe sélectionnée: Bleue
+01/05/2024 19:26:55 Interface    INFO     Fin initialisation StrategySelectionPage
+01/05/2024 19:26:59 Interface    INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Bleue
+01/05/2024 19:26:59 Interface    INFO     Fin initialisation StepsSelectionPage
+01/05/2024 19:27:02 Interface    INFO     Retour à la sélection de stratégie
+01/05/2024 19:27:06 Interface    INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Bleue
+01/05/2024 19:27:06 Interface    INFO     Fin initialisation StepsSelectionPage
+01/05/2024 19:27:09 Interface    INFO     Lancement du programme principal
+01/05/2024 19:27:10 main_code    INFO     Initialisation broche GPIO Jack
+01/05/2024 19:27:10 main_code    INFO     Initialisation du JSON
+01/05/2024 19:27:10 main_code    INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+01/05/2024 19:27:55 Interface    INFO     Arrêt du programme principal
+01/05/2024 19:27:58 Interface    INFO     Lancement du programme principal
+01/05/2024 19:27:58 main_code    INFO     Initialisation broche GPIO Jack
+01/05/2024 19:27:58 main_code    INFO     Initialisation du JSON
+01/05/2024 19:27:58 main_code    INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+01/05/2024 19:28:03 Interface    INFO     Arrêt du programme principal
+01/05/2024 19:30:04 Interface    INFO     Début initialisation TeamSelectionPage
+01/05/2024 19:30:04 Interface    INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 19:30:04 Interface    INFO     Fin initialisation MainApplication
+01/05/2024 19:30:09 Interface    INFO     Equipe sélectionnée: Bleue
+01/05/2024 19:30:09 Interface    INFO     Fin initialisation StrategySelectionPage
+01/05/2024 19:30:10 Interface    INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Bleue
+01/05/2024 19:30:10 Interface    INFO     Fin initialisation StepsSelectionPage
+01/05/2024 19:30:11 Interface    INFO     Lancement du programme principal
+01/05/2024 19:30:11 main_code    INFO     Initialisation broche GPIO Jack
+01/05/2024 19:30:11 main_code    INFO     Initialisation du JSON
+01/05/2024 19:30:11 main_code    INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+01/05/2024 19:30:11 Asserv       INFO     Thread receive_data started
+01/05/2024 19:30:11 Asserv       INFO     Asserv initialized.
+01/05/2024 19:30:11 Lidarscan    INFO     Lidar initialized.
+01/05/2024 19:31:29 Interface    INFO     Début initialisation TeamSelectionPage
+01/05/2024 19:31:29 Interface    INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 19:31:29 Interface    INFO     Fin initialisation MainApplication
+01/05/2024 19:31:31 Interface    INFO     Equipe sélectionnée: Bleue
+01/05/2024 19:31:31 Interface    INFO     Fin initialisation StrategySelectionPage
+01/05/2024 19:31:32 Interface    INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Bleue
+01/05/2024 19:31:32 Interface    INFO     Fin initialisation StepsSelectionPage
+01/05/2024 19:31:33 Interface    INFO     Lancement du programme principal
+01/05/2024 19:31:33 main_code    INFO     Initialisation broche GPIO Jack
+01/05/2024 19:31:33 main_code    INFO     Initialisation du JSON
+01/05/2024 19:31:33 main_code    INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+01/05/2024 19:31:33 Asserv       INFO     Thread receive_data started
+01/05/2024 19:31:33 Asserv       INFO     Asserv initialized.
+01/05/2024 19:31:33 Asserv       WARNING  receive_data wrong data format...
+01/05/2024 19:31:33 Lidarscan    INFO     Lidar initialized.
+01/05/2024 19:33:32 Interface    INFO     Début initialisation TeamSelectionPage
+01/05/2024 19:33:32 Interface    INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 19:33:32 Interface    INFO     Fin initialisation MainApplication
+01/05/2024 19:33:36 Interface    INFO     Equipe sélectionnée: Bleue
+01/05/2024 19:33:36 Interface    INFO     Fin initialisation StrategySelectionPage
+01/05/2024 19:33:37 Interface    INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Bleue
+01/05/2024 19:33:37 Interface    INFO     Fin initialisation StepsSelectionPage
+01/05/2024 19:33:39 Interface    INFO     Lancement du programme principal
+01/05/2024 19:33:39 main_code    INFO     Initialisation broche GPIO Jack
+01/05/2024 19:33:39 main_code    INFO     Initialisation du JSON
+01/05/2024 19:33:39 main_code    INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+01/05/2024 19:33:39 Asserv       INFO     Thread receive_data started
+01/05/2024 19:33:39 Asserv       INFO     Asserv initialized.
+01/05/2024 19:33:39 Lidarscan    INFO     Lidar initialized.
+01/05/2024 19:34:11 Interface    INFO     Début initialisation TeamSelectionPage
+01/05/2024 19:34:11 Interface    INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 19:34:11 Interface    INFO     Fin initialisation MainApplication
+01/05/2024 19:34:14 Interface    INFO     Equipe sélectionnée: Jaune
+01/05/2024 19:34:14 Interface    INFO     Fin initialisation StrategySelectionPage
+01/05/2024 19:34:19 Interface    INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Jaune
+01/05/2024 19:34:19 Interface    INFO     Fin initialisation StepsSelectionPage
+01/05/2024 19:34:21 Interface    INFO     Lancement du programme principal
+01/05/2024 19:34:21 main_code    INFO     Initialisation broche GPIO Jack
+01/05/2024 19:34:21 main_code    INFO     Initialisation du JSON
+01/05/2024 19:34:21 main_code    INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+01/05/2024 19:34:21 Asserv       INFO     Thread receive_data started
+01/05/2024 19:34:21 Asserv       INFO     Asserv initialized.
+01/05/2024 19:34:21 Lidarscan    INFO     Lidar initialized.
+01/05/2024 19:34:52 Interface    INFO     Début initialisation TeamSelectionPage
+01/05/2024 19:34:52 Interface    INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 19:34:52 Interface    INFO     Fin initialisation MainApplication
+01/05/2024 19:34:55 Interface    INFO     Equipe sélectionnée: Bleue
+01/05/2024 19:34:55 Interface    INFO     Fin initialisation StrategySelectionPage
+01/05/2024 19:34:56 Interface    INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Bleue
+01/05/2024 19:34:56 Interface    INFO     Fin initialisation StepsSelectionPage
+01/05/2024 19:34:58 Interface    INFO     Lancement du programme principal
+01/05/2024 19:34:58 main_code    INFO     Initialisation broche GPIO Jack
+01/05/2024 19:34:58 main_code    INFO     Initialisation du JSON
+01/05/2024 19:34:58 main_code    INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+01/05/2024 19:34:58 Asserv       INFO     Thread receive_data started
+01/05/2024 19:34:58 Asserv       INFO     Asserv initialized.
+01/05/2024 19:34:58 Lidarscan    INFO     Lidar initialized.
+01/05/2024 19:35:46 Interface    INFO     Début initialisation TeamSelectionPage
+01/05/2024 19:35:46 Interface    INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 19:35:46 Interface    INFO     Fin initialisation MainApplication
+01/05/2024 19:35:48 Interface    INFO     Equipe sélectionnée: Jaune
+01/05/2024 19:35:48 Interface    INFO     Fin initialisation StrategySelectionPage
+01/05/2024 19:35:48 Interface    INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Jaune
+01/05/2024 19:35:49 Interface    INFO     Fin initialisation StepsSelectionPage
+01/05/2024 19:35:56 Interface    INFO     Lancement du programme principal
+01/05/2024 19:35:56 main_code    INFO     Initialisation broche GPIO Jack
+01/05/2024 19:35:56 main_code    INFO     Initialisation du JSON
+01/05/2024 19:35:56 main_code    INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+01/05/2024 19:35:56 Asserv       INFO     Thread receive_data started
+01/05/2024 19:35:56 Asserv       INFO     Asserv initialized.
+01/05/2024 19:36:26 Interface    INFO     Début initialisation TeamSelectionPage
+01/05/2024 19:36:26 Interface    INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 19:36:26 Interface    INFO     Fin initialisation MainApplication
+01/05/2024 19:36:27 Interface    INFO     Equipe sélectionnée: Bleue
+01/05/2024 19:36:27 Interface    INFO     Fin initialisation StrategySelectionPage
+01/05/2024 19:36:28 Interface    INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Bleue
+01/05/2024 19:36:28 Interface    INFO     Fin initialisation StepsSelectionPage
+01/05/2024 19:36:29 Interface    INFO     Lancement du programme principal
+01/05/2024 19:36:29 main_code    INFO     Initialisation broche GPIO Jack
+01/05/2024 19:36:30 main_code    INFO     Initialisation du JSON
+01/05/2024 19:36:30 main_code    INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+01/05/2024 19:36:30 Asserv       INFO     Thread receive_data started
+01/05/2024 19:36:30 Asserv       INFO     Asserv initialized.
+01/05/2024 19:36:30 Asserv       DEBUG    Data received: -9.33818
+01/05/2024 19:36:30 Lidarscan    INFO     Lidar initialized.
+01/05/2024 19:39:19 Interface    INFO     Début initialisation TeamSelectionPage
+01/05/2024 19:39:19 Interface    INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 19:39:19 Interface    INFO     Fin initialisation MainApplication
+01/05/2024 19:39:23 Interface    INFO     Equipe sélectionnée: Bleue
+01/05/2024 19:39:23 Interface    INFO     Fin initialisation StrategySelectionPage
+01/05/2024 19:39:24 Interface    INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Bleue
+01/05/2024 19:39:24 Interface    INFO     Fin initialisation StepsSelectionPage
+01/05/2024 19:39:25 Interface    INFO     Lancement du programme principal
+01/05/2024 19:39:25 main_code    INFO     Initialisation broche GPIO Jack
+01/05/2024 19:39:25 main_code    INFO     Initialisation du JSON
+01/05/2024 19:39:25 main_code    INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+01/05/2024 19:39:25 Asserv       INFO     Thread receive_data started
+01/05/2024 19:39:25 Asserv       INFO     Asserv initialized.
+01/05/2024 19:39:25 Asserv       WARNING  receive_data wrong data format...
+01/05/2024 19:39:25 Lidarscan    INFO     Lidar initialized.
+01/05/2024 19:40:49 Interface    INFO     Début initialisation TeamSelectionPage
+01/05/2024 19:40:49 Interface    INFO     Fin intitialisation TeamSelectionPage
+01/05/2024 19:40:49 Interface    INFO     Fin initialisation MainApplication
+01/05/2024 19:40:51 Interface    INFO     Equipe sélectionnée: Bleue
+01/05/2024 19:40:51 Interface    INFO     Fin initialisation StrategySelectionPage
+01/05/2024 19:40:53 Interface    INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Bleue
+01/05/2024 19:40:53 Interface    INFO     Fin initialisation StepsSelectionPage
+01/05/2024 19:40:55 Interface    INFO     Lancement du programme principal
+01/05/2024 19:40:56 main_code    INFO     Initialisation broche GPIO Jack
+01/05/2024 19:40:56 main_code    INFO     Initialisation du JSON
+01/05/2024 19:40:56 main_code    INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+01/05/2024 19:40:56 Asserv       INFO     Thread receive_data started
+01/05/2024 19:40:56 Asserv       INFO     Asserv initialized.
+01/05/2024 19:40:56 Lidarscan    INFO     Lidar initialized.

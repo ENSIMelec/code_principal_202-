@@ -12,10 +12,10 @@ class LidarScanner:
     def __init__(self): 
         
         # Charger la configuration de logging
-        logging.config.fileConfig('logs.conf')
+        logging.config.fileConfig(LOGS_CONF_PATH)
 
         # Créer un logger
-        self.logger = logging.getLogger(__name__)
+        self.logger = logging.getLogger("Lidarscan")
 
         self.port_name = LIDAR_SERIAL
         self.deadzone_distance = 500

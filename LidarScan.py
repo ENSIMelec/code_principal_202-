@@ -41,9 +41,9 @@ class LidarScanner:
                     if (-200 <= y_coordinate <= 200) and (50 < x_coordinate < 650) and (quality > 10): # Filtering by deadzone distance
                         self.logger.info(f"Object detected in the deadzone at {distance} mm (x)! {angle}°. {quality}")
                         if not self.detection:
+                            self.logger.warning(f"Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°")
                             self.asserv.stopmove()
                         self.detection = True
-                        self.logger.info("Stopping the robot. Object at {x_coordinate} mm (x) and {angle}°")
                         self.time_detect = time.time()
                             
                     elif (self.detection) and (time.time() - self.time_detect) > 0.5 :

@@ -69,13 +69,13 @@ class Asserv:
         self.logger.info("Commande envoyé : Z")
         return True
     
-    def debug_enable():
+    def debug_enable(self):
         command = "asserv debug enable\n"
         self.serial.write(command.encode())
         self.logger.info("Commande envoyé : debug enable")
         return True
     
-    def debug_disable():
+    def debug_disable(self):
         command = "asserv debug disable\n"
         self.serial.write(command.encode())
         self.logger.info("Commande envoyé : debug disable")

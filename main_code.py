@@ -112,11 +112,9 @@ def main():
         
     return 0
 
+# Charger la configuration de logging
+logging.config.fileConfig(LOGS_CONF_PATH)
 
-if __name__ == "__main__":
-    # Charger la configuration de logging
-    logging.config.fileConfig(LOGS_CONF_PATH)
-
-    # Créer un logger
-    logger = logging.getLogger("main_code")
-    main()
+# Créer un logger
+logger = logging.getLogger("main_code")
+main()

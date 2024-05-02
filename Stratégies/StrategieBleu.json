@@ -141,6 +141,41 @@
         "classe": "Asserv",
         "methode": "moveof",
         "arguments": [250]    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "moveof",
+        "arguments": [150,100]    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "rotate",
+        "arguments": [1]    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "moveof",
+        "arguments": [100,100]    
+    },
+    {
+        "classe": "AX12_Ascenceur",
+        "methode": "lower_for_plant",
+        "arguments": []    
+    },
+    {
+        "classe": "AX12_Pinces",
+        "methode": "open_pince",
+        "arguments": []    
+    },
+    {
+        "classe": "AX12_Ascenceur",
+        "methode": "elevate",
+        "arguments": []    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "moveof",
+        "arguments": [-200]    
     }
   ]
 }

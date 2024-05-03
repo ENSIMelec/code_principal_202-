@@ -8144,3 +8144,424 @@
 03/05/2024 05:05:04 Lidarscan    INFO     Lidar initialized.
 03/05/2024 05:05:04 Lidarscan    INFO     Setting PWM value to 512
 03/05/2024 05:05:15 Lidarscan    INFO     Stopping the lidar scan.
+03/05/2024 22:36:46 Interface    INFO     Début initialisation TeamSelectionPage
+03/05/2024 22:36:46 Interface    INFO     Fin intitialisation TeamSelectionPage
+03/05/2024 22:36:46 Interface    INFO     Fin initialisation MainApplication
+03/05/2024 22:41:23 Interface    INFO     Equipe sélectionnée: Bleue
+03/05/2024 22:41:23 Interface    INFO     Fin initialisation StrategySelectionPage
+03/05/2024 22:41:34 Interface    INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/StrategieBleu.json en couleur Bleue
+03/05/2024 22:41:34 Interface    INFO     Fin initialisation StepsSelectionPage
+03/05/2024 22:41:36 Interface    INFO     Lancement du programme principal
+03/05/2024 22:41:36 main_code    INFO     Initialisation broche GPIO Jack
+03/05/2024 22:41:36 main_code    INFO     Initialisation du JSON
+03/05/2024 22:41:44 Interface    INFO     Arrêt du programme principal
+03/05/2024 22:41:45 Interface    INFO     Lancement du programme principal
+03/05/2024 22:41:45 main_code    INFO     Initialisation broche GPIO Jack
+03/05/2024 22:41:45 main_code    INFO     Initialisation du JSON
+03/05/2024 22:41:47 Interface    INFO     Arrêt du programme principal
+03/05/2024 22:42:20 Interface    INFO     Retour à la sélection de stratégie
+03/05/2024 22:42:23 Interface    INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/StrategieBleu.json en couleur Bleue
+03/05/2024 22:42:23 Interface    INFO     Fin initialisation StepsSelectionPage
+03/05/2024 22:42:24 Interface    INFO     Lancement du programme principal
+03/05/2024 22:42:24 main_code    INFO     Initialisation broche GPIO Jack
+03/05/2024 22:42:24 main_code    INFO     Initialisation du JSON
+03/05/2024 22:42:25 Interface    INFO     Arrêt du programme principal
+03/05/2024 22:42:26 Interface    INFO     Retour à la sélection de stratégie
+03/05/2024 22:42:29 Interface    INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/exemple.json en couleur Bleue
+03/05/2024 22:42:29 Interface    INFO     Fin initialisation StepsSelectionPage
+03/05/2024 22:42:31 Interface    INFO     Retour à la sélection de stratégie
+03/05/2024 22:42:37 Interface    INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/StrategieBleu.json en couleur Bleue
+03/05/2024 22:42:37 Interface    INFO     Fin initialisation StepsSelectionPage
+03/05/2024 22:44:00 Interface    INFO     Début initialisation TeamSelectionPage
+03/05/2024 22:44:00 Interface    INFO     Fin intitialisation TeamSelectionPage
+03/05/2024 22:44:00 Interface    INFO     Fin initialisation MainApplication
+03/05/2024 22:44:02 Interface    INFO     Equipe sélectionnée: Bleue
+03/05/2024 22:44:02 Interface    INFO     Fin initialisation StrategySelectionPage
+03/05/2024 22:44:03 Interface    INFO     Stratégie sélectionnée: /home/pi/code_principal_2024/Stratégies/StrategieBleu.json en couleur Bleue
+03/05/2024 22:44:03 Interface    INFO     Fin initialisation StepsSelectionPage
+03/05/2024 22:44:08 Interface    INFO     Lancement du programme principal
+03/05/2024 22:44:09 main_code    INFO     Initialisation broche GPIO Jack
+03/05/2024 22:44:09 main_code    INFO     Initialisation du JSON
+03/05/2024 22:44:09 main_code    INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+03/05/2024 22:44:09 Asserv       INFO     Thread receive_data started
+03/05/2024 22:44:09 Asserv       INFO     Commande envoyé : Z
+03/05/2024 22:44:09 Asserv       INFO     Asserv initialized.
+03/05/2024 22:44:09 AX12_Control(Pince Droite) INFO     Port ouvert avec succès ID: 5
+03/05/2024 22:44:09 AX12_Control(Pince Droite) INFO     Vitesse du port modifiée avec succès à 9600 bps
+03/05/2024 22:44:09 AX12_Control(Pince Droite) INFO     Ping réussi. Numéro de modèle du Dynamixel : 12
+03/05/2024 22:44:09 AX12_Control(Pince Droite) INFO     Position réglée à 150 avec succès
+03/05/2024 22:44:09 AX12_Control(Bras Gauche) INFO     Port ouvert avec succès ID: 8
+03/05/2024 22:44:09 AX12_Control(Bras Gauche) INFO     Vitesse du port modifiée avec succès à 9600 bps
+03/05/2024 22:44:09 AX12_Control(Bras Gauche) INFO     Ping réussi. Numéro de modèle du Dynamixel : 12
+03/05/2024 22:44:09 AX12_Control(Bras Gauche) INFO     Vitesse réglée à 1023 avec succès
+03/05/2024 22:44:09 AX12_Control(Bras Gauche) INFO     Position réglée à 495 avec succès
+03/05/2024 22:44:09 AX12_Control(Ascenceur) INFO     Port ouvert avec succès ID: 6
+03/05/2024 22:44:09 AX12_Control(Ascenceur) INFO     Vitesse du port modifiée avec succès à 9600 bps
+03/05/2024 22:44:09 AX12_Control(Ascenceur) INFO     Ping réussi. Numéro de modèle du Dynamixel : 780
+03/05/2024 22:44:09 AX12_Control(Ascenceur) INFO     Limite d'angle: 0 à 1023 donc sens horaire (POV LED)
+03/05/2024 22:44:09 AX12_Control(Ascenceur) INFO     Position réglée à 970 avec succès
+03/05/2024 22:44:09 Lidarscan    INFO     Lidar initialized.
+03/05/2024 22:44:09 Lidarscan    INFO     Setting PWM value to 512
+03/05/2024 22:44:38 Lidarscan    INFO     Object detected in the deadzone at 149.75 mm (x)! 135.5625°. 15
+03/05/2024 22:44:38 Lidarscan    WARNING  Stopping the robot. Object at 132.80671523753588 mm (x) and 135.5625°
+03/05/2024 22:44:38 Lidarscan    INFO     Object detected in the deadzone at 142.5 mm (x)! 137.765625°. 14
+03/05/2024 22:44:38 Lidarscan    INFO     Object detected in the deadzone at 145.5 mm (x)! 134.640625°. 11
+03/05/2024 22:44:39 Lidarscan    INFO     Object detected in the deadzone at 152.75 mm (x)! 136.09375°. 15
+03/05/2024 22:44:39 Lidarscan    INFO     Object detected in the deadzone at 151.0 mm (x)! 135.8125°. 15
+03/05/2024 22:44:39 Lidarscan    INFO     Object detected in the deadzone at 143.0 mm (x)! 137.765625°. 15
+03/05/2024 22:44:39 Lidarscan    INFO     Object detected in the deadzone at 152.0 mm (x)! 135.75°. 15
+03/05/2024 22:44:39 Lidarscan    INFO     Object detected in the deadzone at 141.75 mm (x)! 139.25°. 13
+03/05/2024 22:44:40 Lidarscan    INFO     Object detected in the deadzone at 147.0 mm (x)! 134.9375°. 15
+03/05/2024 22:44:40 Lidarscan    INFO     Object detected in the deadzone at 152.25 mm (x)! 135.953125°. 15
+03/05/2024 22:44:40 Lidarscan    INFO     Object detected in the deadzone at 143.0 mm (x)! 138.46875°. 13
+03/05/2024 22:44:40 Lidarscan    INFO     Object detected in the deadzone at 149.5 mm (x)! 135.140625°. 15
+03/05/2024 22:44:40 Lidarscan    INFO     Object detected in the deadzone at 140.75 mm (x)! 137.59375°. 14
+03/05/2024 22:44:40 Lidarscan    INFO     Object detected in the deadzone at 149.25 mm (x)! 135.171875°. 15
+03/05/2024 22:44:41 Lidarscan    INFO     No more object. Restarting the robot.
+03/05/2024 22:44:41 Lidarscan    INFO     Object detected in the deadzone at 151.75 mm (x)! 135.71875°. 15
+03/05/2024 22:44:41 Lidarscan    WARNING  Stopping the robot. Object at 134.59319523403101 mm (x) and 135.71875°
+03/05/2024 22:44:41 Lidarscan    INFO     Object detected in the deadzone at 141.5 mm (x)! 139.328125°. 14
+03/05/2024 22:44:41 Lidarscan    INFO     Object detected in the deadzone at 148.5 mm (x)! 134.59375°. 12
+03/05/2024 22:44:41 Lidarscan    INFO     Object detected in the deadzone at 151.75 mm (x)! 135.78125°. 15
+03/05/2024 22:44:41 Lidarscan    INFO     Object detected in the deadzone at 142.75 mm (x)! 138.296875°. 13
+03/05/2024 22:44:42 Lidarscan    INFO     Object detected in the deadzone at 151.75 mm (x)! 135.671875°. 15
+03/05/2024 22:44:42 Lidarscan    INFO     Object detected in the deadzone at 142.75 mm (x)! 138.140625°. 12
+03/05/2024 22:44:42 Lidarscan    INFO     Object detected in the deadzone at 151.75 mm (x)! 135.71875°. 15
+03/05/2024 22:44:42 Lidarscan    INFO     Object detected in the deadzone at 142.75 mm (x)! 138.1875°. 12
+03/05/2024 22:44:42 Lidarscan    INFO     Object detected in the deadzone at 151.75 mm (x)! 135.71875°. 15
+03/05/2024 22:44:42 Lidarscan    INFO     Object detected in the deadzone at 141.75 mm (x)! 138.15625°. 15
+03/05/2024 22:44:42 Lidarscan    INFO     Object detected in the deadzone at 149.25 mm (x)! 135.15625°. 15
+03/05/2024 22:44:43 Lidarscan    INFO     Object detected in the deadzone at 150.25 mm (x)! 135.6875°. 15
+03/05/2024 22:44:43 Lidarscan    INFO     Object detected in the deadzone at 142.5 mm (x)! 137.78125°. 13
+03/05/2024 22:44:43 Lidarscan    INFO     No more object. Restarting the robot.
+03/05/2024 22:44:43 Lidarscan    INFO     Object detected in the deadzone at 147.75 mm (x)! 134.828125°. 15
+03/05/2024 22:44:43 Lidarscan    WARNING  Stopping the robot. Object at 129.71676799898356 mm (x) and 134.828125°
+03/05/2024 22:44:44 Lidarscan    INFO     Object detected in the deadzone at 147.75 mm (x)! 134.765625°. 15
+03/05/2024 22:44:44 Lidarscan    INFO     Object detected in the deadzone at 151.75 mm (x)! 135.6875°. 15
+03/05/2024 22:44:44 Lidarscan    INFO     Object detected in the deadzone at 141.75 mm (x)! 138.140625°. 15
+03/05/2024 22:44:44 Lidarscan    INFO     Object detected in the deadzone at 140.75 mm (x)! 139.625°. 11
+03/05/2024 22:44:44 Lidarscan    INFO     Object detected in the deadzone at 148.0 mm (x)! 134.859375°. 15
+03/05/2024 22:44:44 Lidarscan    INFO     Object detected in the deadzone at 154.0 mm (x)! 136.03125°. 14
+03/05/2024 22:44:44 Lidarscan    INFO     Object detected in the deadzone at 142.25 mm (x)! 138.546875°. 13
+03/05/2024 22:44:45 Lidarscan    INFO     Object detected in the deadzone at 148.25 mm (x)! 134.703125°. 15
+03/05/2024 22:44:45 Lidarscan    INFO     Object detected in the deadzone at 151.5 mm (x)! 135.703125°. 15
+03/05/2024 22:44:45 Lidarscan    INFO     Object detected in the deadzone at 141.75 mm (x)! 138.171875°. 14
+03/05/2024 22:44:45 Lidarscan    INFO     Object detected in the deadzone at 152.0 mm (x)! 135.734375°. 15
+03/05/2024 22:44:45 Lidarscan    INFO     Object detected in the deadzone at 141.75 mm (x)! 138.265625°. 15
+03/05/2024 22:44:46 Lidarscan    INFO     No more object. Restarting the robot.
+03/05/2024 22:44:46 Lidarscan    INFO     Object detected in the deadzone at 149.75 mm (x)! 135.234375°. 15
+03/05/2024 22:44:46 Lidarscan    WARNING  Stopping the robot. Object at 132.0587647711007 mm (x) and 135.234375°
+03/05/2024 22:44:46 Lidarscan    INFO     Object detected in the deadzone at 142.5 mm (x)! 137.6875°. 11
+03/05/2024 22:44:46 Lidarscan    INFO     Object detected in the deadzone at 148.0 mm (x)! 134.890625°. 15
+03/05/2024 22:44:46 Lidarscan    INFO     Object detected in the deadzone at 150.75 mm (x)! 135.484375°. 15
+03/05/2024 22:44:46 Lidarscan    INFO     Object detected in the deadzone at 142.75 mm (x)! 137.953125°. 14
+03/05/2024 22:44:47 Lidarscan    INFO     Object detected in the deadzone at 150.0 mm (x)! 135.28125°. 15
+03/05/2024 22:44:47 Lidarscan    INFO     Object detected in the deadzone at 142.75 mm (x)! 137.734375°. 11
+03/05/2024 22:44:47 Lidarscan    INFO     Object detected in the deadzone at 151.5 mm (x)! 135.609375°. 15
+03/05/2024 22:44:47 Lidarscan    INFO     Object detected in the deadzone at 141.75 mm (x)! 138.078125°. 13
+03/05/2024 22:44:47 Lidarscan    INFO     Object detected in the deadzone at 146.75 mm (x)! 134.796875°. 15
+03/05/2024 22:44:48 Lidarscan    INFO     Object detected in the deadzone at 150.75 mm (x)! 135.5°. 15
+03/05/2024 22:44:48 Lidarscan    INFO     Object detected in the deadzone at 142.0 mm (x)! 137.96875°. 15
+03/05/2024 22:44:48 Lidarscan    INFO     Object detected in the deadzone at 150.25 mm (x)! 135.359375°. 15
+03/05/2024 22:44:48 Lidarscan    INFO     Object detected in the deadzone at 142.5 mm (x)! 137.828125°. 13
+03/05/2024 22:44:48 Lidarscan    INFO     Object detected in the deadzone at 147.0 mm (x)! 134.84375°. 15
+03/05/2024 22:44:49 Lidarscan    INFO     No more object. Restarting the robot.
+03/05/2024 22:44:49 Lidarscan    INFO     Object detected in the deadzone at 149.0 mm (x)! 135.09375°. 15
+03/05/2024 22:44:49 Lidarscan    WARNING  Stopping the robot. Object at 131.20569015903644 mm (x) and 135.09375°
+03/05/2024 22:44:49 Lidarscan    INFO     Object detected in the deadzone at 151.0 mm (x)! 135.59375°. 15
+03/05/2024 22:44:49 Lidarscan    INFO     Object detected in the deadzone at 141.0 mm (x)! 138.296875°. 12
+03/05/2024 22:44:49 Lidarscan    INFO     Object detected in the deadzone at 148.25 mm (x)! 134.96875°. 15
+03/05/2024 22:44:50 Lidarscan    INFO     Object detected in the deadzone at 152.0 mm (x)! 135.8125°. 15
+03/05/2024 22:44:50 Lidarscan    INFO     Object detected in the deadzone at 143.0 mm (x)! 138.328125°. 13
+03/05/2024 22:44:50 Lidarscan    INFO     Object detected in the deadzone at 148.25 mm (x)! 134.96875°. 15
+03/05/2024 22:44:50 Lidarscan    INFO     Object detected in the deadzone at 152.0 mm (x)! 135.84375°. 15
+03/05/2024 22:44:50 Lidarscan    INFO     Object detected in the deadzone at 142.0 mm (x)! 139.515625°. 13
+03/05/2024 22:44:50 Lidarscan    INFO     Object detected in the deadzone at 152.25 mm (x)! 136.171875°. 15
+03/05/2024 22:44:50 Lidarscan    INFO     Object detected in the deadzone at 142.0 mm (x)! 139.03125°. 12
+03/05/2024 22:44:50 Lidarscan    INFO     Object detected in the deadzone at 150.5 mm (x)! 135.390625°. 15
+03/05/2024 22:44:50 Lidarscan    INFO     Object detected in the deadzone at 140.75 mm (x)! 137.84375°. 13
+03/05/2024 22:44:51 Lidarscan    INFO     Object detected in the deadzone at 148.25 mm (x)! 134.921875°. 15
+03/05/2024 22:44:51 Lidarscan    INFO     Object detected in the deadzone at 151.5 mm (x)! 135.9375°. 15
+03/05/2024 22:44:51 Lidarscan    INFO     Object detected in the deadzone at 141.75 mm (x)! 138.484375°. 13
+03/05/2024 22:44:51 Lidarscan    INFO     Object detected in the deadzone at 152.0 mm (x)! 135.90625°. 15
+03/05/2024 22:44:51 Lidarscan    INFO     Object detected in the deadzone at 143.0 mm (x)! 138.4375°. 14
+03/05/2024 22:44:51 Lidarscan    INFO     Object detected in the deadzone at 150.5 mm (x)! 135.625°. 15
+03/05/2024 22:44:51 Lidarscan    INFO     Object detected in the deadzone at 142.75 mm (x)! 137.84375°. 13
+03/05/2024 22:44:51 Lidarscan    INFO     Object detected in the deadzone at 148.25 mm (x)! 135.328125°. 15
+03/05/2024 22:44:52 Lidarscan    INFO     Object detected in the deadzone at 148.0 mm (x)! 134.890625°. 15
+03/05/2024 22:44:52 Lidarscan    INFO     Object detected in the deadzone at 149.5 mm (x)! 135.21875°. 15
+03/05/2024 22:44:52 Lidarscan    INFO     Object detected in the deadzone at 142.5 mm (x)! 137.6875°. 11
+03/05/2024 22:44:52 Lidarscan    INFO     Object detected in the deadzone at 152.0 mm (x)! 135.78125°. 15
+03/05/2024 22:44:52 Lidarscan    INFO     Object detected in the deadzone at 142.5 mm (x)! 139.671875°. 13
+03/05/2024 22:44:52 Lidarscan    INFO     Object detected in the deadzone at 148.0 mm (x)! 134.875°. 15
+03/05/2024 22:44:52 Lidarscan    INFO     Object detected in the deadzone at 150.75 mm (x)! 135.453125°. 15
+03/05/2024 22:44:52 Lidarscan    INFO     Object detected in the deadzone at 142.5 mm (x)! 137.921875°. 14
+03/05/2024 22:44:52 Lidarscan    INFO     Object detected in the deadzone at 150.5 mm (x)! 136.0625°. 15
+03/05/2024 22:44:52 Lidarscan    INFO     Object detected in the deadzone at 142.5 mm (x)! 137.8125°. 13
+03/05/2024 22:44:53 Lidarscan    INFO     Object detected in the deadzone at 150.25 mm (x)! 135.34375°. 15
+03/05/2024 22:44:53 Lidarscan    INFO     Object detected in the deadzone at 142.25 mm (x)! 137.78125°. 12
+03/05/2024 22:44:53 Lidarscan    INFO     Object detected in the deadzone at 152.0 mm (x)! 135.78125°. 15
+03/05/2024 22:44:53 Lidarscan    INFO     Object detected in the deadzone at 142.0 mm (x)! 138.421875°. 14
+03/05/2024 22:44:53 Lidarscan    INFO     Object detected in the deadzone at 148.0 mm (x)! 134.6875°. 13
+03/05/2024 22:44:53 Lidarscan    INFO     Object detected in the deadzone at 154.5 mm (x)! 136.03125°. 12
+03/05/2024 22:44:53 Lidarscan    INFO     Object detected in the deadzone at 148.0 mm (x)! 134.875°. 15
+03/05/2024 22:44:53 Lidarscan    INFO     Object detected in the deadzone at 151.75 mm (x)! 135.671875°. 15
+03/05/2024 22:44:53 Lidarscan    INFO     Object detected in the deadzone at 142.75 mm (x)! 138.125°. 11
+03/05/2024 22:44:53 Lidarscan    INFO     Object detected in the deadzone at 150.5 mm (x)! 135.390625°. 15
+03/05/2024 22:44:53 Lidarscan    INFO     Object detected in the deadzone at 142.5 mm (x)! 137.859375°. 13
+03/05/2024 22:44:54 Lidarscan    INFO     Object detected in the deadzone at 148.25 mm (x)! 134.9375°. 15
+03/05/2024 22:44:54 Lidarscan    INFO     Object detected in the deadzone at 151.5 mm (x)! 135.953125°. 15
+03/05/2024 22:44:54 Lidarscan    INFO     Object detected in the deadzone at 151.5 mm (x)! 135.859375°. 15
+03/05/2024 22:44:54 Lidarscan    INFO     Object detected in the deadzone at 142.5 mm (x)! 139.140625°. 12
+03/05/2024 22:44:54 Lidarscan    INFO     Object detected in the deadzone at 151.5 mm (x)! 135.6875°. 15
+03/05/2024 22:44:54 Lidarscan    INFO     Object detected in the deadzone at 141.75 mm (x)! 138.15625°. 14
+03/05/2024 22:44:54 Lidarscan    INFO     Object detected in the deadzone at 150.0 mm (x)! 135.296875°. 15
+03/05/2024 22:44:54 Lidarscan    INFO     Object detected in the deadzone at 141.75 mm (x)! 137.765625°. 12
+03/05/2024 22:44:54 Lidarscan    INFO     Object detected in the deadzone at 151.0 mm (x)! 135.578125°. 15
+03/05/2024 22:44:54 Lidarscan    INFO     Object detected in the deadzone at 142.0 mm (x)! 139.3125°. 11
+03/05/2024 22:44:55 Lidarscan    INFO     Object detected in the deadzone at 148.0 mm (x)! 135.65625°. 12
+03/05/2024 22:44:55 Lidarscan    INFO     Object detected in the deadzone at 150.75 mm (x)! 135.453125°. 15
+03/05/2024 22:44:55 Lidarscan    INFO     Object detected in the deadzone at 142.0 mm (x)! 137.921875°. 14
+03/05/2024 22:44:55 Lidarscan    INFO     Object detected in the deadzone at 150.75 mm (x)! 135.5°. 15
+03/05/2024 22:44:55 Lidarscan    INFO     Object detected in the deadzone at 148.0 mm (x)! 134.71875°. 14
+03/05/2024 22:44:55 Lidarscan    INFO     Object detected in the deadzone at 150.75 mm (x)! 135.546875°. 15
+03/05/2024 22:44:55 Lidarscan    INFO     Object detected in the deadzone at 148.0 mm (x)! 134.734375°. 15
+03/05/2024 22:44:56 Lidarscan    INFO     Object detected in the deadzone at 150.75 mm (x)! 135.46875°. 15
+03/05/2024 22:44:56 Lidarscan    INFO     Object detected in the deadzone at 142.0 mm (x)! 137.9375°. 14
+03/05/2024 22:44:56 Lidarscan    INFO     Object detected in the deadzone at 149.75 mm (x)! 136.015625°. 15
+03/05/2024 22:44:56 Lidarscan    INFO     Object detected in the deadzone at 142.0 mm (x)! 137.671875°. 11
+03/05/2024 22:44:56 Lidarscan    INFO     Object detected in the deadzone at 149.5 mm (x)! 135.1875°. 15
+03/05/2024 22:44:56 Lidarscan    INFO     Object detected in the deadzone at 148.25 mm (x)! 134.96875°. 15
+03/05/2024 22:44:56 Lidarscan    INFO     Object detected in the deadzone at 140.75 mm (x)! 140.078125°. 11
+03/05/2024 22:44:56 Lidarscan    INFO     Object detected in the deadzone at 148.25 mm (x)! 135.4375°. 12
+03/05/2024 22:44:56 Lidarscan    INFO     Object detected in the deadzone at 152.0 mm (x)! 135.875°. 15
+03/05/2024 22:44:56 Lidarscan    INFO     Object detected in the deadzone at 143.0 mm (x)! 138.421875°. 12
+03/05/2024 22:44:56 Lidarscan    INFO     Object detected in the deadzone at 152.0 mm (x)! 135.765625°. 15
+03/05/2024 22:44:56 Lidarscan    INFO     Object detected in the deadzone at 142.0 mm (x)! 139.21875°. 13
+03/05/2024 22:44:57 Lidarscan    INFO     Object detected in the deadzone at 151.25 mm (x)! 135.59375°. 15
+03/05/2024 22:44:57 Lidarscan    INFO     Object detected in the deadzone at 142.0 mm (x)! 139.078125°. 12
+03/05/2024 22:44:57 Lidarscan    INFO     Object detected in the deadzone at 150.25 mm (x)! 135.359375°. 15
+03/05/2024 22:44:57 Lidarscan    INFO     Object detected in the deadzone at 142.0 mm (x)! 137.8125°. 14
+03/05/2024 22:44:57 Lidarscan    INFO     Object detected in the deadzone at 150.0 mm (x)! 135.25°. 15
+03/05/2024 22:44:57 Lidarscan    INFO     Object detected in the deadzone at 142.0 mm (x)! 137.703125°. 11
+03/05/2024 22:44:57 Lidarscan    INFO     Object detected in the deadzone at 149.0 mm (x)! 135.109375°. 15
+03/05/2024 22:44:57 Lidarscan    INFO     Object detected in the deadzone at 150.0 mm (x)! 135.390625°. 15
+03/05/2024 22:44:57 Lidarscan    INFO     Object detected in the deadzone at 142.0 mm (x)! 137.859375°. 13
+03/05/2024 22:44:57 Lidarscan    INFO     Object detected in the deadzone at 150.75 mm (x)! 135.515625°. 15
+03/05/2024 22:44:58 Lidarscan    INFO     Object detected in the deadzone at 146.5 mm (x)! 134.765625°. 15
+03/05/2024 22:44:58 Lidarscan    INFO     Object detected in the deadzone at 152.0 mm (x)! 135.890625°. 15
+03/05/2024 22:44:58 Lidarscan    INFO     Object detected in the deadzone at 142.75 mm (x)! 138.421875°. 12
+03/05/2024 22:44:58 Lidarscan    INFO     Object detected in the deadzone at 150.0 mm (x)! 135.3125°. 15
+03/05/2024 22:44:58 Lidarscan    INFO     Object detected in the deadzone at 142.5 mm (x)! 137.78125°. 12
+03/05/2024 22:44:58 Lidarscan    INFO     Object detected in the deadzone at 145.5 mm (x)! 134.703125°. 11
+03/05/2024 22:44:58 Lidarscan    INFO     Object detected in the deadzone at 152.0 mm (x)! 135.765625°. 15
+03/05/2024 22:44:58 Lidarscan    INFO     Object detected in the deadzone at 142.5 mm (x)! 138.3125°. 13
+03/05/2024 22:44:58 Lidarscan    INFO     Object detected in the deadzone at 148.25 mm (x)! 134.90625°. 15
+03/05/2024 22:44:58 Lidarscan    INFO     Object detected in the deadzone at 149.75 mm (x)! 135.25°. 15
+03/05/2024 22:44:58 Lidarscan    INFO     Object detected in the deadzone at 142.5 mm (x)! 137.703125°. 11
+03/05/2024 22:44:59 Lidarscan    INFO     Object detected in the deadzone at 150.75 mm (x)! 135.53125°. 15
+03/05/2024 22:44:59 Lidarscan    INFO     Object detected in the deadzone at 151.75 mm (x)! 135.6875°. 15
+03/05/2024 22:44:59 Lidarscan    INFO     Object detected in the deadzone at 141.75 mm (x)! 138.171875°. 14
+03/05/2024 22:44:59 Lidarscan    INFO     Object detected in the deadzone at 151.75 mm (x)! 135.765625°. 15
+03/05/2024 22:44:59 Lidarscan    INFO     Object detected in the deadzone at 141.75 mm (x)! 138.28125°. 15
+03/05/2024 22:44:59 Lidarscan    INFO     Object detected in the deadzone at 558.0 mm (x)! 197.0°. 15
+03/05/2024 22:44:59 Lidarscan    INFO     Object detected in the deadzone at 556.5 mm (x)! 199.359375°. 15
+03/05/2024 22:44:59 Lidarscan    INFO     Object detected in the deadzone at 151.75 mm (x)! 135.6875°. 15
+03/05/2024 22:44:59 Lidarscan    INFO     Object detected in the deadzone at 141.75 mm (x)! 138.15625°. 15
+03/05/2024 22:44:59 Lidarscan    INFO     Object detected in the deadzone at 150.75 mm (x)! 135.703125°. 15
+03/05/2024 22:44:59 Lidarscan    INFO     Object detected in the deadzone at 142.5 mm (x)! 137.921875°. 14
+03/05/2024 22:44:59 Lidarscan    INFO     Object detected in the deadzone at 150.5 mm (x)! 135.34375°. 15
+03/05/2024 22:44:59 Lidarscan    INFO     Object detected in the deadzone at 140.75 mm (x)! 137.796875°. 12
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 430.5 mm (x)! 200.921875°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 415.25 mm (x)! 203.46875°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 349.0 mm (x)! 200.234375°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 350.0 mm (x)! 202.390625°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 361.0 mm (x)! 205.09375°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 373.5 mm (x)! 207.234375°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 336.25 mm (x)! 198.640625°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 333.25 mm (x)! 201.171875°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 346.75 mm (x)! 203.96875°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 355.75 mm (x)! 205.828125°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 382.25 mm (x)! 208.5°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 332.75 mm (x)! 202.875°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 348.75 mm (x)! 205.25°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 375.25 mm (x)! 207.328125°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 240.75 mm (x)! 188.375°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 238.25 mm (x)! 191.34375°. 12
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 317.25 mm (x)! 191.953125°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 299.25 mm (x)! 194.421875°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 304.0 mm (x)! 196.703125°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 312.25 mm (x)! 198.96875°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 325.75 mm (x)! 201.84375°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 340.25 mm (x)! 204.15625°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 367.0 mm (x)! 205.828125°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 258.5 mm (x)! 184.09375°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 253.75 mm (x)! 187.25°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 241.75 mm (x)! 190.53125°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 301.25 mm (x)! 196.015625°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 308.25 mm (x)! 198.390625°. 15
+03/05/2024 22:45:00 Lidarscan    INFO     Object detected in the deadzone at 321.5 mm (x)! 200.21875°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 337.5 mm (x)! 202.59375°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 358.5 mm (x)! 204.78125°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 384.0 mm (x)! 206.9375°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 269.0 mm (x)! 182.546875°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 262.5 mm (x)! 185.890625°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 252.25 mm (x)! 188.140625°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 312.0 mm (x)! 194.828125°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 319.25 mm (x)! 196.703125°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 334.5 mm (x)! 199.03125°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 348.25 mm (x)! 201.453125°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 371.25 mm (x)! 203.6875°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 395.75 mm (x)! 205.6875°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 266.75 mm (x)! 183.859375°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 255.25 mm (x)! 187.5°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 308.75 mm (x)! 193.484375°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 314.25 mm (x)! 195.234375°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 323.5 mm (x)! 197.90625°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 342.5 mm (x)! 199.84375°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 356.75 mm (x)! 202.453125°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 382.25 mm (x)! 204.3125°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 403.5 mm (x)! 206.625°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 270.0 mm (x)! 184.765625°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 273.0 mm (x)! 185.9375°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 260.5 mm (x)! 188.984375°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 308.5 mm (x)! 195.359375°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 319.75 mm (x)! 197.859375°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 339.25 mm (x)! 200.40625°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 355.0 mm (x)! 202.1875°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 383.0 mm (x)! 204.4375°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 405.75 mm (x)! 206.578125°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 169.5 mm (x)! 130.796875°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 276.25 mm (x)! 182.296875°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 271.5 mm (x)! 184.625°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 280.0 mm (x)! 187.265625°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 266.5 mm (x)! 190.734375°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 308.5 mm (x)! 196.59375°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 321.5 mm (x)! 198.890625°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 342.5 mm (x)! 200.96875°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 361.5 mm (x)! 203.421875°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 392.0 mm (x)! 205.3125°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 274.25 mm (x)! 184.796875°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 276.75 mm (x)! 186.359375°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 273.5 mm (x)! 189.421875°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 306.75 mm (x)! 195.890625°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 319.0 mm (x)! 198.265625°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 339.25 mm (x)! 199.96875°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 356.25 mm (x)! 202.3125°. 15
+03/05/2024 22:45:01 Lidarscan    INFO     Object detected in the deadzone at 388.75 mm (x)! 204.765625°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 272.75 mm (x)! 184.8125°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 276.75 mm (x)! 187.1875°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 260.5 mm (x)! 190.890625°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 317.75 mm (x)! 196.5625°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 333.5 mm (x)! 199.09375°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 353.5 mm (x)! 201.1875°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 374.0 mm (x)! 203.109375°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 404.0 mm (x)! 205.28125°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 336.75 mm (x)! 191.59375°. 14
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 321.0 mm (x)! 194.8125°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 326.0 mm (x)! 196.53125°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 338.5 mm (x)! 198.828125°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 352.75 mm (x)! 201.359375°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 367.25 mm (x)! 203.5°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 398.75 mm (x)! 205.703125°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 365.25 mm (x)! 192.84375°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 337.0 mm (x)! 195.71875°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 339.25 mm (x)! 198.21875°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 350.75 mm (x)! 199.953125°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 359.0 mm (x)! 202.75°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 383.25 mm (x)! 205.03125°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 143.25 mm (x)! 126.328125°. 12
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 316.0 mm (x)! 194.234375°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 310.75 mm (x)! 197.171875°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 317.0 mm (x)! 199.34375°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 330.5 mm (x)! 201.4375°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 347.5 mm (x)! 204.046875°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 367.75 mm (x)! 206.28125°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 260.0 mm (x)! 189.421875°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 255.0 mm (x)! 192.65625°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 313.25 mm (x)! 197.953125°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 322.25 mm (x)! 200.875°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 343.25 mm (x)! 202.484375°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 362.25 mm (x)! 205.046875°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 399.0 mm (x)! 207.046875°. 15
+03/05/2024 22:45:02 Lidarscan    INFO     Object detected in the deadzone at 269.0 mm (x)! 187.84375°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 271.0 mm (x)! 190.21875°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 261.0 mm (x)! 193.875°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 319.75 mm (x)! 199.40625°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 340.0 mm (x)! 201.734375°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 361.5 mm (x)! 203.703125°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 398.75 mm (x)! 206.078125°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 147.0 mm (x)! 139.15625°. 12
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 335.25 mm (x)! 184.640625°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 314.5 mm (x)! 187.84375°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 315.0 mm (x)! 189.75°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 321.0 mm (x)! 192.765625°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 374.25 mm (x)! 199.0°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 407.0 mm (x)! 201.171875°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 452.5 mm (x)! 203.328125°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 206.75 mm (x)! 177.375°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 259.75 mm (x)! 182.9375°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 258.25 mm (x)! 184.84375°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 269.0 mm (x)! 187.40625°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 279.75 mm (x)! 189.3125°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 245.75 mm (x)! 180.5625°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 242.75 mm (x)! 183.421875°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 256.75 mm (x)! 184.828125°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 221.25 mm (x)! 187.15625°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 220.0 mm (x)! 189.875°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 225.25 mm (x)! 192.078125°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 235.5 mm (x)! 194.875°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 249.5 mm (x)! 198.40625°. 15
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 144.25 mm (x)! 138.546875°. 11
+03/05/2024 22:45:03 Lidarscan    INFO     Object detected in the deadzone at 142.5 mm (x)! 137.421875°. 14
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 142.0 mm (x)! 138.703125°. 13
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 234.5 mm (x)! 188.578125°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 254.75 mm (x)! 175.90625°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 187.5 mm (x)! 180.546875°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 195.0 mm (x)! 183.03125°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 197.75 mm (x)! 185.515625°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 206.75 mm (x)! 187.59375°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 216.25 mm (x)! 189.375°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 227.25 mm (x)! 192.78125°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 478.0 mm (x)! 200.53125°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 369.25 mm (x)! 196.296875°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 370.0 mm (x)! 198.28125°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 384.0 mm (x)! 200.984375°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 412.25 mm (x)! 203.109375°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 319.0 mm (x)! 190.453125°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 314.75 mm (x)! 193.25°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 382.5 mm (x)! 199.5625°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 409.0 mm (x)! 201.375°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 436.5 mm (x)! 203.78125°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 358.5 mm (x)! 185.6875°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 329.5 mm (x)! 188.578125°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 338.75 mm (x)! 190.9375°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 351.25 mm (x)! 193.453125°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 415.5 mm (x)! 200.0°. 15
+03/05/2024 22:45:04 Lidarscan    INFO     Object detected in the deadzone at 450.0 mm (x)! 202.09375°. 15
+03/05/2024 22:45:05 Lidarscan    INFO     Object detected in the deadzone at 141.75 mm (x)! 137.15625°. 14
+03/05/2024 22:45:05 Lidarscan    INFO     Object detected in the deadzone at 141.75 mm (x)! 137.203125°. 14
+03/05/2024 22:45:05 Lidarscan    INFO     Object detected in the deadzone at 142.5 mm (x)! 137.28125°. 14
+03/05/2024 22:45:05 Lidarscan    INFO     Object detected in the deadzone at 142.25 mm (x)! 138.890625°. 14
+03/05/2024 22:45:05 Lidarscan    INFO     Object detected in the deadzone at 140.5 mm (x)! 137.75°. 12
+03/05/2024 22:45:05 Lidarscan    INFO     Object detected in the deadzone at 141.5 mm (x)! 136.859375°. 14
+03/05/2024 22:45:06 Lidarscan    INFO     Object detected in the deadzone at 143.0 mm (x)! 137.3125°. 13
+03/05/2024 22:45:06 Lidarscan    INFO     Object detected in the deadzone at 141.75 mm (x)! 137.421875°. 14
+03/05/2024 22:45:06 Lidarscan    INFO     Object detected in the deadzone at 142.0 mm (x)! 138.90625°. 12
+03/05/2024 22:45:06 Lidarscan    INFO     Object detected in the deadzone at 141.5 mm (x)! 138.328125°. 13
+03/05/2024 22:45:07 Lidarscan    INFO     Object detected in the deadzone at 143.0 mm (x)! 137.640625°. 12
+03/05/2024 22:45:07 Lidarscan    INFO     Object detected in the deadzone at 143.0 mm (x)! 137.265625°. 14
+03/05/2024 22:45:07 Lidarscan    INFO     Object detected in the deadzone at 140.75 mm (x)! 137.34375°. 13
+03/05/2024 22:45:07 Lidarscan    INFO     Object detected in the deadzone at 143.0 mm (x)! 137.59375°. 11
+03/05/2024 22:45:07 Lidarscan    INFO     Object detected in the deadzone at 141.75 mm (x)! 138.609375°. 12
+03/05/2024 22:45:08 Lidarscan    INFO     Object detected in the deadzone at 140.5 mm (x)! 137.875°. 13
+03/05/2024 22:45:08 Lidarscan    INFO     Object detected in the deadzone at 141.75 mm (x)! 137.5625°. 14
+03/05/2024 22:45:08 Lidarscan    INFO     Object detected in the deadzone at 141.75 mm (x)! 137.15625°. 13
+03/05/2024 22:45:09 Lidarscan    INFO     Object detected in the deadzone at 141.5 mm (x)! 137.203125°. 12
+03/05/2024 22:45:09 Lidarscan    INFO     Object detected in the deadzone at 141.25 mm (x)! 137.328125°. 12
+03/05/2024 22:45:09 Lidarscan    INFO     Object detected in the deadzone at 141.25 mm (x)! 137.375°. 13
+03/05/2024 22:45:09 Lidarscan    INFO     Object detected in the deadzone at 142.0 mm (x)! 137.6875°. 13
+03/05/2024 22:45:09 Lidarscan    INFO     Object detected in the deadzone at 142.5 mm (x)! 137.109375°. 13
+03/05/2024 22:45:09 Lidarscan    INFO     Object detected in the deadzone at 143.0 mm (x)! 137.65625°. 11
+03/05/2024 22:45:10 Lidarscan    INFO     Object detected in the deadzone at 142.75 mm (x)! 137.125°. 14
+03/05/2024 22:45:10 Lidarscan    INFO     Stopping the lidar scan.

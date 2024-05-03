@@ -49,7 +49,6 @@ class LidarScanner:
                     elif (self.detection) and (time.time() - self.time_detect) > 0.5 :
                         self.logger.info("No more object. Restarting the robot.")
                         self.asserv.restartmove()
-                        print("nothing detected")
                         self.detection = False  
 
         except KeyboardInterrupt:

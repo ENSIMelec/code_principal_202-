@@ -174,7 +174,10 @@ class Asserv:
 
     def goto(self, x, y, vitesse=500): # simple goto x et y en mm à une certaine vitesse par défault = 500
         self.action_ok = False
-        self.signeLidar = 1
+        if x < 0 :
+            self.signeLidar = -1
+        else :
+            self.signeLidar = 1
         command = f'asserv goto {x} {y} {vitesse}\n'
         self.serial.write(command.encode())
         self.logger.info(f"Commande envoyé : goto {x} {y} {vitesse}")
@@ -225,7 +228,6 @@ class Asserv:
             try :
                 data = self.serial.readline().decode().strip()
                 self.logger.debug(f"Data received: {data}")
-                
                 if data.startswith("A"): # Valeur du codeur Gauche
                     x = data[1:]
                     self.encGauche[self.index_encGauche] = int(x)

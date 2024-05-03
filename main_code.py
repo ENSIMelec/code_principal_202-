@@ -66,7 +66,7 @@ def main():
 
     # Initialisation avec le JSON
     logger.info("Initialisation du JSON")
-    dic_class, data = init_json("/home/pi/code_principal_2024/InterfaceGraphique2024/INTERFACE/STRATEGIE/STRATEGIE.json")
+    dic_class, data = init_json("/home/pi/code_principal_2024/Stratégies/StrategieBleuGoTo")
 
     logger.info("Initialisation du Lidar")
     lidar_scanner = LidarScanner()

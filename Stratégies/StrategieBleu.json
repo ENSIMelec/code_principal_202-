@@ -158,7 +158,7 @@
         "arguments": [100,100]    
     },
     {
-        "classe": "AX12_Ascenceur",
+        "classe": "AX12_Ascenseur",
         "methode": "lower_for_plant",
         "arguments": []    
     },
@@ -168,7 +168,7 @@
         "arguments": []    
     },
     {
-        "classe": "AX12_Ascenceur",
+        "classe": "AX12_Ascenseur",
         "methode": "elevate",
         "arguments": []    
     },

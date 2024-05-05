@@ -7,7 +7,7 @@ import logging
 import logging.config
 
 class Asserv:
-    def __init__(self, port=STM32_SERIAL, baudrate=115200, buffer_size=512):
+    def __init__(self, port=STM32_SERIAL, baudrate=115200, buffer_size=512,app=None):
 
         # Charger la configuration de logging
         logging.config.fileConfig(LOGS_CONF_PATH)
@@ -15,6 +15,7 @@ class Asserv:
         # Créer un logger
         self.logger = logging.getLogger("Asserv")
 
+        self.app = app
         self.buffer_size = buffer_size
         self.encGauche = [None] * buffer_size
         self.index_encGauche = 0

@@ -9,7 +9,7 @@ from Asserv import Asserv
 
        
 class LidarScanner:
-    def __init__(self): 
+    def __init__(self,app=None): 
         
         # Charger la configuration de logging
         logging.config.fileConfig(LOGS_CONF_PATH)
@@ -17,6 +17,7 @@ class LidarScanner:
         # Créer un logger
         self.logger = logging.getLogger("Lidarscan")
 
+        self.app=app
         self.port_name = LIDAR_SERIAL
         self.deadzone_distance = 500
         self.lidar = RPLidar(None, self.port_name, timeout=5)
@@ -66,6 +67,6 @@ class LidarScanner:
 if __name__ == '__main__':
     # Setup the RPLidar
     lidar_scanner = LidarScanner()
-    lidar_scanner.scan()
+    #lidar_scanner.scan()
     lidar_scanner.stop_lidarScan()
 

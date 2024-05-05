@@ -17,7 +17,6 @@ class MainCode:
         self.json_path = json_path
         logging.config.fileConfig(LOGS_CONF_PATH)
         self.logger = logging.getLogger("main_code")
-        self.running = False
         self.thread_action = None
         self.lidar_scanner = None
         self.dic_class = {}
@@ -26,34 +25,19 @@ class MainCode:
         self.logger.info("Main Code initialized.")
 
     def init_json(self):
-        if self.app == None :
-            self.logger.info("Initialisation du JSON...")
-            with open(self.json_path) as f:
-                self.data = json.load(f)
-            self.dic_class = {}
-            for module_name in self.data['initialisation']:
-                if module_name.startswith('AX12'):
-                    module = importlib.import_module('AX12_Python.' + module_name)
-                else:
-                    module = importlib.import_module(module_name)
-                self.logger.info(f"Initialisation de {module}")
-                self.dic_class[module_name] = getattr(module, module_name)()
-            self.logger.info("JSON initialisé.")
-            return True
-        else :
-            self.logger.info("Initialisation du JSON...")
-            with open(self.json_path) as f:
-                self.data = json.load(f)
-            self.dic_class = {}
-            for module_name in self.data['initialisation']:
-                if module_name.startswith('AX12'):
-                    module = importlib.import_module('AX12_Python.' + module_name)
-                else:
-                    module = importlib.import_module(module_name)
-                self.logger.info(f"Initialisation de {module}")
-                self.dic_class[module_name] = getattr(module, module_name)(app=self.app)
-            self.logger.info("JSON initialisé.")
-            return True
+        self.logger.info("Initialisation du JSON...")
+        with open(self.json_path) as f:
+            self.data = json.load(f)
+        self.dic_class = {}
+        for module_name in self.data['initialisation']:
+            if module_name.startswith('AX12'):
+                module = importlib.import_module('AX12_Python.' + module_name)
+            else:
+                module = importlib.import_module(module_name)
+            self.logger.info(f"Initialisation de {module}")
+            self.dic_class[module_name] = getattr(module, module_name)()
+        self.logger.info("JSON initialisé.")
+        return True
 
     def actions(self):
         if self.app == None :
@@ -64,6 +48,8 @@ class MainCode:
         else :
             for action in self.data['actions']:
                 self.logger.debug(f"Action {action['methode']} de la classe {action['classe']} avec les arguments {action['arguments']}")
+                print("fait l'action pitié")
+                self.app.update_current_action(action['methode'])
                 while not(getattr(self.dic_class[action['classe']], action['methode'])(*action['arguments'])):
                     time.sleep(0.1)
 
@@ -93,7 +79,6 @@ class MainCode:
 
     def stop(self):
         if self.app == None :
-            self.running = False
             self.logger.info("Arrêt des moteurs")
             self.dic_class['Asserv'].stopmove()
             # Arrêter le scanner Lidar
@@ -103,7 +88,7 @@ class MainCode:
             # if self.thread_action and self.thread_action.is_alive():
             #     self.thread_action.join()
         else :
-            self.running = False
+            self.app.mainStop()
             self.logger.info("Arrêt des moteurs")
             self.dic_class['Asserv'].stopmove()
             # Arrêter le scanner Lidar
@@ -116,7 +101,6 @@ class MainCode:
 
     def run(self):
         if self.app == None :
-            self.running = True
             GPIO.setmode(GPIO.BCM)
             self.logger.info("Initialisation broche GPIO Jack")
             GPIO.setup(PIN_JACK, GPIO.IN)
@@ -160,7 +144,9 @@ class MainCode:
             time.sleep(1)
             self.stop()
         else :
-            self.running = True
+            print("Lets goo")
+            self.app.mainStart()
+            print("passé")
             GPIO.setmode(GPIO.BCM)
             self.logger.info("Initialisation broche GPIO Jack")
             GPIO.setup(PIN_JACK, GPIO.IN)
@@ -175,12 +161,13 @@ class MainCode:
             signal.signal(signal.SIGINT, lambda sig, frame: self.signal_handler(sig,frame))
             signal.signal(signal.SIGTERM, lambda sig, frame: self.signal_handler(sig,frame))
 
+            print("je suis la")
             self.logger.info("Waiting for jack removal...")
             self.app.waiting_jack()
             while not self.check_jack_removed():
                 time.sleep(0.1)
             self.app.jack_retired()
-
+            print("encore pâssé")
             time_launch = time.time()
             self.logger.info(f"Démarrage du robot à {time_launch} secondes")
 
@@ -196,10 +183,14 @@ class MainCode:
             self.thread_action.start()
 
             self.logger.info("Démarrage du chrono")
-
-            while time.time() < (time_launch + MATCH_TIME) and self.thread_action.is_alive():
-                self.logger.debug(f"Match en cours... (T = {time.time()})")
+            
+            t = time.time()
+            print("match en cours askip")
+            while t < (time_launch + MATCH_TIME) and self.thread_action.is_alive():
+                self.logger.debug(f"Match en cours... (T = {t})")
+                self.app.time_update(t-time_launch)
                 time.sleep(0.1)
+                t = time.time()
 
             self.logger.info("Fin du match ou chrono")
 

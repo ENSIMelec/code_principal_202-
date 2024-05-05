@@ -92,14 +92,14 @@
         "arguments": []    
     },
     {
-        "classe": "AX12_Ascenseur",
-        "methode": "elevate",
-        "arguments": []    
-    },
-    {
         "classe": "Asserv",
         "methode": "goto",
         "arguments": [790, 1210]    
+    },
+    {
+        "classe": "AX12_Ascenseur",
+        "methode": "elevate",
+        "arguments": []    
     },
     {
         "classe": "Asserv",
@@ -174,7 +174,22 @@
     {
         "classe": "Asserv",
         "methode": "goto",
-        "arguments": [1100, 1680]    
+        "arguments": [730, 1940]    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "goto",
+        "arguments": [770, 1990]    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "moveof",
+        "arguments": [150]    
+    },
+    {
+        "classe": "Asserv",
+        "methode": "moveof",
+        "arguments": [-700]    
     }
   ]
 }

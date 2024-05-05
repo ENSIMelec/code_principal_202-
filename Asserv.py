@@ -61,8 +61,11 @@ class Asserv:
         self.serial.write(command.encode())
         self.logger.info("Commande envoyé : Z")
 
-        self.logger.info("Asserv initialized.")
         self.signeLidar = 1
+
+        self.logger.info("Asserv initialized.")
+        if self.app != None :
+            self.app.asserv_initialized()
 
     def action_ok_receive(self):
         command = "asserv Z\n"
@@ -173,6 +176,24 @@ class Asserv:
         self.logger.info("Commande envoyé : reset vitesse gauche")
         return True
 
+    def set_coord(self, x,y): # set la position x et y du robot
+        command = f"asserv set coord {x} {y}\n"
+        self.serial.write(command.encode())
+        self.logger.info(f"Commande envoyé : set coord {x} {y}")
+        return True
+    
+    def set_angle(self, angle):
+        command = f"asserv set angle {angle}\n"
+        self.serial.write(command.encode())
+        self.logger.info(f"Commande envoyé : set angle {angle}")
+        return True
+
+    def set_position(self, x, y, angle): # set la position du robot
+        command = f"asserv set position {x} {y} {angle}\n"
+        self.serial.write(command.encode())
+        self.logger.info(f"Commande envoyé : set position {x} {y} {angle}")
+        return True
+    
     def goto(self, x, y, vitesse=500): # simple goto x et y en mm à une certaine vitesse par défault = 500
         self.action_ok = False
         if x < 0 :
@@ -293,10 +314,14 @@ class Asserv:
                     self.distance_ok = bool(x)
                 elif data.startswith("X"): # position x
                     x = data[1:]
+                    if self.app != None :
+                        self.app.X_update(x)
                     self.x[self.index_x] = float(x)
                     self.index_x = (self.index_x + 1) % self.buffer_size
                 elif data.startswith("Y"): # position y
                     x = data[1:]
+                    if self.app != None :
+                        self.app.Y_update(x)
                     self.y[self.index_y] = float(x)
                     self.index_y = (self.index_y + 1) % self.buffer_size
                 elif data.startswith("Z"): # action OK

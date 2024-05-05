@@ -23,6 +23,9 @@ class LidarScanner:
         self.lidar = RPLidar(None, self.port_name, timeout=5)
         self.detection = False
         self.logger.info("Lidar initialized.")
+
+        if self.app != None :
+            self.app.lidar_initialized()
         
 
     def set_pwm(self, value):

@@ -5,28 +5,8 @@
     "actions": [
         {
             "classe": "Asserv",
-            "methode": "reset",
-            "arguments": []
-        },
-        {
-            "classe": "Asserv",
             "methode": "goto",
-            "arguments": [500,0]
-        },
-        {
-            "classe": "Asserv",
-            "methode": "goto",
-            "arguments": [500,500]
-        },
-        {
-            "classe": "Asserv",
-            "methode": "goto",
-            "arguments": [0,500]
-        },
-        {
-            "classe": "Asserv",
-            "methode": "goto",
-            "arguments": [0,0]
+            "arguments": [1040, 1700]
         }
     ]
 }

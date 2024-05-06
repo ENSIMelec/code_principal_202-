@@ -12,8 +12,9 @@ from InterfaceGraphique2024.INTERFACE.Interface import *
 from Globals_Variables import *
 
 class MainCode:
-    def __init__(self, json_path="/home/pi/code_principal_2024/Stratégies/StrategieBleuGoTo.json", app=None):
-        self.app = app
+    def __init__(self, json_path="/home/pi/code_principal_2024/Stratégies/StrategieBleuGoTo.json", queue=None, interface=None):
+        self.queue = queue
+        self.interface=interface
         self.json_path = json_path
         logging.config.fileConfig(LOGS_CONF_PATH,disable_existing_loggers=False)
         self.logger = logging.getLogger('Main')
@@ -35,12 +36,12 @@ class MainCode:
             else:
                 module = importlib.import_module(module_name)
             self.logger.info(f"Initialisation de {module}")
-            self.dic_class[module_name] = getattr(module, module_name)()
+            self.dic_class[module_name] = getattr(module, module_name)(queue=self.queue)
         self.logger.info("JSON initialisé.")
         return True
 
     def actions(self):
-        if self.app == None :
+        if self.queue == None :
             for action in self.data['actions']:
                 self.logger.debug(f"Action {action['methode']} de la classe {action['classe']} avec les arguments {action['arguments']}")
                 while not(getattr(self.dic_class[action['classe']], action['methode'])(*action['arguments'])):
@@ -48,28 +49,18 @@ class MainCode:
         else :
             for action in self.data['actions']:
                 self.logger.debug(f"Action {action['methode']} de la classe {action['classe']} avec les arguments {action['arguments']}")
-                print("fait l'action pitié")
-                self.app.update_current_action(action['methode'])
+                self.queue.put(("UPDATE_ACTION", action['methode']))
                 while not(getattr(self.dic_class[action['classe']], action['methode'])(*action['arguments'])):
                     time.sleep(0.1)
 
     def check_jack_removed(self):
-        if self.app == None :
-            jack_state = GPIO.input(PIN_JACK)
-            if jack_state == GPIO.HIGH:
-                self.logger.info("Jack retiré")
-                return True
-            else:
-                self.logger.debug("Jack non retiré")
-                return False
-        else :
-            jack_state = GPIO.input(PIN_JACK)
-            if jack_state == GPIO.HIGH:
-                self.logger.info("Jack retiré")
-                return True
-            else:
-                self.logger.debug("Jack non retiré")
-                return False
+        jack_state = GPIO.input(PIN_JACK)
+        if jack_state == GPIO.HIGH:
+            self.logger.info("Jack retiré")
+            return True
+        else:
+            # self.logger.debug("Jack non retiré")
+            return False
 
     def signal_handler(self, sig, frame):
         # Arrêter les moteurs
@@ -78,7 +69,7 @@ class MainCode:
         sys.exit(0)
 
     def stop(self):
-        if self.app == None :
+        if self.queue == None :
             self.logger.info("Arrêt des moteurs")
             self.dic_class['Asserv'].stopmove()
             # Arrêter le scanner Lidar
@@ -88,7 +79,7 @@ class MainCode:
             # if self.thread_action and self.thread_action.is_alive():
             #     self.thread_action.join()
         else :
-            self.app.mainStop()
+            self.queue.put(("MAIN_STOP"))
             self.logger.info("Arrêt des moteurs")
             self.dic_class['Asserv'].stopmove()
             # Arrêter le scanner Lidar
@@ -100,7 +91,7 @@ class MainCode:
 
 
     def run(self):
-        if self.app == None :
+        if self.queue == None :
             GPIO.setmode(GPIO.BCM)
             self.logger.info("Initialisation broche GPIO Jack")
             GPIO.setup(PIN_JACK, GPIO.IN)
@@ -144,9 +135,8 @@ class MainCode:
             time.sleep(1)
             self.stop()
         else :
-            print("Lets goo")
-            self.app.mainStart()
-            print("passé")
+            self.queue.put(("MAIN_START"))
+            self.interface.after(0, self.interface.mainStart())
             GPIO.setmode(GPIO.BCM)
             self.logger.info("Initialisation broche GPIO Jack")
             GPIO.setup(PIN_JACK, GPIO.IN)
@@ -154,20 +144,15 @@ class MainCode:
             self.init_json()
 
             self.logger.info("Initialisation du Lidar")
-            self.lidar_scanner = LidarScanner(self.app)
+            self.lidar_scanner = LidarScanner(self.queue)
             self.logger.info("Don de asserv à Lidar")
             self.lidar_scanner.set_asserv_obj(self.dic_class['Asserv'])
 
-            signal.signal(signal.SIGINT, lambda sig, frame: self.signal_handler(sig,frame))
-            signal.signal(signal.SIGTERM, lambda sig, frame: self.signal_handler(sig,frame))
-
-            print("je suis la")
             self.logger.info("Waiting for jack removal...")
-            self.app.waiting_jack()
+            self.queue.put(("WAITING_JACK"))
             while not self.check_jack_removed():
                 time.sleep(0.1)
-            self.app.jack_retired()
-            print("encore pâssé")
+            self.queue.put(("JACK_RETIRED"))
             time_launch = time.time()
             self.logger.info(f"Démarrage du robot à {time_launch} secondes")
 
@@ -183,12 +168,11 @@ class MainCode:
             self.thread_action.start()
 
             self.logger.info("Démarrage du chrono")
-            
+
             t = time.time()
-            print("match en cours askip")
             while t < (time_launch + MATCH_TIME) and self.thread_action.is_alive():
-                self.logger.debug(f"Match en cours... (T = {t})")
-                self.app.time_update(t-time_launch)
+                # self.logger.debug(f"Match en cours... (T = {t})")
+                self.queue.put(("TIME_UPDATE",t-time_launch))
                 time.sleep(0.1)
                 t = time.time()
 
@@ -199,5 +183,5 @@ class MainCode:
 
 # Utilisation exemple
 if __name__ == "__main__":
-    main_code = MainCode("/home/pi/code_principal_2024/Stratégies/StrategieBleuGoTo.json")
+    main_code = MainCode("/home/pi/code_principal_2024/Stratégies/StrategieBleu.json")
     main_code.run()

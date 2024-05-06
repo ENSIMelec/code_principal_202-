@@ -7,7 +7,7 @@ import logging
 import logging.config
 
 class Asserv:
-    def __init__(self, port=STM32_SERIAL, baudrate=115200, buffer_size=512,app=None):
+    def __init__(self, port=STM32_SERIAL, baudrate=115200, buffer_size=512,queue=None):
 
         # Charger la configuration de logging
         logging.config.fileConfig(LOGS_CONF_PATH,disable_existing_loggers=False)
@@ -15,7 +15,7 @@ class Asserv:
         # Créer un logger
         self.logger = logging.getLogger("Asserv")
 
-        self.app = app
+        self.queue = queue
         self.buffer_size = buffer_size
         self.encGauche = [None] * buffer_size
         self.index_encGauche = 0
@@ -64,8 +64,8 @@ class Asserv:
         self.signeLidar = 1
 
         self.logger.info("Asserv initialized.")
-        if self.app != None :
-            self.app.asserv_initialized()
+        if self.queue != None :
+            self.queue.put(("ASSERV_INITIALIZED"))
 
     def action_ok_receive(self):
         command = "asserv Z\n"
@@ -246,10 +246,13 @@ class Asserv:
 
     def receive_data(self):
         self.logger.info("Thread receive_data started")
+        queue_angle = 0
+        queue_X = 0
+        queue_Y = 0
         while True:
             try :
                 data = self.serial.readline().decode().strip()
-                self.logger.debug(f"Data received: {data}")
+                # self.logger.debug(f"Data received: {data}")
                 if data.startswith("A"): # Valeur du codeur Gauche
                     x = data[1:]
                     self.encGauche[self.index_encGauche] = int(x)
@@ -284,6 +287,11 @@ class Asserv:
                     self.index_cmd_vitesse_D = (self.index_cmd_vitesse_D + 1) % self.buffer_size
                 elif data.startswith("I"): # angle mesurer
                     x = data[1:]
+                    if self.queue != None :
+                        queue_angle+=1
+                        if queue_angle == 10 :
+                            self.queue.put(("ANGLE_UPDATE",x))
+                            queue_angle = 0
                     self.angle[self.index_angle] = float(x)
                     self.index_angle = (self.index_angle + 1) % self.buffer_size
                 elif data.startswith("J"): # angle PID
@@ -314,21 +322,27 @@ class Asserv:
                     self.distance_ok = bool(x)
                 elif data.startswith("X"): # position x
                     x = data[1:]
-                    if self.app != None :
-                        self.app.X_update(x)
+                    if self.queue != None :
+                        queue_X+=1
+                        if queue_X == 10 :
+                            self.queue.put(("X_UPDATE",x))
+                            queue_X = 0
                     self.x[self.index_x] = float(x)
                     self.index_x = (self.index_x + 1) % self.buffer_size
                 elif data.startswith("Y"): # position y
                     x = data[1:]
-                    if self.app != None :
-                        self.app.Y_update(x)
+                    if self.queue != None :
+                        queue_Y+=1
+                        if queue_Y == 10 :
+                            self.queue.put(("Y_UPDATE",x))
+                            queue_Y=0
                     self.y[self.index_y] = float(x)
                     self.index_y = (self.index_y + 1) % self.buffer_size
                 elif data.startswith("Z"): # action OK
                     self.logger.info("Action OK (Z reçu)")
                     self.action_ok = True
             except :
-                self.logger.warn("receive_data wrong data format...")
+                self.logger.warn(f"receive_data wrong data format...{data}")
                 continue
 
     def get_enc_gauche(self):

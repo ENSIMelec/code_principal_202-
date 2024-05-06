@@ -15,8 +15,8 @@ class MainCode:
     def __init__(self, json_path="/home/pi/code_principal_2024/Stratégies/StrategieBleuGoTo.json", app=None):
         self.app = app
         self.json_path = json_path
-        logging.config.fileConfig(LOGS_CONF_PATH)
-        self.logger = logging.getLogger("main_code")
+        logging.config.fileConfig(LOGS_CONF_PATH,disable_existing_loggers=False)
+        self.logger = logging.getLogger('Main')
         self.thread_action = None
         self.lidar_scanner = None
         self.dic_class = {}

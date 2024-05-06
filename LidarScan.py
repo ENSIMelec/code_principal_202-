@@ -12,10 +12,10 @@ class LidarScanner:
     def __init__(self,app=None): 
         
         # Charger la configuration de logging
-        logging.config.fileConfig(LOGS_CONF_PATH)
+        logging.config.fileConfig(LOGS_CONF_PATH,disable_existing_loggers=False)
 
         # Créer un logger
-        self.logger = logging.getLogger("Lidarscan")
+        self.logger = logging.getLogger("Lidar")
 
         self.app=app
         self.port_name = LIDAR_SERIAL

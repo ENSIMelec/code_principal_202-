@@ -9119,3 +9119,66 @@
 06/05/2024 23:36:16 Main         DEBUG    Action goto de la classe Asserv avec les arguments [850, 278]
 06/05/2024 23:36:16 Main         INFO     Arrêt des moteurs
 06/05/2024 23:36:16 Main         INFO     Arrêt du scanner Lidar
+07/05/2024 00:29:06 Main         INFO     Main Code initialized.
+07/05/2024 00:29:07 Main         INFO     Initialisation broche GPIO Jack
+07/05/2024 00:29:07 Main         INFO     Initialisation du JSON...
+07/05/2024 00:29:07 Main         INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+07/05/2024 00:29:07 Main         INFO     Initialisation de <module 'AX12_Python.AX12_Pinces' from '/home/pi/code_principal_2024/AX12_Python/AX12_Pinces.py'>
+07/05/2024 00:29:08 Main         INFO     Initialisation de <module 'AX12_Python.AX12_Panneau' from '/home/pi/code_principal_2024/AX12_Python/AX12_Panneau.py'>
+07/05/2024 00:29:08 Main         INFO     Initialisation de <module 'AX12_Python.AX12_Ascenseur' from '/home/pi/code_principal_2024/AX12_Python/AX12_Ascenseur.py'>
+07/05/2024 00:29:08 Main         INFO     JSON initialisé.
+07/05/2024 00:29:08 Main         INFO     Initialisation du Lidar
+07/05/2024 00:29:08 Main         INFO     Don de asserv à Lidar
+07/05/2024 00:29:08 Main         INFO     Waiting for jack removal...
+07/05/2024 00:29:08 Main         INFO     Jack retiré
+07/05/2024 00:29:08 Main         INFO     Démarrage du robot à 1715034548.854111 secondes
+07/05/2024 00:29:08 Main         INFO     Démarrage du thread de scanner Lidar
+07/05/2024 00:29:09 Main         INFO     Démarrage du thread d'actions
+07/05/2024 00:29:09 Main         DEBUG    Action reset de la classe Asserv avec les arguments []
+07/05/2024 00:29:09 Main         INFO     Démarrage du chrono
+07/05/2024 00:29:11 Main         DEBUG    Action bouger_panneau_droit de la classe AX12_Panneau avec les arguments []
+07/05/2024 00:29:11 Main         DEBUG    Action moveof de la classe Asserv avec les arguments [20, 100]
+07/05/2024 00:29:12 Main         DEBUG    Action ramener_AX12_droit de la classe AX12_Panneau avec les arguments []
+07/05/2024 00:29:12 Main         DEBUG    Action goto de la classe Asserv avec les arguments [240, -22, 300]
+07/05/2024 00:29:13 Main         DEBUG    Action bouger_panneau_droit de la classe AX12_Panneau avec les arguments []
+07/05/2024 00:29:14 Main         DEBUG    Action moveof de la classe Asserv avec les arguments [20, 100]
+07/05/2024 00:29:15 Main         DEBUG    Action ramener_AX12_droit de la classe AX12_Panneau avec les arguments []
+07/05/2024 00:29:15 Main         DEBUG    Action moveof de la classe Asserv avec les arguments [220, 300]
+07/05/2024 00:29:15 Main         INFO     Arrêt des moteurs
+07/05/2024 00:29:15 Main         INFO     Arrêt du scanner Lidar
+07/05/2024 00:29:48 Main         INFO     Main Code initialized.
+07/05/2024 00:29:56 Main         INFO     Initialisation broche GPIO Jack
+07/05/2024 00:29:56 Main         INFO     Initialisation du JSON...
+07/05/2024 00:29:56 Main         INFO     Initialisation de <module 'Asserv' from '/home/pi/code_principal_2024/Asserv.py'>
+07/05/2024 00:29:56 Main         INFO     Initialisation de <module 'AX12_Python.AX12_Pinces' from '/home/pi/code_principal_2024/AX12_Python/AX12_Pinces.py'>
+07/05/2024 00:29:56 Main         INFO     Initialisation de <module 'AX12_Python.AX12_Panneau' from '/home/pi/code_principal_2024/AX12_Python/AX12_Panneau.py'>
+07/05/2024 00:29:57 Main         INFO     Initialisation de <module 'AX12_Python.AX12_Ascenseur' from '/home/pi/code_principal_2024/AX12_Python/AX12_Ascenseur.py'>
+07/05/2024 00:29:57 Main         INFO     JSON initialisé.
+07/05/2024 00:29:57 Main         INFO     Initialisation du Lidar
+07/05/2024 00:29:57 Main         INFO     Don de asserv à Lidar
+07/05/2024 00:29:57 Main         INFO     Waiting for jack removal...
+07/05/2024 00:30:02 Main         INFO     Jack retiré
+07/05/2024 00:30:02 Main         INFO     Démarrage du robot à 1715034602.1509507 secondes
+07/05/2024 00:30:02 Main         INFO     Démarrage du thread de scanner Lidar
+07/05/2024 00:30:02 Main         INFO     Démarrage du thread d'actions
+07/05/2024 00:30:02 Main         DEBUG    Action reset de la classe Asserv avec les arguments []
+07/05/2024 00:30:02 Main         INFO     Démarrage du chrono
+07/05/2024 00:30:04 Main         DEBUG    Action bouger_panneau_droit de la classe AX12_Panneau avec les arguments []
+07/05/2024 00:30:05 Main         DEBUG    Action moveof de la classe Asserv avec les arguments [20, 100]
+07/05/2024 00:30:05 Main         DEBUG    Action ramener_AX12_droit de la classe AX12_Panneau avec les arguments []
+07/05/2024 00:30:05 Main         DEBUG    Action goto de la classe Asserv avec les arguments [240, -22, 300]
+07/05/2024 00:30:08 Main         DEBUG    Action bouger_panneau_droit de la classe AX12_Panneau avec les arguments []
+07/05/2024 00:30:08 Main         DEBUG    Action moveof de la classe Asserv avec les arguments [20, 100]
+07/05/2024 00:30:09 Main         DEBUG    Action ramener_AX12_droit de la classe AX12_Panneau avec les arguments []
+07/05/2024 00:30:09 Main         DEBUG    Action moveof de la classe Asserv avec les arguments [220, 300]
+07/05/2024 00:30:10 Main         DEBUG    Action bouger_panneau_droit de la classe AX12_Panneau avec les arguments []
+07/05/2024 00:30:11 Main         DEBUG    Action moveof de la classe Asserv avec les arguments [30, 100]
+07/05/2024 00:30:12 Main         DEBUG    Action ramener_AX12_droit de la classe AX12_Panneau avec les arguments []
+07/05/2024 00:30:12 Main         DEBUG    Action moveof de la classe Asserv avec les arguments [270]
+07/05/2024 00:30:13 Main         DEBUG    Action open_pince de la classe AX12_Pinces avec les arguments [64]
+07/05/2024 00:30:13 Main         DEBUG    Action goto de la classe Asserv avec les arguments [850, 278]
+07/05/2024 00:30:17 Main         DEBUG    Action moveof de la classe Asserv avec les arguments [200, 75]
+07/05/2024 00:30:20 Main         DEBUG    Action close_pince_bloquant de la classe AX12_Pinces avec les arguments []
+07/05/2024 00:30:20 Main         INFO     Fin du match ou chrono
+07/05/2024 00:30:21 Main         INFO     Arrêt des moteurs
+07/05/2024 00:30:21 Main         INFO     Arrêt du scanner Lidar

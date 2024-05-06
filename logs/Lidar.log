@@ -1297,3 +1297,9 @@
 06/05/2024 23:36:06 Lidar        INFO     Lidar initialized.
 06/05/2024 23:36:06 Lidar        INFO     Setting PWM value to 512
 06/05/2024 23:36:16 Lidar        INFO     Stopping the lidar scan.
+07/05/2024 00:29:08 Lidar        INFO     Lidar initialized.
+07/05/2024 00:29:08 Lidar        INFO     Setting PWM value to 512
+07/05/2024 00:29:15 Lidar        INFO     Stopping the lidar scan.
+07/05/2024 00:29:57 Lidar        INFO     Lidar initialized.
+07/05/2024 00:30:02 Lidar        INFO     Setting PWM value to 512
+07/05/2024 00:30:21 Lidar        INFO     Stopping the lidar scan.

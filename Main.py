@@ -12,8 +12,7 @@ from InterfaceGraphique2024.INTERFACE.Interface import *
 from Globals_Variables import *
 
 class MainCode:
-    def __init__(self, json_path="/home/pi/code_principal_2024/Stratégies/StrategieBleuGoTo.json", queue=None, interface=None):
-        self.queue = queue
+    def __init__(self, json_path="/home/pi/code_principal_2024/Stratégies/StrategieBleuGoTo.json", interface=None):
         self.interface=interface
         self.json_path = json_path
         logging.config.fileConfig(LOGS_CONF_PATH,disable_existing_loggers=False)
@@ -36,12 +35,12 @@ class MainCode:
             else:
                 module = importlib.import_module(module_name)
             self.logger.info(f"Initialisation de {module}")
-            self.dic_class[module_name] = getattr(module, module_name)(queue=self.queue)
+            self.dic_class[module_name] = getattr(module, module_name)(interface=self.interface)
         self.logger.info("JSON initialisé.")
         return True
 
     def actions(self):
-        if self.queue == None :
+        if self.interface == None :
             for action in self.data['actions']:
                 self.logger.debug(f"Action {action['methode']} de la classe {action['classe']} avec les arguments {action['arguments']}")
                 while not(getattr(self.dic_class[action['classe']], action['methode'])(*action['arguments'])):
@@ -49,7 +48,7 @@ class MainCode:
         else :
             for action in self.data['actions']:
                 self.logger.debug(f"Action {action['methode']} de la classe {action['classe']} avec les arguments {action['arguments']}")
-                self.queue.put(("UPDATE_ACTION", action['methode']))
+                self.interface.after(0, self.interface.update_action(action['methode']))
                 while not(getattr(self.dic_class[action['classe']], action['methode'])(*action['arguments'])):
                     time.sleep(0.1)
 
@@ -69,7 +68,7 @@ class MainCode:
         sys.exit(0)
 
     def stop(self):
-        if self.queue == None :
+        if self.interface == None :
             self.logger.info("Arrêt des moteurs")
             self.dic_class['Asserv'].stopmove()
             # Arrêter le scanner Lidar
@@ -79,7 +78,7 @@ class MainCode:
             # if self.thread_action and self.thread_action.is_alive():
             #     self.thread_action.join()
         else :
-            self.queue.put(("MAIN_STOP"))
+            self.interface.after(0, self.interface.mainStop())
             self.logger.info("Arrêt des moteurs")
             self.dic_class['Asserv'].stopmove()
             # Arrêter le scanner Lidar
@@ -91,7 +90,7 @@ class MainCode:
 
 
     def run(self):
-        if self.queue == None :
+        if self.interface == None :
             GPIO.setmode(GPIO.BCM)
             self.logger.info("Initialisation broche GPIO Jack")
             GPIO.setup(PIN_JACK, GPIO.IN)
@@ -135,7 +134,6 @@ class MainCode:
             time.sleep(1)
             self.stop()
         else :
-            self.queue.put(("MAIN_START"))
             self.interface.after(0, self.interface.mainStart())
             GPIO.setmode(GPIO.BCM)
             self.logger.info("Initialisation broche GPIO Jack")
@@ -144,15 +142,15 @@ class MainCode:
             self.init_json()
 
             self.logger.info("Initialisation du Lidar")
-            self.lidar_scanner = LidarScanner(self.queue)
+            self.lidar_scanner = LidarScanner(self.interface)
             self.logger.info("Don de asserv à Lidar")
             self.lidar_scanner.set_asserv_obj(self.dic_class['Asserv'])
 
             self.logger.info("Waiting for jack removal...")
-            self.queue.put(("WAITING_JACK"))
+            self.interface.after(0, self.interface.waiting_jack())
             while not self.check_jack_removed():
                 time.sleep(0.1)
-            self.queue.put(("JACK_RETIRED"))
+            self.interface.after(0, self.interface.jack_retired())
             time_launch = time.time()
             self.logger.info(f"Démarrage du robot à {time_launch} secondes")
 
@@ -172,7 +170,7 @@ class MainCode:
             t = time.time()
             while t < (time_launch + MATCH_TIME) and self.thread_action.is_alive():
                 # self.logger.debug(f"Match en cours... (T = {t})")
-                self.queue.put(("TIME_UPDATE",t-time_launch))
+                self.interface.after(0, self.interface.time_update(t-time_launch))
                 time.sleep(0.1)
                 t = time.time()
 

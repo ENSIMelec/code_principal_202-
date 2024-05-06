@@ -7,7 +7,7 @@ import logging
 import logging.config
 
 class Asserv:
-    def __init__(self, port=STM32_SERIAL, baudrate=115200, buffer_size=512,queue=None):
+    def __init__(self, port=STM32_SERIAL, baudrate=115200, buffer_size=512,interface=None):
 
         # Charger la configuration de logging
         logging.config.fileConfig(LOGS_CONF_PATH,disable_existing_loggers=False)
@@ -15,7 +15,7 @@ class Asserv:
         # Créer un logger
         self.logger = logging.getLogger("Asserv")
 
-        self.queue = queue
+        self.interface = interface
         self.buffer_size = buffer_size
         self.encGauche = [None] * buffer_size
         self.index_encGauche = 0
@@ -64,8 +64,8 @@ class Asserv:
         self.signeLidar = 1
 
         self.logger.info("Asserv initialized.")
-        if self.queue != None :
-            self.queue.put(("ASSERV_INITIALIZED"))
+        if self.interface != None :
+            self.interface.after(0,self.interface.asserv_initialized())
 
     def action_ok_receive(self):
         command = "asserv Z\n"
@@ -287,10 +287,10 @@ class Asserv:
                     self.index_cmd_vitesse_D = (self.index_cmd_vitesse_D + 1) % self.buffer_size
                 elif data.startswith("I"): # angle mesurer
                     x = data[1:]
-                    if self.queue != None :
+                    if self.interface != None :
                         queue_angle+=1
                         if queue_angle == 10 :
-                            self.queue.put(("ANGLE_UPDATE",x))
+                            self.interface.after(0, self.interface.Angle_update(x))
                             queue_angle = 0
                     self.angle[self.index_angle] = float(x)
                     self.index_angle = (self.index_angle + 1) % self.buffer_size
@@ -322,19 +322,19 @@ class Asserv:
                     self.distance_ok = bool(x)
                 elif data.startswith("X"): # position x
                     x = data[1:]
-                    if self.queue != None :
+                    if self.interface != None :
                         queue_X+=1
                         if queue_X == 10 :
-                            self.queue.put(("X_UPDATE",x))
+                            self.interface.after(0, self.interface.X_update(x))
                             queue_X = 0
                     self.x[self.index_x] = float(x)
                     self.index_x = (self.index_x + 1) % self.buffer_size
                 elif data.startswith("Y"): # position y
                     x = data[1:]
-                    if self.queue != None :
+                    if self.interface != None :
                         queue_Y+=1
                         if queue_Y == 10 :
-                            self.queue.put(("Y_UPDATE",x))
+                            self.interface.after(0, self.interface.Y_update(x))
                             queue_Y=0
                     self.y[self.index_y] = float(x)
                     self.index_y = (self.index_y + 1) % self.buffer_size

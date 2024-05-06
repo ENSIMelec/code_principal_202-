@@ -10525,3 +10525,51 @@
 06/05/2024 23:36:16 Asserv       INFO     Commande envoyé : Z
 06/05/2024 23:36:16 Asserv       INFO     Commande envoyé : goto 850 278 500
 06/05/2024 23:36:16 Asserv       INFO     Commande envoyé : stopmove
+07/05/2024 00:29:07 Asserv       INFO     Thread receive_data started
+07/05/2024 00:29:07 Asserv       INFO     Commande envoyé : Z
+07/05/2024 00:29:07 Asserv       INFO     Asserv initialized.
+07/05/2024 00:29:08 Asserv       WARNING  receive_data wrong data format...L47.I1.34916
+07/05/2024 00:29:09 Asserv       INFO     Commande envoyé : reset all
+07/05/2024 00:29:09 Asserv       INFO     Action OK (Z reçu)
+07/05/2024 00:29:11 Asserv       INFO     Commande envoyé : moveof 20 100
+07/05/2024 00:29:12 Asserv       INFO     Action OK (Z reçu)
+07/05/2024 00:29:12 Asserv       INFO     Commande envoyé : Z
+07/05/2024 00:29:12 Asserv       INFO     Commande envoyé : goto 240 -22 300
+07/05/2024 00:29:13 Asserv       INFO     Action OK (Z reçu)
+07/05/2024 00:29:13 Asserv       INFO     Commande envoyé : Z
+07/05/2024 00:29:14 Asserv       INFO     Commande envoyé : moveof 20 100
+07/05/2024 00:29:15 Asserv       INFO     Action OK (Z reçu)
+07/05/2024 00:29:15 Asserv       INFO     Commande envoyé : Z
+07/05/2024 00:29:15 Asserv       INFO     Commande envoyé : moveof 220 300
+07/05/2024 00:29:15 Asserv       INFO     Commande envoyé : stopmove
+07/05/2024 00:29:56 Asserv       INFO     Thread receive_data started
+07/05/2024 00:29:56 Asserv       INFO     Commande envoyé : Z
+07/05/2024 00:29:56 Asserv       INFO     Asserv initialized.
+07/05/2024 00:29:56 Asserv       WARNING  receive_data wrong data format...X265.45I0.19487
+07/05/2024 00:30:02 Asserv       INFO     Commande envoyé : reset all
+07/05/2024 00:30:03 Asserv       INFO     Action OK (Z reçu)
+07/05/2024 00:30:05 Asserv       INFO     Commande envoyé : moveof 20 100
+07/05/2024 00:30:05 Asserv       INFO     Action OK (Z reçu)
+07/05/2024 00:30:05 Asserv       INFO     Commande envoyé : Z
+07/05/2024 00:30:05 Asserv       INFO     Commande envoyé : goto 240 -22 300
+07/05/2024 00:30:08 Asserv       INFO     Action OK (Z reçu)
+07/05/2024 00:30:08 Asserv       INFO     Commande envoyé : Z
+07/05/2024 00:30:08 Asserv       INFO     Commande envoyé : moveof 20 100
+07/05/2024 00:30:09 Asserv       INFO     Action OK (Z reçu)
+07/05/2024 00:30:09 Asserv       INFO     Commande envoyé : Z
+07/05/2024 00:30:09 Asserv       INFO     Commande envoyé : moveof 220 300
+07/05/2024 00:30:10 Asserv       INFO     Action OK (Z reçu)
+07/05/2024 00:30:10 Asserv       INFO     Commande envoyé : Z
+07/05/2024 00:30:11 Asserv       INFO     Commande envoyé : moveof 30 100
+07/05/2024 00:30:12 Asserv       INFO     Action OK (Z reçu)
+07/05/2024 00:30:12 Asserv       INFO     Commande envoyé : Z
+07/05/2024 00:30:12 Asserv       INFO     Commande envoyé : moveof 270 500
+07/05/2024 00:30:13 Asserv       INFO     Action OK (Z reçu)
+07/05/2024 00:30:13 Asserv       INFO     Commande envoyé : Z
+07/05/2024 00:30:13 Asserv       INFO     Commande envoyé : goto 850 278 500
+07/05/2024 00:30:17 Asserv       INFO     Action OK (Z reçu)
+07/05/2024 00:30:17 Asserv       INFO     Commande envoyé : Z
+07/05/2024 00:30:17 Asserv       INFO     Commande envoyé : moveof 200 75
+07/05/2024 00:30:19 Asserv       INFO     Action OK (Z reçu)
+07/05/2024 00:30:20 Asserv       INFO     Commande envoyé : Z
+07/05/2024 00:30:21 Asserv       INFO     Commande envoyé : stopmove

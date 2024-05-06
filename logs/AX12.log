@@ -3326,3 +3326,98 @@
 06/05/2024 23:36:16 AX12         INFO     [Pince Droite] Vitesse réglée à 64 avec succès
 06/05/2024 23:36:16 AX12         INFO     [Pince Gauche] Position réglée à 380 avec succès
 06/05/2024 23:36:16 AX12         INFO     [Pince Droite] Position réglée à 360 avec succès
+07/05/2024 00:29:07 AX12         INFO     [Pince Gauche] Port ouvert avec succès ID: 3
+07/05/2024 00:29:07 AX12         INFO     [Pince Gauche] Vitesse du port modifiée avec succès à 9600 bps
+07/05/2024 00:29:08 AX12         INFO     [Pince Gauche] Ping réussi. Numéro de modèle du Dynamixel : 12
+07/05/2024 00:29:08 AX12         INFO     [Pince Droite] Port ouvert avec succès ID: 5
+07/05/2024 00:29:08 AX12         INFO     [Pince Droite] Vitesse du port modifiée avec succès à 9600 bps
+07/05/2024 00:29:08 AX12         INFO     [Pince Droite] Ping réussi. Numéro de modèle du Dynamixel : 12
+07/05/2024 00:29:08 AX12         INFO     [Pince Gauche] Vitesse réglée à 1023 avec succès
+07/05/2024 00:29:08 AX12         INFO     [Pince Droite] Vitesse réglée à 1023 avec succès
+07/05/2024 00:29:08 AX12         INFO     [Pince Gauche] Position réglée à 720 avec succès
+07/05/2024 00:29:08 AX12         INFO     [Pince Droite] Position réglée à 0 avec succès
+07/05/2024 00:29:08 AX12         INFO     [Pinces] Pinces initialized.
+07/05/2024 00:29:08 AX12         INFO     [Bras Droit] Port ouvert avec succès ID: 4
+07/05/2024 00:29:08 AX12         INFO     [Bras Droit] Vitesse du port modifiée avec succès à 9600 bps
+07/05/2024 00:29:08 AX12         INFO     [Bras Droit] Ping réussi. Numéro de modèle du Dynamixel : 12
+07/05/2024 00:29:08 AX12         INFO     [Bras Gauche] Port ouvert avec succès ID: 8
+07/05/2024 00:29:08 AX12         INFO     [Bras Gauche] Vitesse du port modifiée avec succès à 9600 bps
+07/05/2024 00:29:08 AX12         INFO     [Bras Gauche] Ping réussi. Numéro de modèle du Dynamixel : 12
+07/05/2024 00:29:08 AX12         INFO     [Bras Droit] Vitesse réglée à 1023 avec succès
+07/05/2024 00:29:08 AX12         INFO     [Bras Droit] Position réglée à 750 avec succès
+07/05/2024 00:29:08 AX12         INFO     [Bras Gauche] Vitesse réglée à 1023 avec succès
+07/05/2024 00:29:08 AX12         INFO     [Bras Gauche] Position réglée à 495 avec succès
+07/05/2024 00:29:08 AX12         INFO     [Panneau] Panneau initialized.
+07/05/2024 00:29:08 AX12         INFO     [Ascenceur] Port ouvert avec succès ID: 6
+07/05/2024 00:29:08 AX12         INFO     [Ascenceur] Vitesse du port modifiée avec succès à 9600 bps
+07/05/2024 00:29:08 AX12         INFO     [Ascenceur] Ping réussi. Numéro de modèle du Dynamixel : 780
+07/05/2024 00:29:08 AX12         INFO     [Ascenceur] Limite d'angle: 0 à 1023 donc sens horaire (POV LED)
+07/05/2024 00:29:08 AX12         INFO     [Ascenceur] Position réglée à 970 avec succès
+07/05/2024 00:29:08 AX12         INFO     [Ascenceur] Ascenseur initialized.
+07/05/2024 00:29:11 AX12         INFO     [Bras Droit] Vitesse réglée à 128 avec succès
+07/05/2024 00:29:11 AX12         INFO     [Bras Droit] Position réglée à 660 avec succès
+07/05/2024 00:29:11 AX12         INFO     [Bras Droit] Current pos :748
+07/05/2024 00:29:11 AX12         INFO     [Bras Droit] Current pos :668
+07/05/2024 00:29:12 AX12         INFO     [Bras Droit] Vitesse réglée à 1023 avec succès
+07/05/2024 00:29:12 AX12         INFO     [Bras Droit] Position réglée à 750 avec succès
+07/05/2024 00:29:13 AX12         INFO     [Bras Droit] Vitesse réglée à 128 avec succès
+07/05/2024 00:29:13 AX12         INFO     [Bras Droit] Position réglée à 660 avec succès
+07/05/2024 00:29:13 AX12         INFO     [Bras Droit] Current pos :748
+07/05/2024 00:29:14 AX12         INFO     [Bras Droit] Current pos :668
+07/05/2024 00:29:15 AX12         INFO     [Bras Droit] Vitesse réglée à 1023 avec succès
+07/05/2024 00:29:15 AX12         INFO     [Bras Droit] Position réglée à 750 avec succès
+07/05/2024 00:29:56 AX12         INFO     [Pince Gauche] Port ouvert avec succès ID: 3
+07/05/2024 00:29:56 AX12         INFO     [Pince Gauche] Vitesse du port modifiée avec succès à 9600 bps
+07/05/2024 00:29:56 AX12         INFO     [Pince Gauche] Ping réussi. Numéro de modèle du Dynamixel : 12
+07/05/2024 00:29:56 AX12         INFO     [Pince Droite] Port ouvert avec succès ID: 5
+07/05/2024 00:29:56 AX12         INFO     [Pince Droite] Vitesse du port modifiée avec succès à 9600 bps
+07/05/2024 00:29:56 AX12         INFO     [Pince Droite] Ping réussi. Numéro de modèle du Dynamixel : 12
+07/05/2024 00:29:56 AX12         INFO     [Pince Gauche] Vitesse réglée à 1023 avec succès
+07/05/2024 00:29:56 AX12         INFO     [Pince Droite] Vitesse réglée à 1023 avec succès
+07/05/2024 00:29:56 AX12         INFO     [Pince Gauche] Position réglée à 720 avec succès
+07/05/2024 00:29:56 AX12         INFO     [Pince Droite] Position réglée à 0 avec succès
+07/05/2024 00:29:56 AX12         INFO     [Pinces] Pinces initialized.
+07/05/2024 00:29:56 AX12         INFO     [Bras Droit] Port ouvert avec succès ID: 4
+07/05/2024 00:29:56 AX12         INFO     [Bras Droit] Vitesse du port modifiée avec succès à 9600 bps
+07/05/2024 00:29:56 AX12         INFO     [Bras Droit] Ping réussi. Numéro de modèle du Dynamixel : 12
+07/05/2024 00:29:56 AX12         INFO     [Bras Gauche] Port ouvert avec succès ID: 8
+07/05/2024 00:29:56 AX12         INFO     [Bras Gauche] Vitesse du port modifiée avec succès à 9600 bps
+07/05/2024 00:29:56 AX12         INFO     [Bras Gauche] Ping réussi. Numéro de modèle du Dynamixel : 12
+07/05/2024 00:29:57 AX12         INFO     [Bras Droit] Vitesse réglée à 1023 avec succès
+07/05/2024 00:29:57 AX12         INFO     [Bras Droit] Position réglée à 750 avec succès
+07/05/2024 00:29:57 AX12         INFO     [Bras Gauche] Vitesse réglée à 1023 avec succès
+07/05/2024 00:29:57 AX12         INFO     [Bras Gauche] Position réglée à 495 avec succès
+07/05/2024 00:29:57 AX12         INFO     [Panneau] Panneau initialized.
+07/05/2024 00:29:57 AX12         INFO     [Ascenceur] Port ouvert avec succès ID: 6
+07/05/2024 00:29:57 AX12         INFO     [Ascenceur] Vitesse du port modifiée avec succès à 9600 bps
+07/05/2024 00:29:57 AX12         INFO     [Ascenceur] Ping réussi. Numéro de modèle du Dynamixel : 780
+07/05/2024 00:29:57 AX12         INFO     [Ascenceur] Limite d'angle: 0 à 1023 donc sens horaire (POV LED)
+07/05/2024 00:29:57 AX12         INFO     [Ascenceur] Position réglée à 970 avec succès
+07/05/2024 00:29:57 AX12         INFO     [Ascenceur] Ascenseur initialized.
+07/05/2024 00:30:04 AX12         INFO     [Bras Droit] Vitesse réglée à 128 avec succès
+07/05/2024 00:30:04 AX12         INFO     [Bras Droit] Position réglée à 660 avec succès
+07/05/2024 00:30:04 AX12         INFO     [Bras Droit] Current pos :748
+07/05/2024 00:30:05 AX12         INFO     [Bras Droit] Current pos :668
+07/05/2024 00:30:05 AX12         INFO     [Bras Droit] Vitesse réglée à 1023 avec succès
+07/05/2024 00:30:05 AX12         INFO     [Bras Droit] Position réglée à 750 avec succès
+07/05/2024 00:30:08 AX12         INFO     [Bras Droit] Vitesse réglée à 128 avec succès
+07/05/2024 00:30:08 AX12         INFO     [Bras Droit] Position réglée à 660 avec succès
+07/05/2024 00:30:08 AX12         INFO     [Bras Droit] Current pos :748
+07/05/2024 00:30:08 AX12         INFO     [Bras Droit] Current pos :668
+07/05/2024 00:30:09 AX12         INFO     [Bras Droit] Vitesse réglée à 1023 avec succès
+07/05/2024 00:30:09 AX12         INFO     [Bras Droit] Position réglée à 750 avec succès
+07/05/2024 00:30:10 AX12         INFO     [Bras Droit] Vitesse réglée à 128 avec succès
+07/05/2024 00:30:10 AX12         INFO     [Bras Droit] Position réglée à 660 avec succès
+07/05/2024 00:30:10 AX12         INFO     [Bras Droit] Current pos :748
+07/05/2024 00:30:11 AX12         INFO     [Bras Droit] Current pos :668
+07/05/2024 00:30:12 AX12         INFO     [Bras Droit] Vitesse réglée à 1023 avec succès
+07/05/2024 00:30:12 AX12         INFO     [Bras Droit] Position réglée à 750 avec succès
+07/05/2024 00:30:13 AX12         INFO     [Pince Gauche] Vitesse réglée à 64 avec succès
+07/05/2024 00:30:13 AX12         INFO     [Pince Droite] Vitesse réglée à 64 avec succès
+07/05/2024 00:30:13 AX12         INFO     [Pince Gauche] Position réglée à 380 avec succès
+07/05/2024 00:30:13 AX12         INFO     [Pince Droite] Position réglée à 360 avec succès
+07/05/2024 00:30:20 AX12         ERROR    [Pince Gauche] (set_speed) [TxRxResult] Incorrect status packet!
+07/05/2024 00:30:20 AX12         ERROR    [Pince Droite] (set_speed) [TxRxResult] Incorrect status packet!
+07/05/2024 00:30:20 AX12         ERROR    [Pince Gauche] (move) [TxRxResult] Incorrect status packet!
+07/05/2024 00:30:20 AX12         ERROR    [Pince Droite] (move) [TxRxResult] Incorrect status packet!
+07/05/2024 00:30:20 AX12         ERROR    [Pince Gauche] (get_present_speed) [TxRxResult] Incorrect status packet!

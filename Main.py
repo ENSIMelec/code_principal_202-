@@ -101,9 +101,15 @@ class MainCode:
             self.lidar_scanner = LidarScanner()
             self.logger.info("Don de asserv à Lidar")
             self.lidar_scanner.set_asserv_obj(self.dic_class['Asserv'])
+            self.dic_class["Lidar"] = self.lidar_scanner
 
             signal.signal(signal.SIGINT, lambda sig, frame: self.signal_handler(sig,frame))
             signal.signal(signal.SIGTERM, lambda sig, frame: self.signal_handler(sig,frame))
+
+            lidar_thread = threading.Thread(target=self.lidar_scanner.scan)
+            lidar_thread.daemon = True
+            # self.logger.info("Démarrage du thread de scanner Lidar")
+            # lidar_thread.start()
 
             self.logger.info("Waiting for jack removal...")
             while not self.check_jack_removed():
@@ -114,11 +120,6 @@ class MainCode:
 
             self.thread_action = threading.Thread(target=self.actions)
             self.thread_action.daemon = True
-            lidar_thread = threading.Thread(target=self.lidar_scanner.scan)
-            lidar_thread.daemon = True
-
-            self.logger.info("Démarrage du thread de scanner Lidar")
-            lidar_thread.start()
             time.sleep(0.5)
             self.logger.info("Démarrage du thread d'actions")
             self.thread_action.start()
@@ -126,7 +127,7 @@ class MainCode:
             self.logger.info("Démarrage du chrono")
 
             while time.time() < (time_launch + MATCH_TIME) and self.thread_action.is_alive():
-                self.logger.debug(f"Match en cours... (T = {time.time()})")
+                self.logger.debug(f"Match en cours... (T = {time.time()-time_launch})")
                 time.sleep(0.1)
 
             self.logger.info("Fin du match ou chrono")
@@ -159,11 +160,11 @@ class MainCode:
             lidar_thread = threading.Thread(target=self.lidar_scanner.scan)
             lidar_thread.daemon = True
 
-            self.logger.info("Démarrage du thread de scanner Lidar")
-            lidar_thread.start()
             time.sleep(0.5)
             self.logger.info("Démarrage du thread d'actions")
             self.thread_action.start()
+            self.logger.info("Démarrage du thread de scanner Lidar")
+            lidar_thread.start()
 
             self.logger.info("Démarrage du chrono")
 

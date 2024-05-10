@@ -342,7 +342,7 @@ class Asserv:
                     self.logger.info("Action OK (Z reçu)")
                     self.action_ok = True
             except :
-                self.logger.warn(f"receive_data wrong data format...{data}")
+                self.logger.warn(f"receive_data wrong data format : {data}")
                 continue
 
     def get_enc_gauche(self):

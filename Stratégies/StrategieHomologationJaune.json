@@ -11,7 +11,7 @@
         },
         {
             "classe": "AX12_Panneau",
-            "methode": "bouger_panneau_droit",
+            "methode": "bouger_panneau_gauche",
             "arguments": []
         },
         {
@@ -24,7 +24,7 @@
         },
         {
             "classe": "AX12_Panneau",
-            "methode": "ramener_AX12_droit",
+            "methode": "ramener_AX12_gauche",
             "arguments": []
         },
         {
@@ -32,7 +32,7 @@
             "methode": "goto",
             "arguments": [
                 0,
-                1500
+                -1500
             ]
         }
     ]

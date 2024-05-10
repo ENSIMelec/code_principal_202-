@@ -23,7 +23,7 @@
     },
     {
         "classe": "AX12_Panneau",
-        "methode": "bouger_panneau_droit",
+        "methode": "bouger_panneau_gauche",
         "arguments": []    
     },
     {
@@ -33,7 +33,7 @@
     },
     {
         "classe": "AX12_Panneau",
-        "methode": "ramener_AX12_droit",
+        "methode": "ramener_AX12_gauche",
         "arguments": []    
     },
     {
@@ -43,7 +43,7 @@
     },
     {
         "classe": "AX12_Panneau",
-        "methode": "bouger_panneau_droit",
+        "methode": "bouger_panneau_gauche",
         "arguments": []    
     },
     {
@@ -53,7 +53,7 @@
     },
     {
         "classe": "AX12_Panneau",
-        "methode": "ramener_AX12_droit",
+        "methode": "ramener_AX12_gauche",
         "arguments": []    
     },
     {
@@ -63,7 +63,7 @@
     },
     {
         "classe": "AX12_Panneau",
-        "methode": "bouger_panneau_droit",
+        "methode": "bouger_panneau_gauche",
         "arguments": []    
     },
     {
@@ -73,7 +73,7 @@
     },
     {
         "classe": "AX12_Panneau",
-        "methode": "ramener_AX12_droit",
+        "methode": "ramener_AX12_gauche",
         "arguments": []    
     },
     {
@@ -94,7 +94,7 @@
     {
         "classe": "Asserv",
         "methode": "goto",
-        "arguments": [898,256]    
+        "arguments": [898,-256]    
     },
     {
         "classe": "AX12_Pinces",
@@ -114,7 +114,7 @@
     {
         "classe": "Asserv",
         "methode": "goto",
-        "arguments": [627,1044]    
+        "arguments": [627,-1044]    
     },
     {
         "classe": "AX12_Ascenseur",
@@ -124,7 +124,7 @@
     {
         "classe": "Asserv",
         "methode": "goto",
-        "arguments": [662,1791]    
+        "arguments": [662,-1791]    
     },
     {
         "classe": "Lidar",
@@ -139,7 +139,7 @@
     {
         "classe": "Asserv",
         "methode": "set_angle",
-        "arguments": [1.570796]    
+        "arguments": [-1.570796]    
     },
     {
         "classe": "AX12_Ascenseur",
@@ -179,7 +179,7 @@
     {
         "classe": "Asserv",
         "methode": "goto",
-        "arguments": [947,1571]    
+        "arguments": [947,-1571]    
     },
     {
         "classe": "AX12_Pinces",
@@ -189,7 +189,7 @@
     {
         "classe": "Asserv",
         "methode": "goto",
-        "arguments": [928,1375]    
+        "arguments": [928,-1375]    
     },
     {
         "classe": "AX12_Pinces",
@@ -234,7 +234,7 @@
     {
         "classe": "Asserv",
         "methode": "rotate",
-        "arguments": [1.570796]    
+        "arguments": [-1.570796]    
     },
     {
         "classe": "Asserv",
@@ -249,7 +249,7 @@
     {
         "classe": "Asserv",
         "methode": "set_angle",
-        "arguments": [1.570796]    
+        "arguments": [-1.570796]    
     },
     {
         "classe": "Asserv",
@@ -294,7 +294,7 @@
     {
         "classe": "Asserv",
         "methode": "rotate",
-        "arguments": [-1.570796]    
+        "arguments": [1.570796]    
     },
     {
         "classe": "AX12_Ascenseur",

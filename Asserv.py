@@ -6,7 +6,13 @@ from Globals_Variables import *
 import logging
 import logging.config
 
-class Asserv:
+class Asserv(object):
+    _instance = None
+    def __new__(cls,*args,**kwargs):
+        if not isinstance(cls._instance, cls):
+            cls._instance = object.__new__(cls)
+        return cls._instance
+
     def __init__(self, port=STM32_SERIAL, baudrate=115200, buffer_size=512,interface=None):
 
         # Charger la configuration de logging
@@ -61,7 +67,7 @@ class Asserv:
         self.serial.write(command.encode())
         self.logger.info("Commande envoyé : Z")
 
-        self.signeLidar = 1
+        self.signeLidar = 0
 
         self.logger.info("Asserv initialized.")
         if self.interface != None :
@@ -101,7 +107,7 @@ class Asserv:
         command = "asserv reset all\n"
         self.serial.write(command.encode())
         self.logger.info("Commande envoyé : reset all")
-        time.sleep(2)
+        time.sleep(1)
         return True
 
     def angle_enable(self): # enable de l'asservissement d'angle seulement
@@ -244,6 +250,24 @@ class Asserv:
         self.logger.info("Commande envoyé : restartmove")
         return True
 
+    def recalage_avant(self):
+        self.action_ok = False
+        command = f"asserv recalage 1\n"
+        self.serial.write(command.encode())
+        self.logger.info(f"Commande envoyé : recalage avant")
+        while (not self.action_ok):
+            continue
+        return True
+
+    def recalage_arriere(self):
+        self.action_ok = False
+        command = f"asserv recalage -1\n"
+        self.serial.write(command.encode())
+        self.logger.info(f"Commande envoyé : recalage arrière")
+        while (not self.action_ok):
+            continue
+        return True
+
     def receive_data(self):
         self.logger.info("Thread receive_data started")
         queue_angle = 0
@@ -341,8 +365,8 @@ class Asserv:
                 elif data.startswith("Z"): # action OK
                     self.logger.info("Action OK (Z reçu)")
                     self.action_ok = True
-            except :
-                self.logger.warn(f"receive_data wrong data format : {data}")
+            except Exception as e:
+                self.logger.warn(f"data reception : {e}")
                 continue
 
     def get_enc_gauche(self):

@@ -103,7 +103,7 @@ class LidarScanner(object):
 if __name__ == '__main__':
     # Setup the RPLidar
     lidar_scanner = LidarScanner()
-    lidar_scanner.disable()
-    time.sleep(10)
+    # lidar_scanner.disable()
+    # time.sleep(10)
     lidar_scanner.stop_lidarScan()
 

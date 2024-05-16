@@ -182,5 +182,5 @@ class MainCode:
 
 # Utilisation exemple
 if __name__ == "__main__":
-    main_code = MainCode("/home/pi/code_principal_2024/Stratégies/StrategieBleu.json")
+    main_code = MainCode("/home/pi/code_principal_2024/Stratégies/StrategieBleuFinale.json")
     main_code.run()

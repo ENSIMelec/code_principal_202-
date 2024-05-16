@@ -7,13 +7,13 @@
   ], 
   "actions": [
     {
-        "classe": "Asserv",
-        "methode": "reset",
+        "classe": "Lidar",
+        "methode": "disable",
         "arguments": []    
     },
     {
-        "classe": "Lidar",
-        "methode": "disable",
+        "classe": "Asserv",
+        "methode": "reset",
         "arguments": []    
     },
     {

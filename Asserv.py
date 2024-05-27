@@ -267,6 +267,12 @@ class Asserv(object):
         while (not self.action_ok):
             continue
         return True
+    
+    def manette_PWM(self, PWM_G, PWM_D):
+        command = f"asserv manette pwm {PWM_G} {PWM_D}\n"
+        self.serial.write(command.encode())
+        self.logger.info(f"Commande envoyé : manette pwm {PWM_G} {PWM_D}")
+        return True
 
     def receive_data(self):
         self.logger.info("Thread receive_data started")
